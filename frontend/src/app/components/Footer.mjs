@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
-// import "../../src/app/globals.css";
+// import { useLanguage } from "../context/LenguajeContext.js";
+import { useTranslation } from "react-i18next"; 
 
 
 export default function Footer() {
+    // const { changeLanguage } = useLanguage();
+    const { t } = useTranslation(); 
+
     return (
 
         <footer className="bg-p-truegray-800">
@@ -20,10 +25,9 @@ export default function Footer() {
                     </div>
                 </a>
                 <div className="w-full mt-6 md:mt-0 leading-normal">
-                    <h4 className="py-2 uppercase font-bold whitespace-pre-line text-p-white">About Project Name</h4>
+                    <h4 className="py-2 uppercase font-bold whitespace-pre-line text-p-white">{t("about_nebula_tek")}</h4>
                     <p className="text-lg whitespace-pre-line text-p-white">
-                        Personalized Salesforce Services
-                        At Nebula Tek, we offer tailored consulting and development in Salesforce to optimize customer relationship management (CRM), improve productivity, and maximize return on technology investment.
+                    {t("salesforce_services")}
                     </p>
                 </div>
                 <div className="flex flex-col items-center w-full md:w-1/4 mt-6 md:mt-0">
