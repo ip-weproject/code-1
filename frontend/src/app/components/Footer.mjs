@@ -11,9 +11,9 @@ export default function Footer() {
                 <a className="w-full md:w-1/4 flex justify-center items-center p-5" target="_blank" rel="noopener noreferrer">
                     <div className="m-2 w-24 h-24 rounded-md shadow-lg bg-p-red-50 flex justify-center items-center transform rotate-45 overflow-hidden">
                         <Image
-                            width={100}
-                            height={100}
-                            className="object-fill h-auto w-auto transform -rotate-45"
+                            width={150}
+                            height={150}
+                            className="object-fill h-auto w-auto transform -rotate-45 scale-150"
                             alt="logo"
                             src="/images/logo-inv.png"
                         />
