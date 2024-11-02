@@ -76,7 +76,19 @@ ul {
   color:var(--gcolor-red);
 }
 
-
+/* texts colors */
+.bg-color-cian{
+  background-color:var(--gcolor-cian);
+}
+.bg-color-purple{
+  background-color:var(--gcolor-purple);
+}
+.bg-color-blue{
+  background-color:var(--gcolor-blue);
+}
+.bg-color-red{
+  background-color:var(--gcolor-red);
+}
 
 
 /* pazly styles  */
