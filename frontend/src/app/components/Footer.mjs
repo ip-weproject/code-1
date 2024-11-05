@@ -14,13 +14,13 @@ export default function Footer() {
         <div className="w-full py-8 px-4">
             <div className="mx-auto container overflow-hidden flex flex-col md:flex-row justify-between pb-4 text-center md:text-left">
                 <a className="w-full md:w-1/4 flex justify-center items-center p-5" target="_blank" rel="noopener noreferrer">
-                    <div className="m-2 w-24 h-24 rounded-md shadow-lg bg-p-red-50 flex justify-center items-center transform rotate-45 overflow-hidden">
+                    <div className="m-2 w-20 h-20 flex justify-center items-center">
                         <Image
-                            width={150}
-                            height={150}
-                            className="object-fill h-auto w-auto transform -rotate-45 scale-150"
+                            width={50}
+                            height={50}
+                            className="object-fill h-auto w-auto transform"
                             alt="logo"
-                            src="/images/logo-inv.png"
+                            src="/images/Recurso 10.svg"
                         />
                     </div>
                 </a>
@@ -47,6 +47,4 @@ export default function Footer() {
             </div>
         </div>
     </footer>
-
-
 )};

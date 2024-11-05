@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/Footer.mjs";
 import Header from "./components/Header.mjs";
-import Plans from "./components/Plans.mjs";
+// import Plans from "./components/Plans.mjs";
 import { LanguageProvider } from '../app/context/LenguajeContext';
 import Head from "next/head";
 
@@ -26,20 +26,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children,}: 
   Readonly<{
-  children: React.ReactNode;
-}>) {
+  children: React.ReactNode;}>) {
   return (
     <LanguageProvider>
     <html lang="en">
     <Head>
       <link rel="preload" href="/images/logo-inv.png" as="image" />
-        </Head>
+    </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="main-container">
-      <Header/>
-      <main className="content">{children}</main>
-      <Plans/>
-        <Footer/>
+          <Header/>
+            <main className="content">{children}</main>
+          <Footer/>
         </div>
       </body>
     </html>

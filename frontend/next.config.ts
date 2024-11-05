@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
-import i18n  from "./next-i18next.config.js";
+// import i18n  from "./next-i18next.config.js";
 
 // Combina las configuraciones de i18n con nextConfig
 const nextConfig: NextConfig = {
-  i18n,
+  output: 'export',
+  // i18n,
   images: {
     domains: ['images.unsplash.com'],
+    unoptimized: true,
   },
 };
 

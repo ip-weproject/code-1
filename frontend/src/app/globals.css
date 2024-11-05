@@ -35,7 +35,7 @@ body {
 }
 
 .content {
-  flex-grow: 1; /* Permite que la sección de contenido se expanda */
+  /* flex-grow: 1; Permite que la sección de contenido se expanda */
   /* flex-shrink: 0; */
 }
 

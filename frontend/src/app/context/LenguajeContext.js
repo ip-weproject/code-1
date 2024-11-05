@@ -4,7 +4,7 @@
 import React from 'react';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
 
 // Inicializa i18n si aún no está inicializado
 if (!i18n.isInitialized) {
@@ -28,7 +28,14 @@ if (!i18n.isInitialized) {
           "lets_talk": "Let's talk",
           "sign_up": "Sign Up",
           "about_nebula_tek": "About Nebula Tek",
-          "salesforce_services": "Personalized Salesforce Services. At Nebula Tek, we offer tailored consulting and development in Salesforce to optimize customer relationship management (CRM), improve productivity, and maximize return on technology investment."
+          "salesforce_services": "Personalized Salesforce Services. At Nebula Tek, we offer tailored consulting and development in Salesforce to optimize customer relationship management (CRM), improve productivity, and maximize return on technology investment.",
+          "building_websites": "Building websites for yourself or others? With Pazly you can build beautiful responsive websites in minutes.",
+          "fast_and_easy": "Fast and easy to use",
+          "compose_layouts": "It takes seconds to compose different layouts. Drag and drop components and start customising. Download your website and publish it with your preferred host provider.",
+          "growing_integrations": "Growing integrations",
+          "nebula_pro_integrations": "Nebula Pro has several integrations that help you make better, more functional websites. We make new components every week.",
+          "build_website": "Build your website in minutes",
+          "back_to_plans": "Back to Plans"
         }
       },
       es: {
@@ -48,7 +55,14 @@ if (!i18n.isInitialized) {
           "lets_talk": "Hablemos",
           "sign_up": "Regístrate",
           "about_nebula_tek": "Sobre Nebula Tek",
-          "salesforce_services": "Servicios personalizados de Salesforce. En Nebula Tek, ofrecemos consultoría y desarrollo a medida en Salesforce para optimizar la gestión de relaciones con clientes (CRM), mejorar la productividad y maximizar el retorno de inversión en tecnología."
+          "salesforce_services": "Servicios personalizados de Salesforce. En Nebula Tek, ofrecemos consultoría y desarrollo a medida en Salesforce para optimizar la gestión de relaciones con clientes (CRM), mejorar la productividad y maximizar el retorno de inversión en tecnología.",
+          "building_websites": "¿Construyendo sitios web para ti o para otros? Con Pazly puedes crear sitios web responsivos y hermosos en minutos.",
+          "fast_and_easy": "Rápido y fácil de usar",
+          "compose_layouts": "Se tarda segundos en componer diferentes diseños. Arrastra y suelta componentes y comienza a personalizar. Descarga tu sitio web y publícalo con tu proveedor de hosting preferido.",
+          "growing_integrations": "Integraciones en crecimiento",
+          "nebula_pro_integrations": "Nebula Pro tiene varias integraciones que te ayudan a hacer sitios web mejores y más funcionales. Creamos nuevos componentes cada semana.",
+          "build_website": "Construye tu sitio web en minutos",
+          "back_to_plans": "Volver a los Planes"
         }
       },
     },
@@ -61,11 +75,24 @@ if (!i18n.isInitialized) {
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('en'); // Inicializa con 'en' por defecto
+
+  useEffect(() => {
+    // Intenta recuperar el idioma del localStorage solo en el cliente
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, []);
+
+  useEffect(() => {
+    i18n.changeLanguage(language); // Cambia el idioma en i18n
+    localStorage.setItem('language', language); // Guarda el idioma en localStorage
+  }, [language]);
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);  // Cambia el idioma en i18n
-    setLanguage(lang);          // Cambia el idioma en el contexto
+    setLanguage(lang); // Cambia el idioma en el contexto
   };
 
   return (
