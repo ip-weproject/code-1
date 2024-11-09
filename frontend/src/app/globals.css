@@ -95,10 +95,10 @@ ul {
   background-color:var(--gcolor-red);
 }
 .bg-color-black{
-  background-color:var(--background) !important;
+  background-color:var(--foreground) !important;
 }
 .bg-color-white{
-  background-color:var(--foreground);
+  background-color:var(--background);
 }
 
 
