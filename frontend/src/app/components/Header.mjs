@@ -16,20 +16,20 @@ export default function Header() {
                     pazly-editable="src child"
                     width={30} 
                     height={30} 
-                    className="transform " 
+                    className="transform" 
                     alt="logo" 
                     src="/images/Recurso 12.svg"/>
             <span className="ml-4 text-xl whitespace-pre-line text-p-white">{t("Nebula")}</span>
         </a>
         <div  className="flex flex-col md:flex-row">
             <nav  className="flex flex-wrap items-center text-center justify-center pb-2 md:pb-0">
-                <a pazly-editable="innerHTML href clone" target="_blank"  className="mr-5 text-xl cursor-pointer whitespace-pre-line text-color-red">{t("header_products")}</a>
-                <a pazly-editable="innerHTML href clone" target="_blank"  className="mr-5 text-xl cursor-pointer whitespace-pre-line text-color-red">{t("header_about")}</a>
-                <a pazly-editable="innerHTML href clone" target="_blank"  className="mr-5 text-xl cursor-pointer whitespace-pre-line text-color-red">{t("header_contact")}</a>
+                <a target="_blank"  className="mr-5 text-xl cursor-pointer whitespace-pre-line text-color-red">{t("header_products")}</a>
+                <a target="_blank"  className="mr-5 text-xl cursor-pointer whitespace-pre-line text-color-red">{t("header_about")}</a>
+                <a href="components/form" className="mr-5 text-xl cursor-pointer whitespace-pre-line text-color-red">{t("header_contact")}</a>
             </nav>
             <div  className="flex flex-row justify-center pb-2 md:pb-0">
-            <button pazly-editable="innerHTML href clone" className="mr-5 text-xl cursor-pointer border-b border-transparent hover:border-indigo-600 whitespace-pre-line text-color-cian" onClick={() => changeLanguage('en')} disabled={language === 'en'}>En</button>
-            <button pazly-editable="innerHTML href clone" className="mr-5 text-xl cursor-pointer border-b border-transparent hover:border-indigo-600 whitespace-pre-line text-color-cian" onClick={() => changeLanguage('es')} disabled={language === 'es'}>Es</button>
+            <button className="mr-5 text-xl cursor-pointer border-b border-transparent hover:border-indigo-600 whitespace-pre-line text-color-cian" onClick={() => changeLanguage('en')} disabled={language === 'en'}>En</button>
+            <button className="mr-5 text-xl cursor-pointer border-b border-transparent hover:border-indigo-600 whitespace-pre-line text-color-cian" onClick={() => changeLanguage('es')} disabled={language === 'es'}>Es</button>
             </div>
         </div>
     </div>

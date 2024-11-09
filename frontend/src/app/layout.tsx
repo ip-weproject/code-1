@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/Footer.mjs";
 import Header from "./components/Header.mjs";
-// import Plans from "./components/Plans.mjs";
 import { LanguageProvider } from '../app/context/LenguajeContext';
 import Head from "next/head";
 
