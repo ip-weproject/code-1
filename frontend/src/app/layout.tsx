@@ -7,19 +7,38 @@ import { LanguageProvider } from '../app/context/LenguajeContext';
 import Head from "next/head";
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+// const gilroyBlack = localFont({
+//   src: "./fonts/Gilroy-Black.ttf",
+//   variable: "--font-gilroy-black",
+//   weight: "100 900",
+// });
+
+const gilroyBold = localFont({
+  src: "./fonts/Gilroy-Bold.ttf",
+  variable: "--font-gilroy-bold",
   weight: "100 900",
 });
 
+const gilroyLight = localFont({
+  src: "./fonts/Gilroy-Light.ttf",
+  variable: "--font-gilroy-light",
+  weight: "100 900",
+});
+
+// const gilroyMedium = localFont({
+//   src: "./fonts/Gilroy-Medium.ttf",
+//   variable: "--font-gilroy-medium",
+//   weight: "100 900",
+// });
+
+// const gilroyRegular = localFont({
+//   src: "./fonts/Gilroy-Regular.ttf",
+//   variable: "--font-gilroy-regular",
+//   weight: "100 900",
+// });
+
 export const metadata: Metadata = {
-  title: "Nebula tek - web App",
+  title: "Loki's - web App",
   description: "A forward-thinking startup in Argentina specializing in Salesforce and Web3 solutions, driven by a team with international expertise.",
 };
 
@@ -30,15 +49,21 @@ export default function RootLayout({children,}:
     <LanguageProvider>
     <html lang="en">
     <Head>
-      <link rel="preload" href="/images/logo-inv.png" as="image" />
+      <link rel="preload" href="/images/favicon.svg" as="favicon" />
     </Head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
+
+
+      <body className={`${gilroyBold.variable} ${gilroyLight.variable} antialiased`}>
         <div className="main-container">
           <Header/>
             <main className="content">{children}</main>
           <Footer/>
         </div>
       </body>
+
+
+
     </html>
     </LanguageProvider>
   );

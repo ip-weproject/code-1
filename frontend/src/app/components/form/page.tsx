@@ -1,4 +1,4 @@
-import Form from "../form.mjs";
+import Form from "../Form.mjs";
 
 function FormPage() {
     return <Form/>;

@@ -5,15 +5,87 @@
 /* styles/globals.css */
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
+/* Cargar las fuentes usando @font-face */
+@font-face {
+  font-family: 'Gilroy-Black';
+  src: url('/fonts/Gilroy/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Heavy';
+  src: url('/fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('/fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url('/fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Ultralight';
+  src: url('/fonts/Gilroy/Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Establecer las variables de fuente en root */
 :root {
+  --font-gilroy-black: 'Gilroy-Black', sans-serif;
+  --font-gilroy-bold: 'Gilroy-Bold', sans-serif;
+  --font-gilroy-heavy: 'Gilroy-Heavy', sans-serif;
+  --font-gilroy-light: 'Gilroy-Light', sans-serif;
+  --font-gilroy-medium: 'Gilroy-Medium', sans-serif;
+  --font-gilroy-regular: 'Gilroy-Regular', sans-serif;
+  --font-gilroy-semibold: 'Gilroy-SemiBold', sans-serif;
+  --font-gilroy-ultralight: 'Gilroy-Ultralight', sans-serif;
+
   --background: #ffffff;
   --foreground: #171717;
   --gcolor-cian: #00ffd5;
   --gcolor-purple: #bc08ae;
   --gcolor-blue: #2c60ab;
   --gcolor-red: #ff328b;
+  /* CSS HEX */
+  --eerie-black: #212222ff;
+  --papaya-whip: #fff2d3ff;
+  --dun: #d0c3b8ff;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,31 +94,35 @@
   }
 }
 
-body {
-  color: var(--background);
-  background: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
-  display: flex;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main-container {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: url('/images/bg-img-2x.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vw;
 }
 
 .content {
-  background-color: var(--foreground);
-  /* flex-grow: 1; Permite que la sección de contenido se expanda */
-  /* flex-shrink: 0; */
+  flex-grow: 1; /*Permite que la sección de contenido se expanda */
+  flex-shrink: 0;
 }
 
 footer {
   width: 100%;
-  background-color: var(--background-color);
+  background-color: transparent;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -99,6 +175,136 @@ ul {
 }
 .bg-color-white{
   background-color:var(--background);
+}
+
+@layer utilities {
+  /* Gilroy Black */
+  .font-gilroy-black {
+    font-family: 'Gilroy-Black', sans-serif;
+    font-weight: 900;
+  }
+
+  /* Gilroy Bold */
+  .font-gilroy-bold {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+  }
+
+  /* Gilroy Heavy */
+  .font-gilroy-heavy {
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-weight: 800;
+  }
+
+  /* Gilroy Light */
+  .font-gilroy-light {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 100;
+  }
+
+  /* Gilroy Medium */
+  .font-gilroy-medium {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 500;
+  }
+
+  /* Gilroy Regular */
+  .font-gilroy-regular {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+  }
+
+  /* Gilroy SemiBold */
+  .font-gilroy-semibold {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-weight: 600;
+  }
+
+  /* Gilroy UltraLight */
+  .font-gilroy-ultralight {
+    font-family: 'GilroyUltralight', sans-serif;
+    font-weight: 100;
+  }
+}
+
+
+/* Contenedor del header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #d4d4d4;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.navbar a:hover {
+  background-color: #d4d4d4;
+}
+
+/* Enlace activo */
+.navbar .active {
+  background-color: #8a3ab9;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* Botón de "Let's Talk" */
+.button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Centrar el contenedor principal */
+.main-container {
+  max-width: 1400px; /* Ajusta según tu diseño */
+  margin: 0 auto; /* Centrará el contenedor horizontalmente */
+  padding: 0 20px; /* Espaciado interno para evitar que los contenidos se peguen al borde */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
 }
 
 

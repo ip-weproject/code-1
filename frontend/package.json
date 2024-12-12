@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "@heroicons/react": "^2.1.5",
     "autoprefixer": "^10.4.20",
     "i18next": "^23.16.4",
     "i18next-fs-backend": "^2.3.2",

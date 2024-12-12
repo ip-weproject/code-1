@@ -6,7 +6,7 @@ function Plans () {
     const { t } = useTranslation(); 
 
     return ( 
-        <section className="w-full bg-p-truegray-800">
+        <section className="w-full ">
         <div  className="flex flex-row flex-wrap container mx-auto justify-center py-4">
             <div  className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 bg-p-black">
                 <p className="w-full text-center px-6 pt-4 whitespace-pre-line text-p-white">{t("discover")}</p>
@@ -37,7 +37,7 @@ function Plans () {
                 </div>
     
                 <div  className="w-full text-center pt-8 pb-4">
-                    <a href=" " target="_blank "  className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line bg-p-white text-p-black">{t("sign_up")}</a>
+                    <a href=" " target="_blank "  className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line bg-p-white text-p-white">{t("sign_up")}</a>
                 </div>
             </div>
     
@@ -53,7 +53,7 @@ function Plans () {
                     <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-white"> ✅ Lorem ipsum dolor sit amet consectetur </div>
                 </div>
                 <div  className="w-full text-center pt-8 pb-4">
-                    <a href=" " target="_blank" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line bg-p-white text-p-black">{t("learn_more")}</a>
+                    <a href=" " target="_blank" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line bg-p-white text-p-white">{t("learn_more")}</a>
                 </div>
             </div>
         </div>
