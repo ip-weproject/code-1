@@ -25,7 +25,7 @@ export default function Header() {
             alt="logo"
             src="/images/logo1.1.svg"
           />
-          <span className="mt-2 ml-4 text-xl font-bold text-white">{t("Lokis")}</span>
+          <span className="mt-2 ml-4 text-xl font-bold text-white">{t("OSA")}</span>
         </a>
 
         {/* Navegación */}
