@@ -21,12 +21,12 @@ export default function Footer() {
                             height={50}
                             className="object-fill h-auto w-auto transform"
                             alt="logo"
-                            src="/images/logo1.1b.svg"
+                            src="/images/logo-png_1white.svg"     
                         />
                     </div>
                 </a>
                 <div className="w-full mt-6 md:mt-0 leading-normal">
-                    <h4 className="py-2 uppercase font-bold whitespace-pre-line text-p-white">{t("about")}</h4>
+                    <h4 className="py-2 uppercase font-bold whitespace-pre-line text-p-white">{t("salesforce_services")}</h4>
                     <p className="text-lg whitespace-pre-line text-p-white">
                     {t("salesforce_services")}
                     </p>

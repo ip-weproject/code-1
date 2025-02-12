@@ -23,7 +23,7 @@ export default function Header() {
             width={30}
             height={30}
             alt="logo"
-            src="/images/logo1.1.svg"
+            src="/images/logo-png_1white.svg"
           />
           <span className="mt-2 ml-4 text-xl font-bold text-white">{t("OSA")}</span>
         </a>

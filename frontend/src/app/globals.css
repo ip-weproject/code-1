@@ -2,8 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* styles/globals.css */
 @import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+/* Colores marca OSA*/
+
+.text-p-yellow {
+  color: #DCC658 !important;
+}
+
+.text-p-blue-osa {
+  color: #0D2B3F !important;
+}
+
+.text-p-lightgray-osa {
+  color: #F0F0F0 !important;
+}
+
 
 /* Cargar las fuentes usando @font-face */
 @font-face {
@@ -62,6 +79,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
 /* Establecer las variables de fuente en root */
 :root {
   --font-gilroy-black: 'Gilroy-Black', sans-serif;
@@ -77,8 +111,9 @@
   --foreground: #171717;
   --gcolor-cian: #00ffd5;
   --gcolor-purple: #bc08ae;
-  --gcolor-blue: #2c60ab;
+  --gcolor-blue: #0d2b3f;
   --gcolor-red: #ff328b;
+  
   /* CSS HEX */
   --eerie-black: #212222ff;
   --papaya-whip: #fff2d3ff;
@@ -109,7 +144,7 @@ html, body {
 }
 
 body {
-  background: url('/images/bg-img-2x.jpg') no-repeat center center fixed;
+  background:#0d2b3f;;
   background-size: cover;
   background-position: center;
   display: flex;

@@ -19,7 +19,7 @@ export default function Home() {
                         width={200}  
                         height={200} 
                         className="pb-20 inline-flex mb-4 hover:scale-110 transition-transform duration-300 ease-in-out"  
-                        src="/images/logo1.1.svg"
+                        src="/images/logo.1.svg"
                         />
                         <div  className="w-full mb-4 py-2">
                         <h1 className="w-full whitespace-pre-line text-5xl font-gilroy-bold text-center text-p-white">{t('page_title')}
