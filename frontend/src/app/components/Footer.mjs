@@ -10,43 +10,74 @@ export default function Footer() {
 
     return (
 
-        <footer className="">
-                  <div className="mx-4 border-b border-gray-500"></div>
-        <div className="">
-            <div className="mx-auto mt-6 container overflow-hidden flex flex-col md:flex-row justify-between pb-4 text-center md:text-left">
-                <a className="w-full md:w-1/4 flex justify-center items-center p-5" target="_blank" rel="noopener noreferrer">
-                    <div className="m-2 w-20 h-20 flex justify-center items-center">
+<footer  className="text-p-gray-600  bg-p-gray-100">
+    <div  className="container px-5 pt-16 mx-auto">
+        <div  className="flex flex-wrap md:text-left text-center mb-4">
+            <div  className="lg:w-1/4 md:w-1/2 w-full pr-4">
+                <a pazly-editable="href"  className="text-center">
+                <div className="m-2 w-20 h-20 flex justify-center items-center">
                         <Image
                             width={50}
                             height={50}
                             className="object-fill h-auto w-auto transform"
                             alt="logo"
-                            src="/images/logo-png_1white.svg"     
+                            src="/images/logo-png.svg"     
                         />
                     </div>
                 </a>
-                <div className="w-full mt-6 md:mt-0 leading-normal">
-                    <h4 className="py-2 uppercase font-bold whitespace-pre-line text-p-white">{t("salesforce_services")}</h4>
-                    <p className="text-lg whitespace-pre-line text-p-white">
-                    {t("salesforce_services")}
-                    </p>
+                <div  className="text-sm md:text-left text-center flex flex-col mt-4">
+                    <a target="_blank" href  className="inline-block my-1 whitespace-pre-line">Privacy statement</a>
+                    <a target="_blank" href  className="inline-block my-1 whitespace-pre-line"> Terms of service</a>
+                    <a target="_blank" href  className="inline-block my-1 whitespace-pre-line">Imprint</a>
                 </div>
-                <div className="flex flex-col items-center w-full md:w-1/4 mt-6 md:mt-0">
-                    <h4 className="inline-block py-2 px-3 uppercase font-bold text-center w-full whitespace-pre-line text-p-white">Links</h4>
-                    <div className="flex flex-col pl-0 md:pl-4 justify-center items-center w-full">
-                        {/* <a href="#" target="_blank" className="flex items-center hover:underline whitespace-pre-line text-lg text-p-blue-200" rel="noopener noreferrer">Facebook</a>
-                        <a href="#" target="_blank" className="flex items-center hover:underline whitespace-pre-line text-lg text-p-cyan-200" rel="noopener noreferrer">Twitter</a>
-                        <a href="#" target="_blank" className="flex items-center hover:underline whitespace-pre-line text-lg text-p-red-300" rel="noopener noreferrer">YouTube</a> */}
+                <div  className="text-sm md:text-left text-center flex flex-row mt-8">
+                    <span   className="flex"> Pazly is a trendydots.com product ©2020 trendydots.com All rights reserved.  </span>
+                </div>
+            </div>
+            <div  className="lg:w-1/4 w-1/2">
+                <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">WORK</h2>
+                <div  className="flex flex-col mb-10">
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Ad Campaigns</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Branding</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Case Studies</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Website Design</a>
+                </div>
+            </div>
+            <div  className="lg:w-1/4 w-1/2">
+                <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">BLOG</h2>
+                <div  className="flex flex-col mb-10">
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">About</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Blog</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Job Openings</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Marketing</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">SEO &amp; SEM</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Virtual Reality</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">AI Marketing</a>
+                </div>
+            </div>
+            <div  className="lg:w-1/4 md:w-1/2 w-full">
+                <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-2">FEATURED POSTS</h2>
+                <div  className="flex flex-col pb-4">
+                    <div  className="w-full my-1 text-center">
+                        <div target="_blank"  className="relative block text-left overflow-hidden shadow-lg my-2 text-p-indigo-800  bg-p-yellow-600 min-h-[100px]">
+                            <div  className="relative h-full flex flex-col justify-between">
+                                <p   className="uppercase px-6 py-2 font-semibold text-xs text-p-white whitespace-pre-line">Category</p>
+                                <div   className="px-6 font-bold text-lg mb-8 text-p-gray-100 whitespace-pre-line">Another Fantastic Title</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div  className="w-full my-1 text-center">
+                        <div target="_blank"  className="relative block text-left overflow-hidden shadow-lg my-2 text-p-indigo-800  bg-p-indigo-700 min-h-[100px]">
+                            <div  className="relative h-full flex flex-col justify-between">
+                                <p   className="uppercase px-6 py-2 font-semibold text-xs text-p-red-200 whitespace-pre-line">Category</p>
+                                <div   className="px-6 font-bold text-lg mb-8 text-p-white whitespace-pre-line">One Fantastic Title that is lightly longer</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="pt-4 mt-4 text-grey-darker text-xs text-center">
-            <div className="mx-4 border-b border-gray-500"></div>
-                <span className="whitespace-pre-line text-p-white">©2025 loki&apos;s-project.com All rights reserved.</span>
-                <a href="#" target="_blank" className="inline-block py-2 px-3 whitespace-pre-line text-p-white" rel="noopener noreferrer">Privacy statement</a>
-                <a href="#" target="_blank" className="inline-block py-2 px-3 whitespace-pre-line text-p-white" rel="noopener noreferrer">Terms of service</a>
-                <a href="#" target="_blank" className="inline-block py-2 px-3 whitespace-pre-line text-p-white" rel="noopener noreferrer">Imprint</a>
-            </div>
         </div>
-    </footer>
+    </div>
+</footer>
 )};

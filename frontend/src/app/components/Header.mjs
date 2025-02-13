@@ -5,6 +5,7 @@ import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { useLanguage } from "../context/LenguajeContext.js";
 import { useTranslation } from "react-i18next";
 import "../globals.css";
+import Link from "next/link.js";
 
 export default function Header() {
   const { language, changeLanguage } = useLanguage();
@@ -14,34 +15,34 @@ export default function Header() {
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <section className="top-0 left-0 w-full shadow-md z-50">
+    <section className="flex justify-center top-0 left-0 w-full shadow-md z-50 bg-white">
       <div className="container flex p-3 flex-col md:flex-row items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex">
+        <Link href="/" className="flex">
           <Image
             priority
             width={30}
             height={30}
             alt="logo"
-            src="/images/logo-png_1white.svg"
+            src="/images/logo-png.svg"
           />
-          <span className="mt-2 ml-4 text-xl font-bold text-white">{t("OSA")}</span>
-        </a>
+          <span className="ml-10 text-3xl font-bold text-color-blue">{t("OSA")}</span>
+        </Link>
 
         {/* Navegación */}
         <nav className="flex items-center  rounded-full px-4 py-1">
-          <a href="/" className="px-4 py-2 rounded-full text-gray-400 hover:text-gray-100">
+          {/* <a href="/" className="px-4 py-2 rounded-full text-gray-400 hover:text-gray-100">
             {t("home")}
-          </a>
-          <a href="/components/products" className="px-4 py-2 rounded-full text-gray-400 hover:text-gray-100">
+          </a> */}
+          <Link href="/components/products" className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue">
             {t("header_products")}
-          </a>
-          <a href="/components/about" className="px-4 py-2 rounded-full text-gray-400 hover:text-gray-100">
+          </Link>
+          <Link href="/components/about" className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue">
             {t("header_about")}
-          </a>
-          <a href="/components/form" className="px-4 py-2 rounded-full text-gray-400 hover:text-gray-100">
+          </Link>
+          <Link href="/components/form" className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue">
             {t("header_contact")}
-          </a>
+          </Link>
         </nav>
 
         {/* Botones "Let's Talk" y de Idioma */}
@@ -59,7 +60,7 @@ export default function Header() {
     const newLanguage = language === "en" ? "es" : "en";
     changeLanguage(newLanguage); // Cambiar idioma
   }}
-  className="flex items-center px-4 py-2 rounded-lg border border-gray-500 text-gray-500 hover:bg-gray-300 text-sm"
+  className="flex items-center px-4 py-2 rounded-lg border border-zinc-900 text-color-blue hover:bg-gray-300 text-sm"
 >
   <GlobeAltIcon className="w-5 h-5 mr-1" />
   {language === "en" ? "ES" : "EN"}
@@ -74,7 +75,7 @@ export default function Header() {
                     changeLanguage("en");
                     setIsOpen(false);
                   }}
-                  className={`block w-full text-left px-4 py-2 text-gray-700 text-sm hover:bg-indigo-100 ${
+                  className={`block w-full text-left px-4 py-2 text-color-blue text-sm hover:bg-white ${
                     language === "en" ? "font-semibold" : ""
                   }`}
                   disabled={language === "en"}>
@@ -85,7 +86,7 @@ export default function Header() {
                     changeLanguage("es");
                     setIsOpen(false);
                   }}
-                  className={`block w-full text-left px-4 py-2 text-gray-700 text-sm hover:bg-indigo-100 ${
+                  className={`block w-full text-left px-4 py-2 text-color-blue text-sm hover:bg-white ${
                     language === "es" ? "font-semibold" : ""
                   }`}
                   disabled={language === "es"}>
@@ -96,7 +97,7 @@ export default function Header() {
           )}
         </div>
        </div>
-       <div className="mx-4 border-b border-gray-500"></div>
+       {/* <div className="mx-4 border-b border-gray-500"></div> */}
     </section>
   );
 }

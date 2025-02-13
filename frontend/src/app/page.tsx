@@ -15,11 +15,11 @@ export default function Home() {
         <div  className="w-full flex flex-col">
 
             <div  className="w-full container mx-auto md:px-24 px-2 md:text-left text-center pb-6 pt-12 flex flex-col justify-center items-center">
-                <Image  alt="image-1" 
+                <Image  alt="logo-w-b.svg" 
                         width={200}  
                         height={200} 
                         className="pb-20 inline-flex mb-4 hover:scale-110 transition-transform duration-300 ease-in-out"  
-                        src="/images/logo.1.svg"
+                        src="/images/logo-w-b.svg"
                         />
                         <div  className="w-full mb-4 py-2">
                         <h1 className="w-full whitespace-pre-line text-5xl font-gilroy-bold text-center text-p-white">{t('page_title')}

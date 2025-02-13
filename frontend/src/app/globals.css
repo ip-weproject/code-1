@@ -333,13 +333,14 @@ ul {
 
 /* Centrar el contenedor principal */
 .main-container {
-  max-width: 1400px; /* Ajusta según tu diseño */
-  margin: 0 auto; /* Centrará el contenedor horizontalmente */
-  padding: 0 20px; /* Espaciado interno para evitar que los contenidos se peguen al borde */
+  /* max-width: 1400px; 
+  margin: 0 auto; 
+  padding: 0 20px;  */
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+  width: 100%;
 }
 
 
