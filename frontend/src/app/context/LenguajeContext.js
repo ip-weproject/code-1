@@ -15,6 +15,7 @@ if (!i18n.isInitialized) {
         translation: {
           "toogle_lenguage_en": "English",
           "toogle_lenguage_es": "Spanish",
+          "home_page": "Home",
           "header_about": "About",
           "header_products": "Services",
           "header_contact": "Contact",
@@ -55,13 +56,16 @@ if (!i18n.isInitialized) {
           "form_company": "Company Name",
           "form_phone": "Phone",
           "form_keep_in_touch": "Let’s turn your vision into reality. Reach out today, and let’s build the future of your business together.",
-          "about_services": "At OSA, we turn Salesforce into a competitive advantage for your business. We provide expert consulting to streamline processes, enhance customer experiences, and maximize performance. From implementations and customizations to continuous improvements, our team is ready to deliver tailored solutions that align with your goals."
+          "about_services": "At OSA, we turn Salesforce into a competitive advantage for your business. We provide expert consulting to streamline processes, enhance customer experiences, and maximize performance. From implementations and customizations to continuous improvements, our team is ready to deliver tailored solutions that align with your goals.",
+          "about_us_1": "At OSA, we empower organizations and individuals by leveraging Salesforce to drive growth, efficiency, and innovation. Our mission is to help businesses harness the power of technology to scale, optimize processes, and thrive in an ever-evolving digital landscape. ", 
+           "about_us": "We believe in efficiency, scalability, and innovation—tailoring every Salesforce implementation to your unique business needs. Whether it’s fine-tuning your current setup or designing a complete transformation, we make Salesforce work smarter for you. Let’s build the future of your business together."
         }
       },
       es: {
         translation: {
           "toogle_lenguage_en": "Inglés",
           "toogle_lenguage_es": "Español",
+          "home_page": "Inicio",
           "header_about": "Acerca de",
           "header_products": "Servicios",
           "header_contact": "Contacto",
@@ -101,7 +105,9 @@ if (!i18n.isInitialized) {
           "form_company": "Compañia",
           "form_phone": "Teléfono",
           "form_keep_in_touch": "Hagamos realidad tu visión. Contáctanos hoy y construyamos juntos el futuro de tu negocio.",
-          "about_services": "En OSA, transformamos Salesforce en una ventaja competitiva para tu negocio.Ofrecemos consultoría especializada para optimizar procesos, mejorar la experiencia del cliente y maximizar el rendimiento. Desde implementaciones y personalizaciones hasta mejoras continuas, nuestro equipo está listo para brindarte soluciones a la medida de tus objetivos."
+          "about_services": "En OSA, transformamos Salesforce en una ventaja competitiva para tu negocio.Ofrecemos consultoría especializada para optimizar procesos, mejorar la experiencia del cliente y maximizar el rendimiento. Desde implementaciones y personalizaciones hasta mejoras continuas, nuestro equipo está listo para brindarte soluciones a la medida de tus objetivos.",
+          "about_us_1": "En OSA, ayudamos a organizaciones e individuos a aprovechar Salesforce para impulsar el crecimiento, la eficiencia y la innovación. Nuestra misión es ayudar a las empresas a aprovechar el poder de la tecnología para escalar, optimizar procesos y prosperar en un entorno digital en constante evolución. ",
+           "about_us": "Nos especializamos en optimizar y transformar negocios a través de soluciones inteligentes de Salesforce. Con un equipo de expertos certificados, ayudamos a las empresas a agilizar sus procesos, mejorar la experiencia del cliente y fomentar un crecimiento sostenible.Creemos en la eficiencia, escalabilidad e innovación, adaptando cada implementación de Salesforce a las necesidades únicas de tu negocio. Ya sea perfeccionando tu configuración actual o diseñando una transformación completa, hacemos que Salesforce trabaje de manera más inteligente para ti."
         }
       },
     },

@@ -45,7 +45,7 @@ export default function Footer() {
                 </div>
             </div>
             <div  className="lg:w-1/4 w-1/2">
-                <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">BLOG</h2>
+                <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">SOCIAL</h2>
                 <div  className="flex flex-col mb-10">
                     <Link href="#" className="text-p-gray-600 hover:text-p-gray-800 my-1">About</Link>
                     <Link href="#" className="text-p-gray-600 hover:text-p-gray-800 my-1">Blog</Link>
