@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import "../globals.css";
 import Link from "next/link.js";
 
+
 export default function Header() {
   const { language, changeLanguage } = useLanguage();
   const { t } = useTranslation();
@@ -15,8 +16,8 @@ export default function Header() {
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <section className="flex justify-center top-0 left-0 w-full shadow-md z-50 bg-white">
-      <div className="container flex p-3 flex-col md:flex-row items-center justify-between">
+    <section className="flex justify-center top-0 left-0 w-full shadow-md z-50 ">
+      <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-white mt-4 rounded-lg">
         {/* Logo */}
         <Link href="/" className="flex">
           <Image
@@ -31,9 +32,9 @@ export default function Header() {
 
         {/* Navegación */}
         <nav className="flex items-center  rounded-full px-4 py-1">
-          {/* <a href="/" className="px-4 py-2 rounded-full text-gray-400 hover:text-gray-100">
+          {/* <Link href="/" className="px-4 py-2 rounded-full text-gray-400 hover:text-gray-100">
             {t("home")}
-          </a> */}
+          </Link> */}
           <Link href="/components/products" className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue">
             {t("header_products")}
           </Link>
@@ -60,7 +61,7 @@ export default function Header() {
     const newLanguage = language === "en" ? "es" : "en";
     changeLanguage(newLanguage); // Cambiar idioma
   }}
-  className="flex items-center px-4 py-2 rounded-lg border border-zinc-900 text-color-blue hover:bg-gray-300 text-sm"
+  className="flex items-center px-4 py-2 rounded-lg bg-color-yellow border border-zinc-900 text-color-blue"
 >
   <GlobeAltIcon className="w-5 h-5 mr-1" />
   {language === "en" ? "ES" : "EN"}

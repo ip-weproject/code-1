@@ -9,7 +9,7 @@ function Products () {
         <section className="">
         
         <div  className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
-        <div className="mb-8 leading-relaxed justify-center text-p-white">
+        <div className="text-center px-10 mb-8 leading-relaxed justify-center text-p-white">
              {t('about_services')}
         </div>
             <div  className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">

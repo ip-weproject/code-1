@@ -5,37 +5,47 @@ import { useTranslation } from 'react-i18next';
 import "./globals.css";
 
 export default function Home() {
-  
   const { t } = useTranslation();
+
   return (
-<div id="" className="">
+    <div className="w-full flex justify-center">
+      <section className="w-full max-w-6xl mx-auto flex flex-col items-center">
+        
+        {/* Contenedor con título a la izquierda e imagen a la derecha */}
+        <div className="mt-14 px-10 mb-8 w-full flex flex-col md:flex-row items-center">
+          {/* Título a la izquierda */}
+          <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+            <h1 className="text-5xl font-gilroy-bold text-p-white text-center md:text-left">
+              {t('page_title')}
+            </h1>
+          </div>
 
-<div className="">
-   <section className="w-full body">
-        <div  className="w-full flex flex-col">
-
-            <div  className="w-full container mx-auto md:px-24 px-2 md:text-left text-center pb-6 pt-12 flex flex-col justify-center items-center">
-                <Image  alt="logo-w-b.svg" 
-                        width={200}  
-                        height={200} 
-                        className="pb-20 inline-flex mb-4 hover:scale-110 transition-transform duration-300 ease-in-out"  
-                        src="/images/logo-w-b.svg"
-                        />
-                        <div  className="w-full mb-4 py-2">
-                        <h1 className="w-full whitespace-pre-line text-5xl font-gilroy-bold text-center text-p-white">{t('page_title')}
-                        </h1>
-                        </div>
-                        <p className="w-full mb-8 leading-relaxed whitespace-pre-line font-gilroy-light text-center text-p-white">{t('page_text')}
-                        </p>
-                <div  className="w-full flex md:flex-row flex-col justify-center pb-6">
-                    <a  className="mx-1 font-bold px-6 py-4 rounded-xl outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow-xl  text-p-gray-200 border border-gray-500 hover:cursor-pointer whitespace-pre-line" onClick={() => window.open("https://calendly.com/ip-weproject")}>{t('book_consultation')}</a>
-                    {/* <a  className="mx-1 font-bold px-6 py-4 rounded-xl hover:cursor-pointer outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow-xl  border border-gray-500  text-p-gray-200" onClick={() => window.open("https://calendly.com/ip-weproject")}>{t('lets_talk')}</a> */}
-                </div>
-            </div>
+          {/* Imagen a la derecha */}
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end px-6">
+            <Image 
+              alt="logo-w-b.svg" 
+              width={400}  
+              height={400} 
+              className=""  
+              // className="hover:scale-110 transition-transform duration-300 ease-in-out"  
+              src="/images/portada-1.svg"
+            />
+          </div>
         </div>
-    </section>
-    </div>
 
+        {/* Contenido centrado debajo */}
+        <div className="w-full flex flex-col items-center text-center px-6 mt-6">
+          <p className="text-p-white font-gilroy-light">
+            {t('page_text')}
+          </p>
+          <a className="font-gilroy0light text-center mt-10 font-bold px-6 py-4 rounded-xl border border-gray-500 hover:cursor-pointer text-color-blue bg-color-yellow"
+             onClick={() => window.open("https://calendly.com/ip-weproject")}>
+            {t('book_consultation')}
+          </a>
+        </div>
+
+      </section>
     </div>
   );
 }
+

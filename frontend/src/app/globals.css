@@ -113,6 +113,7 @@
   --gcolor-purple: #bc08ae;
   --gcolor-blue: #0d2b3f;
   --gcolor-red: #ff328b;
+  --gcolor-yellow: #DCC658;
   
   /* CSS HEX */
   --eerie-black: #212222ff;
@@ -191,6 +192,9 @@ ul {
 .text-color-red{
   color:var(--gcolor-red);
 }
+.text-color-yellow{
+  color:var(--gcolor-yellow);
+}
 
 /* texts colors */
 .bg-color-cian{
@@ -210,6 +214,9 @@ ul {
 }
 .bg-color-white{
   background-color:var(--background);
+}
+.bg-color-yellow{
+  background-color:var(--gcolor-yellow);
 }
 
 @layer utilities {
@@ -269,7 +276,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   padding: 10px;
 }
 
@@ -341,6 +348,10 @@ ul {
   align-items: center;
   min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
   width: 100%;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 

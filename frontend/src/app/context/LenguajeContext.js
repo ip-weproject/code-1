@@ -45,6 +45,7 @@ if (!i18n.isInitialized) {
           "home": "Home",
           "i_about_description": "I am a passionate Web Developer with over 3 years of experience in the software development industry. My enthusiasm for technology drives me to continuously learn and adapt to new advancements. I thrive on challenges, excel in team environments, and maintain a proactive and enthusiastic approach. I am seeking new opportunities to grow, innovate, and contribute to the tech industry, leveraging my skills and passion to drive successful and collaborative solutions.",
           "p_about_description": "As a Salesforce Certified Professional, I specialize in helping businesses unlock the full potential of their Salesforce platform. I manage end-to-end implementations tailored to unique business needs, ensuring seamless adoption and measurable results. Additionally, as a specialist in Revenue Operations Consulting, I assist organizations in optimizing their sales processes and driving growth.",
+          "about_us": "About us",
           "form_lets_talk": "Let's talk",
           "form_subscribe_text": "Subscribe to our newsletter to get the latest stories of our work and many happy customer testimonials. Want to be our customer? Enter your email below.",
           "form_message_placeholder": "Your message here...",
@@ -90,6 +91,7 @@ if (!i18n.isInitialized) {
           "home": "Inicio",
           "i_about_description": "Apasionado desarrollador web con más de 3 años de experiencia en la industria del desarrollo de software. Mi entusiasmo por la tecnología me impulsa a aprender y adaptarme continuamente a nuevos avances. Me encantan los desafíos, destaco en entornos de equipo y mantengo un enfoque proactivo y entusiasta. Estoy buscando nuevas oportunidades para crecer, innovar y contribuir a la industria tecnológica, aprovechando mis habilidades y pasión para lograr soluciones exitosas y colaborativas.",
           "p_about_description": "Profesional certificada en Salesforce con amplia experiencia en consultoría y desarrollo de interfaces de usuario dentro de Sales, Service y Commerce Cloud. Tengo una sólida experiencia en la aplicación de metodologías ágiles y mejores prácticas para entregar soluciones eficientes y de alta calidad. Entusiasta y proactiva, me encantan los desafíos y disfruto trabajar de manera colaborativa. Estoy buscando una nueva oportunidad para seguir aprendiendo, explorando y creciendo en esta industria.",
+          "about_us": "Sobre nosotros",
           "form_lets_talk": "Hablemos",
           "form_subscribe_text": "Suscríbete a nuestro boletín para recibir las últimas historias de nuestro trabajo y muchos testimonios de clientes felices. ¿Quieres ser nuestro cliente? Ingresa tu correo electrónico a continuación.",
           "form_message_placeholder": "Tu mensaje aquí...",
@@ -129,6 +131,8 @@ export function LanguageProvider({ children }) {
   const changeLanguage = (lang) => {
     setLanguage(lang); // Cambia el idioma en el contexto
   };
+
+  if (!language) return null; // Evita el render hasta que se cargue el idioma
 
   return (
     <LanguageContext.Provider value={{ language, changeLanguage }}>
