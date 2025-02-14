@@ -9,8 +9,14 @@
 
 /* Colores marca OSA*/
 
+
 .text-p-yellow {
-  color: #DCC658 !important;
+  color: #EBB764!important;
+}
+
+
+.text-p-yellow {
+  color: #EBB764!important;
 }
 
 .text-p-blue-osa {
@@ -120,6 +126,12 @@
   --dun: #d0c3b8ff;
 }
 
+ 
+  /* Clases OSA*/
+
+  .boton-contacto{
+    background-color: #D15D5D;
+  }
 
 
 @media (prefers-color-scheme: dark) {

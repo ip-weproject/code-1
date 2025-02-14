@@ -37,22 +37,20 @@ export default function Footer() {
             <div  className="lg:w-1/4 w-1/2">
                 <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">WORK</h2>
                 <div  className="flex flex-col mb-10">
-                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Ad Campaigns</a>
-                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Branding</a>
-                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Case Studies</a>
-                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Website Design</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">{t('home_page')}</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">{t('header_about')}</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">{t('header_products')}</a>
+                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">{t('header_contact')}</a>
                 </div>
             </div>
             <div  className="lg:w-1/4 w-1/2">
-                <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">BLOG</h2>
+                <h2   className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">SOCIAL</h2>
                 <div  className="flex flex-col mb-10">
                     <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">About</a>
                     <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Blog</a>
                     <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Job Openings</a>
                     <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Marketing</a>
-                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">SEO &amp; SEM</a>
-                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">Virtual Reality</a>
-                    <a href target="_blank"  className="text-p-gray-600 hover:text-p-gray-800 my-1">AI Marketing</a>
+              
                 </div>
             </div>
             <div  className="lg:w-1/4 md:w-1/2 w-full">
