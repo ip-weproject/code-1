@@ -42,8 +42,8 @@ function PlanDetails () {
             </div>
         </div>
         <div  className="text-md font-light mt-6 lg:mt-12 text-center px-4 w-full flex flex-col md:flex-row justify-center ">
-            <Link  className="mx-1 font-bold px-6 py-4 rounded-xl outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow-xl hover:shadow-lg text-p-gray-200 border border-gray-500  whitespace-pre-line" onClick={() => window.open("https://calendly.com/ip-weproject")}>{t("build_website")}</Link>
-            <Link passHref="/components/products" legacyBehavior className="mx-1 font-bold px-6 py-4 rounded-xl outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow-xl hover:shadow-lg text-p-gray-200 border border-gray-500  whitespace-pre-line">{t("back_to_plans")}</Link>
+            <Link href="#" className="mx-1 font-bold px-6 py-4 rounded-xl outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow-xl hover:shadow-lg text-p-gray-200 border border-gray-500  whitespace-pre-line" onClick={() => window.open("https://calendly.com/ip-weproject")}>{t("build_website")}</Link>
+            <Link href="/components/products" className="mx-1 font-bold px-6 py-4 rounded-xl outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow-xl hover:shadow-lg text-p-gray-200 border border-gray-500  whitespace-pre-line">{t("back_to_plans")}</Link>
         </div>
     </div>
 </section>
