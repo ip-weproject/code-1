@@ -1,12 +1,14 @@
 "use client";
 // import Image from "next/image";
 import { useTranslation } from "react-i18next"; 
+import Link from "next/link";
+import Image from "next/image";
 
 function Products () {
     const { t } = useTranslation(); 
 
     return ( 
-        <section className="">
+        <section className="mt-10">
         
         <div  className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
         <div className="text-center px-10 mb-8 leading-relaxed justify-center text-p-white">
@@ -16,7 +18,15 @@ function Products () {
                 <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-yellow text-center">{t("plan_1")}</p>
                 <div  className="w-full pb-4">
                     <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">{t("plan_1_title")}</h1>
-                    <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_1_description")} </p>
+                                <div  className="flex justify-center lg:w-10/12 w-full">
+                                     <Image  priority 
+                                         width={200} 
+                                         height={200} 
+                                         className="mx-auto" 
+                                         alt="logo" 
+                                         src="/images/img-product-1.svg"/>
+                                </div>
+                    {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_1_description")} </p> */}
                 </div>
                 {/* <div  className="w-full pb-4">
                     <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ✅ Lorem ipsum dolor sit amet consectetur </div>
@@ -24,7 +34,7 @@ function Products () {
                     <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ❌ Lorem ipsum dolor sit amet consectetur </div>
                 </div> */}
                 <div  className="w-full text-center pt-8 pb-4">
-                    <a href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</a>
+                    <Link href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</Link>
                 </div>
             </div>
 
@@ -32,10 +42,18 @@ function Products () {
                 <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-yellow text-center">{t("plan_2")}</p>
                 <div  className="w-full pb-4">
                     <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">{t("plan_2_title")}</h1>
-                    <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_2_description")} </p>
+                    <div  className="flex justify-center lg:w-10/12 w-full">
+                                     <Image  priority 
+                                         width={240} 
+                                         height={240} 
+                                         className="mx-auto" 
+                                         alt="logo" 
+                                         src="/images/img-product-2.svg"/>
+                                </div>
+                    {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_2_description")} </p> */}
                 </div>
                 <div  className="w-full text-center pt-8 pb-4">
-                    <a href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</a>
+                    <Link href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</Link>
                 </div>
             </div>
 
@@ -43,10 +61,18 @@ function Products () {
                 <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-yellow text-center">{t("plan_3")}</p>
                 <div  className="w-full pb-4">
                     <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">{t("plan_3_title")}</h1>
-                    <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_3_description")} </p>
+                    <div  className="flex justify-center lg:w-10/12 w-full">
+                                     <Image  priority 
+                                         width={260} 
+                                         height={260} 
+                                         className="mx-auto" 
+                                         alt="logo" 
+                                         src="/images/img-product-3.svg"/>
+                                </div>
+                    {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_3_description")} </p> */}
                 </div>
                 <div  className="w-full text-center pt-8 pb-4">
-                    <a href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</a>
+                    <Link href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</Link>
                 </div>
             </div>
 

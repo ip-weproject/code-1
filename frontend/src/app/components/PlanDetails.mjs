@@ -13,7 +13,6 @@ function PlanDetails () {
         <div  className="container mx-auto flex lg:flex-row flex-col items-center">
             <div  className="lg:w-5/12 w-10/12 lg:pl-20">
                  <Image  priority 
-                     pazly-editable="src child"
                      width={330} 
                      height={330} 
                      className="transform" 

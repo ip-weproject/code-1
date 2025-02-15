@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useTranslation } from 'react-i18next';
 // import { useLanguage } from "../context/LenguajeContext.js";
 import "./globals.css";
+import Typewriter from "typewriter-effect";
+
 
 export default function Home() {
   const { t } = useTranslation();

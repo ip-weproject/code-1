@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   return (
-    <section className="flex justify-center top-0 left-0 w-full shadow-md z-50 ">
+    <section className="fixed flex justify-center top-0 left-0 w-full z-50 ">
       <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-white mt-4 rounded-lg">
         {/* Logo */}
         <Link href="/" className="flex">
