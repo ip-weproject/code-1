@@ -8,23 +8,81 @@
 
 
 /* Colores marca OSA*/
-
-
 .text-p-yellow {
   color: #EBB764!important;
 }
 
-
-.text-p-yellow {
-  color: #EBB764!important;
+.text-p-red {
+  color: #FA7474!important;
 }
 
-.text-p-blue-osa {
+.text-p-blue {
   color: #0D2B3F !important;
 }
 
-.text-p-lightgray-osa {
+.text-p-lightgray{
   color: #F0F0F0 !important;
+}
+
+.bg-yellow {
+  background-color: #EBB764!important;
+}
+
+.bg-lightgray {
+  background-color: #F0F0F0!important;
+}
+
+.bg-lightgray {
+  background-color: #F0F0F0!important;
+}
+
+/* Fuentes OSA */
+
+@font-face {
+  font-family: 'Fredoka Bold';
+  src: url('fonts/Fredoka-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredoka Medium';
+  src: url('fonts/Fredoka-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredoka Regular';
+  src: url('fonts/Fredoka-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredoka Semibold';
+  src: url('fonts/Fredoka-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Clases fuentes OSA */
+
+.font-fredoka-bold {
+  font-family: 'Fredoka-Bold', sans-serif;
+  font-weight: 700;
+}
+
+.font-fredoka-semibold {
+  font-family: 'Fredoka-SemiBold', sans-serif;
+  font-weight: 500;
+}
+
+.font-fredoka-medium {
+  font-family: 'Fredoka-Medium', sans-serif;
+  font-weight: 400;
+}
+
+.font-fredoka-regular {
+  font-family: 'Fredoka-Regular', sans-serif;
+  font-weight: 200;
 }
 
 
@@ -99,6 +157,31 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Fredoka Bold';
+  src: url('fonts/Fredoka-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredoka Medium';
+  src: url('fonts/Fredoka-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredoka Regular';
+  src: url('fonts/Fredoka-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredoka Semibold';
+  src: url('fonts/Fredoka-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 
 
@@ -127,12 +210,7 @@
   --dun: #d0c3b8ff;
 }
 
- 
-  /* Clases OSA*/
 
-  .boton-contacto{
-    background-color: #D15D5D;
-  }
 
 
 @media (prefers-color-scheme: dark) {

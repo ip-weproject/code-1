@@ -7,19 +7,16 @@ function Form() {
   const { t } = useTranslation();
 
   return (
-    <section className="px-20 py-20 text-p-gray-700 flex flex-col lg:flex-row items-center">
-      
-          {/* Texto a la derecha */}
-          <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
-        <h1 className="text-3xl sm:text-4xl font-medium text-p-white mb-4">
-          {t('form_lets_talk')}
+    <section className="font-fredoka-semibold px-20 py-20 text-p-gray-700 flex flex-col lg:flex-row items-center">
+      {/* Texto a la derecha */}
+      <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
+        <h1 className="text-3xl sm:text-4xl font-medium text-p-red mb-4">
+          {t("form_lets_talk")}
         </h1>
         <p className="mb-4 leading-relaxed text-p-white">
-          {t('about_us_form')}
+          {t("about_us_form")}
         </p>
-        <div className="text-p-white">
-          {t('form_keep_in_touch')}
-        </div>
+        <div className="text-p-white">{t("form_keep_in_touch")}</div>
       </div>
 
       {/* Formulario a la izquierda */}
@@ -35,20 +32,20 @@ function Form() {
             name="message"
             className="focus:outline-none border-2 border-gray-300 mb-4 py-2 px-3 rounded-lg md:bg-[url('/images/dot.svg')] bg-repeat bg-[size:6px_6px] placeholder:text-xl"
             rows="10"
-            placeholder={t('form_message_placeholder')}
+            placeholder={t("form_message_placeholder")}
           ></textarea>
 
           <div className="flex flex-row justify-between shadow-lg border-2 border-gray-300">
             <input
               className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-b-lg"
-              placeholder={t('form_name')}
+              placeholder={t("form_name")}
               name="name"
               type="text"
               required
             />
             <input
               className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-b-lg"
-              placeholder={t('form_company')}
+              placeholder={t("form_company")}
               name="company"
               type="text"
               required
@@ -58,7 +55,7 @@ function Form() {
           <div className="flex flex-row justify-between shadow-lg border-2 border-gray-300">
             <input
               className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-b-lg"
-              placeholder={t('form_email')}
+              placeholder={t("form_email")}
               name="email"
               type="email"
               required
@@ -67,7 +64,7 @@ function Form() {
               type="submit"
               className="inline-flex font-semibold py-2 px-6 focus:outline-none text-md m-0 h-12 hover:bg-slate-700 hover:text-white transition duration-300 ease-in-out"
             >
-              {t('form_send_message')}
+              {t("form_send_message")}
             </button>
           </div>
         </form>
@@ -75,6 +72,5 @@ function Form() {
     </section>
   );
 }
-
 
 export default Form;

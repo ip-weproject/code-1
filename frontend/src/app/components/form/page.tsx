@@ -1,7 +1,7 @@
 import Form from "../Form.mjs";
 
 function FormPage() {
-    return <Form/>;
-};
+  return <Form />;
+}
 
 export default FormPage;

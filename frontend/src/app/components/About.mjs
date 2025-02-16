@@ -1,32 +1,51 @@
 "use client";
 import Image from "next/image";
-import { useTranslation } from "react-i18next"; 
+import { useTranslation } from "react-i18next";
 
-       
-  function About () {
-    const { t } = useTranslation();
-  
-    return (
-      <section className="about-section py-12">
-        <div className="container mx-auto py-12">
+function About() {
+  const { t } = useTranslation();
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-  
-          {/* Pilar */}
-          <div className=" p-6 rounded-lg shadow-md relative">
-           
-            <h3 className="text-2xl font-semibold text-white mt-4">{t('about_us_1')}</h3>
-            <p className="text-gray-500 mt-2">{t('about_us')}</p>
-
+  return (
+    <section className="font-fredoka-semibold about-section py-12">
+      <div className="container mx-auto py-12">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+         
+          <div className=" p-6">
+          <p className="w-full font-bold text-4xl my-8 whitespace-pre-line text-p-lightgray text-center">
+            {t("meet_osa")}
+          </p>
+            <p className="font-fredoka-medium text-white mt-4">
+              {t("about_us")}
+            </p>
            
           </div>
-
-            
-
-          </div>
+          <div className="flex justify-center gap-4">
+              <Image
+                priority
+                width={160}
+                height={160}
+                alt="logo"
+                src="/images/cert-admin.png"
+              />
+              <Image
+                priority
+                width={160}
+                height={160}
+                alt="logo"
+                src="/images/cert-app-builder.png"
+              />
+              <Image
+                priority
+                width={160}
+                height={160}
+                alt="logo"
+                src="/images/cert-ai-specialist.png"
+              />
+            </div>
         </div>
-      </section>
-    );
-  };
+      </div>
+    </section>
+  );
+}
 
 export default About;

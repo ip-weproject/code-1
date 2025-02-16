@@ -25,11 +25,18 @@ const gilroyLight = localFont({
 export const metadata: Metadata = {
   title: "Loki's - web App",
   description: "A forward-thinking startup in Argentina specializing in Salesforce and Web3 solutions, driven by a team with international expertise.",
+  icons: {
+    icon: "/images/favicon.ico", // Ruta correcta al favicon
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+       {/* <Head>
+        <link rel="icon" href="/images/favicon.ico" />
+      </Head> */}
       <body className="overflow-y-scroll scrollbar-hide">
         <LanguageProvider>
           <div className="main-container mt-20">

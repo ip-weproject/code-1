@@ -1,86 +1,152 @@
 "use client";
 // import Image from "next/image";
-import { useTranslation } from "react-i18next"; 
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Image from "next/image";
 
-function Products () {
-    const { t } = useTranslation(); 
+function Products() {
+  const { t } = useTranslation();
 
-    return ( 
-        <section className="mt-10">
-        
-        <div  className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
+  return (
+    <section className="font-fredoka-semibold mt-10">
+      <div className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
+      <p className="w-full font-bold text-4xl my-8 whitespace-pre-line text-p-lightgray text-center">
+            {t("work_on")}
+          </p>
         <div className="text-center px-10 mb-8 leading-relaxed justify-center text-p-white">
-             {t('about_services')}
+          {t("services_general")}
         </div>
-            <div  className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">
-                <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-yellow text-center">{t("plan_1")}</p>
-                <div  className="w-full pb-4">
-                    <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">{t("plan_1_title")}</h1>
-                                <div  className="flex justify-center lg:w-10/12 w-full">
-                                     <Image  priority 
-                                         width={200} 
-                                         height={200} 
-                                         className="mx-auto" 
-                                         alt="logo" 
-                                         src="/images/img-product-1.svg"/>
-                                </div>
-                    {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_1_description")} </p> */}
-                </div>
-                {/* <div  className="w-full pb-4">
+        <div className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">
+          <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-red text-center">
+            {t("plan_1")}
+          </p>
+          <div className="w-full pb-4">
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-lightgray font-bold  text-center">
+              {t("plan_1_duration")}
+            </h1>
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
+              {t("plan_1_title")}
+            </h1>
+
+            <div className="flex justify-center lg:w-10/12 w-full">
+              <Image
+                priority
+                width={200}
+                height={200}
+                className="mx-auto"
+                alt="logo"
+                src="/images/img-product-1.svg"
+              />
+            </div>
+          </div>
+          {/* <div  className="w-full pb-4">
                     <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ✅ Lorem ipsum dolor sit amet consectetur </div>
                     <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ❌ Lorem ipsum dolor sit amet consectetur </div>
                     <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ❌ Lorem ipsum dolor sit amet consectetur </div>
                 </div> */}
-                <div  className="w-full text-center pt-8 pb-4">
-                    <Link href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</Link>
-                </div>
-            </div>
-
-            <div  className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">
-                <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-yellow text-center">{t("plan_2")}</p>
-                <div  className="w-full pb-4">
-                    <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">{t("plan_2_title")}</h1>
-                    <div  className="flex justify-center lg:w-10/12 w-full">
-                                     <Image  priority 
-                                         width={240} 
-                                         height={240} 
-                                         className="mx-auto" 
-                                         alt="logo" 
-                                         src="/images/img-product-2.svg"/>
-                                </div>
-                    {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_2_description")} </p> */}
-                </div>
-                <div  className="w-full text-center pt-8 pb-4">
-                    <Link href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</Link>
-                </div>
-            </div>
-
-            <div  className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">
-                <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-yellow text-center">{t("plan_3")}</p>
-                <div  className="w-full pb-4">
-                    <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">{t("plan_3_title")}</h1>
-                    <div  className="flex justify-center lg:w-10/12 w-full">
-                                     <Image  priority 
-                                         width={260} 
-                                         height={260} 
-                                         className="mx-auto" 
-                                         alt="logo" 
-                                         src="/images/img-product-3.svg"/>
-                                </div>
-                    {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_3_description")} </p> */}
-                </div>
-                <div  className="w-full text-center pt-8 pb-4">
-                    <Link href="/components/plan-details" className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white">{t("learn_more")}</Link>
-                </div>
-            </div>
-
-            
-    
+          <div className="w-full text-center pt-8 pb-4">
+            <Link
+              href="/components/plan-details"
+              className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
+            >
+              {t("learn_more")}
+            </Link>
+          </div>
         </div>
+
+        <div className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">
+          <p className="w-full font-bold text-3xl my-8 whitespace-pre-line text-p-red text-center">
+            {t("plan_2")}
+          </p>
+          <div className="w-full pb-4">
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-lightgray font-bold  text-center">
+              {t("plan_2_duration")}
+            </h1>
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
+              {t("plan_2_title")}
+            </h1>
+            <div className="flex justify-center lg:w-10/12 w-full">
+              <Image
+                priority
+                width={240}
+                height={240}
+                className="mx-auto"
+                alt="logo"
+                src="/images/img-product-2.svg"
+              />
+            </div>
+            {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_2_description")} </p> */}
+          </div>
+          <div className="w-full text-center pt-8 pb-4">
+            <Link
+              href="/components/plan-details"
+              className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
+            >
+              {t("learn_more")}
+            </Link>
+          </div>
+        </div>
+
+        <div className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">
+          <p className="w-full font-bold text-3xl my-8  whitespace-pre-line text-p-red text-center">
+            {t("plan_3")}
+          </p>
+          <div className="w-full pb-4">
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-lightgray font-bold  text-center">
+              {t("plan_3_duration")}
+            </h1>
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
+              {t("plan_3_title")}
+            </h1>
+            <div className="flex justify-center lg:w-10/12 w-full">
+              <Image
+                priority
+                width={260}
+                height={260}
+                className="mx-auto"
+                alt="logo"
+                src="/images/img-product-3.svg"
+              />
+            </div>
+            {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_3_description")} </p> */}
+          </div>
+          <div className="w-full text-center pt-8 pb-4">
+            <Link
+              href="/components/plan-details"
+              className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
+            >
+              {t("learn_more")}
+            </Link>
+          </div>
+        </div>
+
+        <div className="bg-lightgraymd:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">
+          <h1 className="w-full my-8 px-8 whitespace-pre-line font-bold text-3xl text-p-yellow text-center">
+            {t("new_salesforce")}
+          </h1>
+          <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
+            {t("discover_salesforce")}
+          </h1>
+          <Image
+            priority
+            width={100}
+            height={100}
+            className="mx-auto mt-10 mb-10"
+            alt="logo"
+            src="/images/salesforce-with-type-logo.svg"
+          />
+          <div className="w-full text-center pt-8 pb-4">
+             <Link
+              href="/components/plan-details"
+              className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
+            >
+              {t("learn_more")}
+            </Link>
+          </div>
+        </div>
+      </div>
     </section>
-     );
+  );
 }
 
 export default Products;
