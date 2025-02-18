@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   return (
-    <section className="font-fredoka-semibold fixed flex justify-center top-0 left-0 w-full z-50 ">
+    <section className="font-fredoka-bold fixed flex  justify-center top-0 left-0 w-full z-50 ">
       <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-lightgray mt-4 rounded-lg">
         {/* Logo */}
         <Link href="/" className="flex">
@@ -34,13 +34,13 @@ export default function Header() {
             alt="logo"
             src="/images/logo-png.svg"
           />
-          <span className="ml-10 text-3xl font-bold text-color-blue">
+          <span className="ml-4 text-3xl font-bold text-color-blue">
             {t("OSA")}
           </span>
         </Link>
 
         {/* Navegación */}
-        <nav className="flex items-center  rounded-full px-4 py-1">
+        <nav className="flex items-center standard-font-size   rounded-full px-4 py-1">
           <Link
             href="/"
             className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue"
@@ -71,7 +71,7 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <button
             onClick={handleClick}
-            className="bg-yellow flex items-center px-4 py-2 rounded-lg -zinc-900 text-color-blue hover:bg-gray-300 text-sm"
+            className="bg-yellow flex items-center px-4 py-2 rounded-lg -zinc-900 text-color-blue hover:bg-gray-300 standard-font-size"
           >
             {t("header_contact")}
           </button>
@@ -83,7 +83,7 @@ export default function Header() {
               const newLanguage = language === "en" ? "es" : "en";
               changeLanguage(newLanguage); // Cambiar idioma
             }}
-            className="flex items-center px-4 py-2 rounded-lg border border-zinc-900 text-color-blue hover:bg-gray-300 text-sm"
+            className="flex items-center px-4 py-2 rounded-lg border border-zinc-900 text-color-blue hover:bg-gray-300 standard-font-size"
           >
             <GlobeAltIcon className="w-5 h-5 mr-1" />
             {language === "en" ? "ES" : "EN"}

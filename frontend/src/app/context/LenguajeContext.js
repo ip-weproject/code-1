@@ -19,12 +19,12 @@ if (!i18n.isInitialized) {
           header_about: "About",
           header_products: "Services",
           header_contact: "Contact",
-          page_title: "Optimizing today, transforming tomorrow",
+          page_title: "Empowering growth through Salesforce innovation",
           page_text_1:
             "We are a Salesforce partner consulting firm committed to helping small businesses unlock their full potential.",
           page_text_2:
-            "Guided by our core pillars—Optimization, Service & Analytics—we specialize in custom CRM solutions that streamline operations, enhance customer relationships, and drive sustainable growth.",
-          book_consultation: "Free consultation",
+            "We combine Salesforce’s power with our expertise to integrate data, utilize AI, and develop scalable solutions.",
+            book_consultation: "Book a free consultation",
           learn_more: "Learn more",
           plan_1: "On demand support",
           plan_1_title:
@@ -46,7 +46,7 @@ if (!i18n.isInitialized) {
           sign_up: "Sign Up",
           about: "About",
           about_us_form:
-            "At OSA, we don’t just implement Salesforce, we unlock its full potential for your business. Our flexible, customized solutions are designed to fit your unique needs, helping you streamline operations, enhance customer experiences, and drive measurable growth.",
+            "At OSA, we don’t just implement Salesforce, we unlock its full potential for your business. Our flexible, customized solutions are designed to fit your unique needs.",
           salesforce_services:
             "OSA: Optimizing businesses, delivering service, and leveraging analytics for smarter growth with Salesforce.",
 
@@ -65,7 +65,7 @@ if (!i18n.isInitialized) {
           form_company: "Company Name",
           form_phone: "Phone",
           form_keep_in_touch:
-            "Let’s turn your vision into reality. Reach out today, and let’s build the future of your business together.",
+            "Reach out today, and let’s build the future of your business together.",
           services_general:
             "We offer expert Salesforce solutions to help businesses and professionals drive growth, innovation, and efficiency. Our certified team designs tailored strategies to streamline operations, enhance customer experiences, and ensure sustainable success. Whether you need to optimize your current setup or undergo a full transformation, we make Salesforce work smarter for you.",
           about_us:
@@ -86,7 +86,7 @@ if (!i18n.isInitialized) {
           header_about: "Acerca de",
           header_products: "Servicios",
           header_contact: "Contacto",
-          page_title: "Optimizamos hoy, transformamos el mañana",
+          page_title: "Impulsando el crecimiento con la innovación de Salesforce",
           page_text_1:
             "Somos  una consultora partner de Salesforce comprometida con ayudar a las pequeñas empresas a alcanzar su máximo potencial.",
           page_text_2:
@@ -113,7 +113,7 @@ if (!i18n.isInitialized) {
             "Para empresas que están listas para crecer y requieren funciones más avanzadas de Salesforce, este plan se enfoca en personalizaciones a medida de tus necesidades específicas. Incluye flujos de trabajo avanzados, automatización, informes personalizados y análisis detallados. Ideal para empresas que desean aprovechar Salesforce para gestionar un CRM avanzado, tomar decisiones basadas en datos y crear automatizaciones complejas.",
           sign_up: "Regístrate",
           about_us_form:
-            "En OSA, no solo implementamos Salesforce, desbloqueamos todo su potencial para tu negocio.Nuestras soluciones flexibles y personalizadas se adaptan a tus necesidades únicas, ayudándote a optimizar operaciones, mejorar la experiencia de tus clientes y generar un crecimiento medible.",
+            "En OSA, no solo implementamos Salesforce, desbloqueamos todo su potencial para tu negocio.Nuestras soluciones flexibles y personalizadas se adaptan a tus necesidades únicas.",
           salesforce_services:
             " OSA: Optimizamos negocios, brindamos servicio y aprovechamos la analítica para un crecimiento más inteligente con Salesforce.",
           back_to_plans: "Volver a los Planes",
@@ -133,7 +133,7 @@ if (!i18n.isInitialized) {
           form_company: "Compañia",
           form_phone: "Teléfono",
           form_keep_in_touch:
-            "Hagamos realidad tu visión. Contáctanos hoy y construyamos juntos el futuro de tu negocio.",
+            "Contáctanos hoy y construyamos juntos el futuro de tu negocio.",
           services_general:
             "Ofrecemos soluciones expertas en Salesforce para ayudar a empresas y profesionales a impulsar el crecimiento, la innovación y la eficiencia. Nuestro equipo certificado diseña estrategias personalizadas para optimizar operaciones, mejorar la experiencia del cliente y garantizar un crecimiento sostenible. Ya sea que necesites optimizar tu configuración actual o realizar una transformación completa, hacemos que Salesforce trabaje de manera más inteligente para ti.",
           about_us:

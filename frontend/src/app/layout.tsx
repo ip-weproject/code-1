@@ -9,6 +9,7 @@ import Link from "next/link";
 import Products from "./components/Products.mjs";
 import About from "./components/About.mjs";
 import Form from "./components/Form.mjs";
+import Home from "./components/Home.mjs";
 
 const gilroyBold = localFont({
   src: "./fonts/Gilroy-Bold.ttf",
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
           <div className="main-container mt-20">
             <Header />
             <main className="content">{children}</main>
+            <Home />
             <Products />
             <About />
             <Form />

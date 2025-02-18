@@ -10,13 +10,13 @@ function Form() {
     <section className="font-fredoka-semibold px-20 py-20 text-p-gray-700 flex flex-col lg:flex-row items-center">
       {/* Texto a la derecha */}
       <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
-        <h1 className="text-3xl sm:text-4xl font-medium text-p-red mb-4">
+        <h1 className=" font-fredoka-bold  sm:text-5xl text-p-red mb-4">
           {t("form_lets_talk")}
         </h1>
-        <p className="mb-4 leading-relaxed text-p-white">
+        <p className="mb-4 leading-relaxed regular-font-size text-p-white">
           {t("about_us_form")}
         </p>
-        <div className="text-p-white">{t("form_keep_in_touch")}</div>
+        <div className="regular-font-size text-p-white">{t("form_keep_in_touch")}</div>
       </div>
 
       {/* Formulario a la izquierda */}

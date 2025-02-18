@@ -9,7 +9,7 @@
 
 /* Colores marca OSA*/
 .text-p-yellow {
-  color: #EBB764!important;
+  color: #FCCA7B!important;
 }
 
 .text-p-red {
@@ -25,7 +25,7 @@
 }
 
 .bg-yellow {
-  background-color: #EBB764!important;
+  background-color: #FCCA7B!important;
 }
 
 .bg-lightgray {
@@ -85,6 +85,30 @@
   font-weight: 200;
 }
 
+.standard-font-size {
+  font-size: 16px;
+} 
+
+.regular-font-size {
+  font-size: 20px;
+}
+
+.medium-font-size {
+  font-size: 26px;
+}
+
+.section-background {
+  background-image: url('https://i.pinimg.com/736x/0a/6e/d2/0a6ed2ecd69750049b1b4e8206fcbe98.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0; /* Ajusta el padding según sea necesario */
+  
+}
+
+.imagen-portada{
+  opacity: 0.5 
+}
 
 /* Cargar las fuentes usando @font-face */
 @font-face {

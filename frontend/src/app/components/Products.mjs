@@ -13,7 +13,7 @@ function Products() {
       <p className="w-full font-bold text-4xl my-8 whitespace-pre-line text-p-lightgray text-center">
             {t("work_on")}
           </p>
-        <div className="text-center px-10 mb-8 leading-relaxed justify-center text-p-white">
+        <div className="text-center regular-font-size px-10 mb-8 leading-relaxed justify-center text-p-white">
           {t("services_general")}
         </div>
         <div className="md:w-1/3 w-10/12 mx-4 text-left max-w-sm rounded-lg overflow-hidden shadow-lg my-4 py-4 text-p-gray-700 border border-gray-500 transition-transform duration-300 ease-in-out hover:scale-105">

@@ -9,7 +9,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="font-fredoka-medium text-p-gray-600  bg-lightgray">
+    <footer className="font-fredoka-medium text-p-gray-600  bg-p-gray-200">
       <div className="container px-5 pt-8 mx-auto">
         <div className="flex flex-wrap md:text-left text-center mb-4">
           <div className="lg:w-1/4 md:w-1/2 w-full pr-4">
@@ -85,7 +85,8 @@ export default function Footer() {
           <div className="lg:w-1/4 md:w-1/2 w-full">
             <div className="flex flex-col pb-4">
               <div className="w-full my-1 text-center">
-                <div className="relative block text-left overflow-hidden shadow-lg my-2 text-p-indigo-800   min-h-[100px]">
+                {/* <div className="relative block text-left overflow-hidden shadow-lg my-2 text-p-indigo-800 min-h-[100px]"> */}
+                <div className="">
                   <Image
                     priority
                     width={100}
