@@ -98,12 +98,11 @@
 }
 
 .section-background {
-  background-image: url('https://i.pinimg.com/736x/0a/6e/d2/0a6ed2ecd69750049b1b4e8206fcbe98.jpg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('./../../public/images/focused-employee.jpg');
+  background-size: 100% 100%; /* Forzar estiramiento tanto en ancho como en alto */
   background-repeat: no-repeat;
-  padding: 50px 0; /* Ajusta el padding según sea necesario */
-  
+  background-position: center;
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la pantalla */
 }
 
 .imagen-portada{

@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       </Head> */}
       <body className="overflow-y-scroll scrollbar-hide">
         <LanguageProvider>
-          <div className="main-container mt-20">
+          <div className="main-container">
             <Header />
             <main className="content">{children}</main>
             <Home />

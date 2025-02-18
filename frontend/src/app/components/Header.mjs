@@ -23,7 +23,7 @@ export default function Header() {
   };
 
   return (
-    <section className="font-fredoka-bold fixed flex  justify-center top-0 left-0 w-full z-50 ">
+    <section className="font-fredoka-bold fixed flex  justify-center top-0 left-0 w-full z-50">
       <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-lightgray mt-4 rounded-lg">
         {/* Logo */}
         <Link href="/" className="flex">
@@ -40,7 +40,7 @@ export default function Header() {
         </Link>
 
         {/* Navegación */}
-        <nav className="flex items-center standard-font-size   rounded-full px-4 py-1">
+        <nav className="flex items-center standard-font-size rounded-full px-4 py-1">
           <Link
             href="/"
             className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue"
