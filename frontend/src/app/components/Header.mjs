@@ -43,28 +43,19 @@ export default function Header() {
         <nav className="flex items-center standard-font-size rounded-full px-4 py-1">
           <Link
             href="/"
-            className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue"
-          >
+            className="text-2xl px-4 py-2 rounded-full text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-gray-300 hover:rounded-md hover:border-gray-900">
             {t("home_page")}
           </Link>
           <Link
             href="/components/products"
-            className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue"
-          >
+            className="text-2xl px-4 py-2 rounded-full text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-gray-300 hover:rounded-md hover:border-gray-900">
             {t("header_products")}
           </Link>
           <Link
             href="/components/about"
-            className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue"
-          >
+            className="text-2xl px-4 py-2 rounded-full text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-gray-300 hover:rounded-md hover:border-gray-900">
             {t("header_about")}
           </Link>
-          {/* <Link
-            href="/components/form"
-            className="px-4 py-2 rounded-full text-color-blue hover:text-color-blue"
-          >
-            {t("header_contact")}
-          </Link> */}
         </nav>
 
         {/* Botones "Let's Talk" y de Idioma */}

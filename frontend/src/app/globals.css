@@ -98,7 +98,8 @@
 }
 
 .section-background {
-  background-image: url('./../../public/images/focused-employee.jpg');
+  background-image: url('https://i.pinimg.com/736x/0a/6e/d2/0a6ed2ecd69750049b1b4e8206fcbe98.jpg');
+  /* background-image: url('./../../public/images/focused-employee.jpg'); */
   background-size: 100% 100%; /* Forzar estiramiento tanto en ancho como en alto */
   background-repeat: no-repeat;
   background-position: center;
