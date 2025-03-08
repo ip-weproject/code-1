@@ -4,12 +4,8 @@ import "./globals.css";
 import Footer from "./components/Footer.mjs";
 import Header from "./components/Header.mjs";
 import { LanguageProvider } from '../app/context/LenguajeContext';
-import Head from "next/head";
-import Link from "next/link";
-import Products from "./components/Products.mjs";
-import About from "./components/About.mjs";
-import Form from "./components/Form.mjs";
-import Home from "./components/Home.mjs";
+// import Head from "next/head";
+// import Link from "next/link";
 
 const gilroyBold = localFont({
   src: "./fonts/Gilroy-Bold.ttf",
@@ -24,7 +20,7 @@ const gilroyLight = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Loki's - web App",
+  title: "OSA - Web App",
   description: "A forward-thinking startup in Argentina specializing in Salesforce and Web3 solutions, driven by a team with international expertise.",
   icons: {
     icon: "/images/favicon.ico", // Ruta correcta al favicon
@@ -43,10 +39,6 @@ export default function RootLayout({ children }) {
           <div className="main-container">
             <Header />
             <main className="content">{children}</main>
-            <Home />
-            <Products />
-            <About />
-            <Form />
             <Footer />
           </div>
         </LanguageProvider>

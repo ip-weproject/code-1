@@ -1,4 +1,4 @@
-import About from "../About.mjs";
+import About from "../components/About.mjs";
 
 function AboutPage() {
   return <About />;

@@ -1,9 +1,9 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import "../globals.css";
 
-function Home() {
+function Start() {
   const { t } = useTranslation();
 
   return (
@@ -45,4 +45,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Start;

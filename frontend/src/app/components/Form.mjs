@@ -35,16 +35,16 @@ function Form() {
             placeholder={t("form_message_placeholder")}
           ></textarea>
 
-          <div className="flex flex-row justify-between shadow-lg border-2 border-gray-300">
+          <div className="flex flex-row justify-between shadow-lg mb-4 border-2 border-gray-300">
             <input
-              className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-b-lg"
+              className="flex-grow bg-white focus:outline-none py-4 px-4 m-0 rounded-b-lg"
               placeholder={t("form_name")}
               name="name"
               type="text"
               required
             />
             <input
-              className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-b-lg"
+              className="flex-grow bg-white focus:outline-none m-0 rounded-b-lg"
               placeholder={t("form_company")}
               name="company"
               type="text"
@@ -52,7 +52,7 @@ function Form() {
             />
           </div>
 
-          <div className="flex flex-row justify-between shadow-lg border-2 border-gray-300">
+          <div className="flex flex-row justify-between h-14 shadow-lg border-2 border-gray-300">
             <input
               className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-b-lg"
               placeholder={t("form_email")}
@@ -62,10 +62,11 @@ function Form() {
             />
             <button
               type="submit"
-              className="inline-flex font-semibold py-2 px-6 focus:outline-none text-md m-0 h-12 hover:bg-slate-700 hover:text-white transition duration-300 ease-in-out"
+              className="flex items-center justify-center text-p-blue font-semibold py-2 px-6 focus:outline-none text-md hover:bg-amber-200 hover:text-white transition duration-300 ease-in-out"
             >
               {t("form_send_message")}
             </button>
+
           </div>
         </form>
       </div>

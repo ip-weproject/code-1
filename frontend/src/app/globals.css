@@ -1162,6 +1162,9 @@ background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
 .bg-p-amber-300 {
   background: #FCD34D !important;
 }
+.bg-p-amber-osa {
+  background: #FCCA7B !important;
+}
 
 .bg-p-amber-400 {
   background: #FBBF24 !important;
