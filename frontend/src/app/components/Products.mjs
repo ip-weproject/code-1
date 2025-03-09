@@ -35,18 +35,16 @@ function Products() {
                 height={170}
                 className="mx-auto"
                 alt="logo"
-                src="/images/logo-prod-1.svg"
+                src="/images/prod-logo-1.svg"
               />
             </div>
           </div>
-          {/* <div  className="w-full pb-4">
-                    <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ✅ Lorem ipsum dolor sit amet consectetur </div>
-                    <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ❌ Lorem ipsum dolor sit amet consectetur </div>
-                    <div className="w-full px-8 py-1 contianer mx-auto flex items-center text-p-gray-500"> ❌ Lorem ipsum dolor sit amet consectetur </div>
-                </div> */}
           <div className="w-full text-center pt-8 pb-4">
             <Link
-              href="/plan-details"
+               href={{
+                pathname: "/plan-details",
+                query: { plan: "plan_1", logo: "logo-1"}, 
+              }}
               className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
             >
               {t("learn_more")}
@@ -72,14 +70,16 @@ function Products() {
                 height={170}
                 className="mx-auto"
                 alt="logo"
-                src="/images/logo-prod-2.svg"
+                src="/images/prod-logo-2.svg"
               />
             </div>
-            {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_2_description")} </p> */}
           </div>
           <div className="w-full text-center pt-8 pb-4">
             <Link
-              href="/plan-details"
+               href={{
+                pathname: "/plan-details",
+                query: { plan: "plan_2", logo: "logo-2" }, 
+              }}
               className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
             >
               {t("learn_more")}
@@ -105,14 +105,16 @@ function Products() {
                 height={170}
                 className="mx-auto"
                 alt="logo"
-                src="/images/logo-prod-3.svg"
+                src="/images/prod-logo-3.svg"
               />
             </div>
-            {/* <p className="w-full px-8 text-base whitespace-pre-line mb-4 text-p-gray-500 text-center">{t("plan_3_description")} </p> */}
           </div>
           <div className="w-full text-center pt-8 pb-4">
             <Link
-              href="/plan-details"
+               href={{
+                pathname: "/plan-details",
+                query: { plan: "plan_3", logo: "logo-3"}, 
+              }}
               className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
             >
               {t("learn_more")}
