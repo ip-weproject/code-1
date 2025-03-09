@@ -6,11 +6,11 @@ import "./globals.css";
 import Typewriter from "typewriter-effect";
 import Header from "./components/Header.mjs";
 import Footer from "./components/Footer.mjs";
-import Products from "./components/Products.mjs";
+import Services from "./components/Services.mjs";
 import About from "./components/About.mjs";
 import Form from "./components/Form.mjs";
 import Start from "./components/Home.mjs";
-import Sales from "./components/Sales.mjs";
+import Salesforce from "./components/Salesforce.mjs";
 
 
 export default function Home() {
@@ -23,19 +23,15 @@ export default function Home() {
         <section id="home" className="min-h-screen flex items-center justify-center">
           <Start/>
         </section>
-
-        <section id="sales" className="min-h-screen flex items-center justify-center">
-          <Sales/>
-        </section>
-
         <section id="products" className="min-h-screen flex items-center justify-center">
-          <Products/>
+          <Services/>
         </section>
-
         <section id="about" className="min-h-screen flex items-center justify-center">
           <About/>
         </section>
-
+        <section id="sales" className="min-h-screen flex items-center justify-center">
+          <Salesforce/>
+        </section>
         <section id="contact" className="min-h-screen flex items-center justify-center">
           <Form/>
         </section>

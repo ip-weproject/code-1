@@ -29,20 +29,20 @@ if (!i18n.isInitialized) {
           plan_1: "On demand support",
           plan_1_title:
             "Ongoing guidance for Salesforce basics and everyday challenges.",
-          plan_1_duration: "(Per hour)",
+          plan_1_duration: "P/ HOUR",
           plan_1_description:
-            "This plan is perfect for companies that already have Salesforce implemented but need day-to-day support. It includes troubleshooting, quick fixes, best practices advice, and general guidance to ensure your Salesforce environment remains stable and optimized.",
+            "Perfect for companies that already have Salesforce implemented but need day-to-day support. This plan includes troubleshooting, quick fixes, best practices advice, and general guidance to ensure your Salesforce environment remains stable and optimized.",
           plan_2: "Jumpstart",
           plan_2_title:
             "Launch your Salesforce journey quickly and efficiently.",
-          plan_2_duration: "2 weeks",
+          plan_2_duration: "2 WEEKS",
           plan_2_description:
             "Ideal for businesses new to Salesforce, this plan offers a rapid setup to get your Salesforce environment up and running. It includes account configuration, essential module setup, basic workflows, and training. Perfect for small-to-medium businesses looking for a hassle-free Salesforce deployment with minimal customization.",
           plan_3: "Growth Accelerator",
           plan_3_title: "Unlock Salesforce's full potential as you scale.",
-          plan_3_duration: "Monthly",
+          plan_3_duration: "MONTHLY",
           plan_3_description:
-            "For businesses that are ready to grow and require more advanced Salesforce features, this plan focuses on customizations tailored to your unique needs. It includes advanced workflows, automation, custom reports, and deeper insights. Ideal for businesses aiming to leverage Salesforce for advanced CRM management, data-driven decision-making, and complex automation.",
+            "Designed for businesses ready to grow and in need of more advanced Salesforce features. This plan focuses on customizations tailored to your unique needs. It includes advanced workflows, automation, custom reports, and deeper insights. Ideal for businesses aiming to leverage Salesforce for advanced CRM management, data-driven decision-making, and complex automation.",
           sign_up: "Sign Up",
           about: "About",
           about_us_form:
@@ -67,9 +67,9 @@ if (!i18n.isInitialized) {
           form_keep_in_touch:
             "Reach out today, and let’s build the future of your business together.",
           services_general:
-            "We offer expert Salesforce solutions to help businesses and professionals drive growth, innovation, and efficiency. Our certified team designs tailored strategies to streamline operations, enhance customer experiences, and ensure sustainable success. Whether you need to optimize your current setup or undergo a full transformation, we make Salesforce work smarter for you.",
+            "We offer expert Salesforce solutions to help businesses and professionals drive growth, innovation, and efficiency. Our certified team designs customized strategies to streamline operations, improve customer engagement, and ensure long-term success. Whether you need to optimize your current setup or completely transform your processes, we make Salesforce work smarter for you.",
           about_us:
-            "We believe in efficiency, scalability, and innovation—tailoring every Salesforce implementation to your unique business needs. Whether it’s fine-tuning your current setup or designing a complete transformation, we make Salesforce work smarter for you. Let’s build the future of your business together.",
+            "At our core, we believe in creating tailored Salesforce implementations that prioritize efficiency, scalability, and innovation. We take the time to understand your unique business needs, adapting our strategies to deliver sustainable results. Whether enhancing an existing setup or embarking on a full transformation, we ensure that Salesforce works in harmony with your goals.",
           sitemap: "SITEMAP",
           new_salesforce: "New to Salesforce?",
           discover_salesforce:
@@ -96,21 +96,21 @@ if (!i18n.isInitialized) {
           plan_1: "Soporte Esencial",
           plan_1_title:
             "Asesoría continua para los conceptos básicos de Salesforce y desafíos diarios.",
-          plan_1_duration: "Por hora",
+          plan_1_duration: "POR HORA",
           plan_1_description:
-            "Este plan es ideal para empresas que ya tienen Salesforce implementado pero necesitan soporte diario. Incluye resolución de problemas, soluciones rápidas, asesoramiento sobre buenas prácticas y orientación general para mantener un entorno de Salesforce estable y optimizado.",
+            "Perfecto para empresas que ya tienen Salesforce implementado pero necesitan soporte diario. Este plan incluye solución de problemas, correcciones rápidas, asesoramiento sobre mejores prácticas y orientación general para garantizar que tu entorno de Salesforce se mantenga estable y optimizado.",
           plan_2: "Despegue",
-          plan_2_duration: "2 semanas",
+          plan_2_duration: "2 SEMANAS",
           plan_2_title:
             "Inicia tu viaje con Salesforce de forma rápida y eficiente.",
           plan_2_description:
-            "Diseñado para empresas nuevas en Salesforce, este plan ofrece una implementación rápida para poner en marcha tu entorno Salesforce. Incluye configuración de cuenta, módulos esenciales, flujos de trabajo básicos y capacitación. Perfecto para pequeñas y medianas empresas que desean un despliegue sin complicaciones y sin personalizaciones complejas.",
+            "Ideal para empresas nuevas en Salesforce, ofrece una configuración rápida para poner en marcha tu entorno de Salesforce. Incluye configuración de cuentas, configuración de módulos esenciales, flujos de trabajo básicos y capacitación. Perfecto para pequeñas y medianas empresas que buscan una implementación de Salesforce sin complicaciones y con mínima personalización.",
           plan_3: "Crecimiento Ágil",
           plan_3_duration: "Mensual",
           plan_3_title:
             "Desbloquea todo el potencial de Salesforce mientras escalas.",
           plan_3_description:
-            "Para empresas que están listas para crecer y requieren funciones más avanzadas de Salesforce, este plan se enfoca en personalizaciones a medida de tus necesidades específicas. Incluye flujos de trabajo avanzados, automatización, informes personalizados y análisis detallados. Ideal para empresas que desean aprovechar Salesforce para gestionar un CRM avanzado, tomar decisiones basadas en datos y crear automatizaciones complejas.",
+            "Para empresas listas para crecer y que requieren funciones avanzadas de Salesforce. Este plan se enfoca en personalizaciones adaptadas a tus necesidades únicas. Incluye flujos de trabajo avanzados, automatización, informes personalizados y análisis más profundos. Ideal para empresas que buscan aprovechar Salesforce para una gestión avanzada de CRM, toma de decisiones basadas en datos y automatización compleja.",
           sign_up: "Regístrate",
           about_us_form:
             "En OSA, no solo implementamos Salesforce, desbloqueamos todo su potencial para tu negocio.Nuestras soluciones flexibles y personalizadas se adaptan a tus necesidades únicas.",
@@ -135,9 +135,9 @@ if (!i18n.isInitialized) {
           form_keep_in_touch:
             "Contáctanos hoy y construyamos juntos el futuro de tu negocio.",
           services_general:
-            "Ofrecemos soluciones expertas en Salesforce para ayudar a empresas y profesionales a impulsar el crecimiento, la innovación y la eficiencia. Nuestro equipo certificado diseña estrategias personalizadas para optimizar operaciones, mejorar la experiencia del cliente y garantizar un crecimiento sostenible. Ya sea que necesites optimizar tu configuración actual o realizar una transformación completa, hacemos que Salesforce trabaje de manera más inteligente para ti.",
+            "Ofrecemos soluciones expertas en Salesforce para ayudar a empresas y profesionales a impulsar el crecimiento, la innovación y la eficiencia. Nuestro equipo certificado diseña estrategias personalizadas para optimizar operaciones, mejorar la experiencia del cliente y asegurar un éxito a largo plazo. Ya sea que necesites optimizar tu configuración actual o realizar una transformación completa, hacemos que Salesforce trabaje de manera más inteligente para ti.",
           about_us:
-            "En OSA, ayudamos a empresas y profesionales a aprovechar Salesforce para crecer, innovar y optimizar sus procesos. Nuestro equipo de expertos certificados diseña soluciones a medida para agilizar operaciones, mejorar la experiencia del cliente y garantizar un crecimiento sostenible.Creemos en la eficiencia, escalabilidad e innovación. Ya sea optimizando tu configuración actual o liderando una transformación completa, hacemos que Salesforce trabaje mejor para ti.",
+            "En nuestra esencia, creemos en crear implementaciones personalizadas de Salesforce que prioricen la eficiencia, escalabilidad e innovación. Nos tomamos el tiempo necesario para entender las necesidades únicas de tu negocio, adaptando nuestras estrategias para ofrecer resultados sostenibles. Ya sea mejorando una configuración existente o emprendiendo una transformación completa, nos aseguramos de que Salesforce trabaje en armonía con tus objetivos.",
           sitemap: "MAPA DEL SITIO",
           new_salesforce: "¿Eres nuevo en Salesforce?",
           discover_salesforce: "Descubre el potencial del CRM más famoso.",

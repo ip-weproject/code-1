@@ -48,27 +48,28 @@ export default function Header() {
           <nav className="flex items-center standard-font-size rounded-full px-4 py-1">
           <button
             onClick={() => scrollToSection("home")}
-            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-amber-300 hover:rounded-lg standard-font-size"
+            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-[#FCCA7B] hover:rounded-lg standard-font-size"
           >
             {t("home_page")}
           </button>
-          <button
-            onClick={() => scrollToSection("sales")}
-            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-amber-300 hover:rounded-lg standard-font-size"
-          >
-            {t("Salesforce")}
-          </button>
+        
           <button
             onClick={() => scrollToSection("products")}
-            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-amber-300 hover:rounded-lg standard-font-size"
+            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-[#FCCA7B] hover:rounded-lg standard-font-size"
           >
             {t("header_products")}
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-amber-300 hover:rounded-lg standard-font-size"
+            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-[#FCCA7B] hover:rounded-lg standard-font-size"
           >
             {t("header_about")}
+          </button>
+          <button
+            onClick={() => scrollToSection("sales")}
+            className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-[#FCCA7B] hover:rounded-lg standard-font-size"
+          >
+            {t("Salesforce")}
           </button>
         </nav>
 
@@ -77,7 +78,7 @@ export default function Header() {
           <button
             onClick={() => scrollToSection("contact")}
             // onClick={handleClick}
-            className="bg-amber-300 flex items-center px-4 py-2 rounded-lg text-color-blue hover:bg-red-400 standard-font-size"
+            className="bg-[#FCCA7B] flex items-center px-4 py-2 rounded-lg text-color-blue hover:bg-red-400 standard-font-size"
           >
             {t("header_contact")}
           </button>
