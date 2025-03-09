@@ -66,7 +66,7 @@ export default function Header() {
           >
             {t("home_page")}
           </button>
-        
+      
           <button
             onClick={() => scrollToSection("products")}
             className="text-lg px-4 py-2 rounded-lg text-color-blue border border-transparent hover:border-solid hover:border-2 hover:bg-[#FCCA7B] hover:rounded-lg standard-font-size"
@@ -92,11 +92,7 @@ export default function Header() {
           <button
             onClick={() => scrollToSection("contact")}
             // onClick={handleClick}
-<<<<<<< HEAD
-            className="bg-[#FCCA7B] flex items-center px-4 py-2 rounded-lg text-color-blue hover:bg-red-400 standard-font-size"
-=======
-            className="bg-amber-300 flex items-center px-4 py-2 rounded-lg text-color-blue hover:bg-red-400 hover:text-color-blue ransition-all duration-300 standard-font-size"
->>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e
+            className="bg-[#FCCA7B] flex items-center px-4 py-2 rounded-lg text-color-blue hover:bg-red-400 hover:text-color-blue ransition-all duration-300 standard-font-size"
           >
             {t("header_contact")}
           </button>

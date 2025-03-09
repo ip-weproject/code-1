@@ -6,7 +6,7 @@ import "./globals.css";
 import Typewriter from "typewriter-effect";
 import Header from "./components/Header.mjs";
 import Footer from "./components/Footer.mjs";
-import Services from "./components/Services.mjs";
+import Services from "./components/Products.mjs";
 import About from "./components/About.mjs";
 import Form from "./components/Form.mjs";
 import Start from "./components/Home.mjs";

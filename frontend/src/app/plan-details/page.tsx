@@ -1,4 +1,4 @@
-import PlanDetails from "../components/PlanDetails1.mjs";
+import PlanDetails from "../components/PlanDetails.mjs";
 
 export default function PlansPage() {
   return <PlanDetails/>;

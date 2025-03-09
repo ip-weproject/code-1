@@ -4,11 +4,11 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Image from "next/image";
 
-function Services() {
+function Products() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-fredoka-semibold">
+    <section className="font-fredoka-semibold mt-10">
       <div className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
       <p className="w-full font-bold text-4xl my-8 whitespace-pre-line text-p-lightgray text-center">
             {t("work_on")}
@@ -21,22 +21,14 @@ function Services() {
             {t("plan_1")}
           </p>
           <div className="w-full pb-4">
-            
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-lightgray font-bold  text-center">
+              {t("plan_1_duration")}
+            </h1>
             <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
               {t("plan_1_title")}
             </h1>
 
-            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-yellow font-bold  text-center">
-              {t("plan_1_duration")}
-            </h1>
-
-            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
-              {t("plan_1_description")}
-            </h1>
-
-      
-
-            {/* <div className="flex justify-center py-3 lg:w-12/12 w-full">
+            <div className="flex justify-center py-3 lg:w-12/12 w-full">
               <Image
                 priority
                 width={170}
@@ -45,12 +37,8 @@ function Services() {
                 alt="logo"
                 src="/images/prod-logo-1.svg"
               />
-            </div> */}
+            </div>
           </div>
-<<<<<<< HEAD:frontend/src/app/components/Services.mjs
-     
-=======
->>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e:frontend/src/app/components/Products.mjs
           <div className="w-full text-center pt-8 pb-4">
             <Link
                href={{
@@ -69,37 +57,22 @@ function Services() {
             {t("plan_2")}
           </p>
           <div className="w-full pb-4">
-          <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
-              {t("plan_2_title")}
-            </h1>
-
-            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-yellow font-bold  text-center">
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-lightgray font-bold  text-center">
               {t("plan_2_duration")}
             </h1>
-
             <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
-              {t("plan_2_description")}
+              {t("plan_2_title")}
             </h1>
-
-      
-
-            {/* <div className="flex justify-center py-3 lg:w-12/12 w-full">
+            <div className="flex justify-cente py-3 lg:w-12/12 w-full">
               <Image
                 priority
                 width={170}
                 height={170}
                 className="mx-auto"
                 alt="logo"
-<<<<<<< HEAD:frontend/src/app/components/Services.mjs
-                src="/images/logo-prod-1.svg"
-              />
-            </div> */}
-        
-=======
                 src="/images/prod-logo-2.svg"
               />
             </div>
->>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e:frontend/src/app/components/Products.mjs
           </div>
           <div className="w-full text-center pt-8 pb-4">
             <Link
@@ -119,37 +92,22 @@ function Services() {
             {t("plan_3")}
           </p>
           <div className="w-full pb-4">
-          <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
-              {t("plan_3_title")}
-            </h1>
-
-            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-yellow font-bold  text-center">
+            <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-lightgray font-bold  text-center">
               {t("plan_3_duration")}
             </h1>
-
             <h1 className="w-full text-1xl my-8 px-8 whitespace-pre-line text-p-white  text-center">
-              {t("plan_3_description")}
+              {t("plan_3_title")}
             </h1>
-
-      
-
-            {/* <div className="flex justify-center py-3 lg:w-12/12 w-full">
+            <div className="flex justify-center py-3 lg:w-12/12 w-full">
               <Image
                 priority
                 width={170}
                 height={170}
                 className="mx-auto"
                 alt="logo"
-<<<<<<< HEAD:frontend/src/app/components/Services.mjs
-                src="/images/logo-prod-1.svg"
-              />
-            </div> */}
-         
-=======
                 src="/images/prod-logo-3.svg"
               />
             </div>
->>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e:frontend/src/app/components/Products.mjs
           </div>
           <div className="w-full text-center pt-8 pb-4">
             <Link
@@ -168,4 +126,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Products;

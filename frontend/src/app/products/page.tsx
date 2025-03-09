@@ -1,4 +1,4 @@
-import Products from "../components/Services.mjs";
+import Products from "../components/Products.mjs";
 
 export default function PlansPage() {
   return <Products />;
