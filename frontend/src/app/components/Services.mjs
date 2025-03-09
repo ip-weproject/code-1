@@ -43,14 +43,20 @@ function Services() {
                 height={170}
                 className="mx-auto"
                 alt="logo"
-                src="/images/logo-prod-1.svg"
+                src="/images/prod-logo-1.svg"
               />
             </div> */}
           </div>
+<<<<<<< HEAD:frontend/src/app/components/Services.mjs
      
+=======
+>>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e:frontend/src/app/components/Products.mjs
           <div className="w-full text-center pt-8 pb-4">
             <Link
-              href="/plan-details"
+               href={{
+                pathname: "/plan-details",
+                query: { plan: "plan_1", logo: "logo-1"}, 
+              }}
               className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
             >
               {t("learn_more")}
@@ -84,14 +90,23 @@ function Services() {
                 height={170}
                 className="mx-auto"
                 alt="logo"
+<<<<<<< HEAD:frontend/src/app/components/Services.mjs
                 src="/images/logo-prod-1.svg"
               />
             </div> */}
         
+=======
+                src="/images/prod-logo-2.svg"
+              />
+            </div>
+>>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e:frontend/src/app/components/Products.mjs
           </div>
           <div className="w-full text-center pt-8 pb-4">
             <Link
-              href="/plan-details"
+               href={{
+                pathname: "/plan-details",
+                query: { plan: "plan_2", logo: "logo-2" }, 
+              }}
               className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
             >
               {t("learn_more")}
@@ -125,14 +140,23 @@ function Services() {
                 height={170}
                 className="mx-auto"
                 alt="logo"
+<<<<<<< HEAD:frontend/src/app/components/Services.mjs
                 src="/images/logo-prod-1.svg"
               />
             </div> */}
          
+=======
+                src="/images/prod-logo-3.svg"
+              />
+            </div>
+>>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e:frontend/src/app/components/Products.mjs
           </div>
           <div className="w-full text-center pt-8 pb-4">
             <Link
-              href="/plan-details"
+               href={{
+                pathname: "/plan-details",
+                query: { plan: "plan_3", logo: "logo-3"}, 
+              }}
               className="inline-flex font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 uppercase text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-p-white"
             >
               {t("learn_more")}

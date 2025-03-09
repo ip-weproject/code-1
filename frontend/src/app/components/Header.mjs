@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { useLanguage } from "../context/LenguajeContext.js";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import "../globals.css";
-import Link from "next/link.js";
 
 
 export default function Header() {
@@ -17,6 +16,8 @@ export default function Header() {
   // const toggleDropdown = () => setIsOpen(!isOpen);
 
   const router = useRouter();
+  const pathname = usePathname();
+  const [targetSection, setTargetSection] = useState(null);
 
   // const handleClick = () => {
   //   router.push("/components/form");
@@ -24,8 +25,21 @@ export default function Header() {
 
     // Función para hacer scroll a una sección
     const scrollToSection = (id) => {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      if (pathname !== "/") {
+        setTargetSection(id); // Guarda la sección a la que queremos ir
+        router.push("/"); // Primero, navega a la página principal
+      } else {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }
     };
+  
+    // Detecta cuando la ruta cambia a `/` y hace el scroll
+    useEffect(() => {
+      if (pathname === "/" && targetSection) {
+        document.getElementById(targetSection)?.scrollIntoView({ behavior: "smooth" });
+        setTargetSection(null); // Resetea el estado
+      }
+    }, [pathname, targetSection]);
 
   return (
     <section className="font-fredoka-bold fixed flex  justify-center top-0 left-0 w-full z-50">
@@ -78,7 +92,11 @@ export default function Header() {
           <button
             onClick={() => scrollToSection("contact")}
             // onClick={handleClick}
+<<<<<<< HEAD
             className="bg-[#FCCA7B] flex items-center px-4 py-2 rounded-lg text-color-blue hover:bg-red-400 standard-font-size"
+=======
+            className="bg-amber-300 flex items-center px-4 py-2 rounded-lg text-color-blue hover:bg-red-400 hover:text-color-blue ransition-all duration-300 standard-font-size"
+>>>>>>> 4e0131ddf8882ee28c628f78ad1eeae34ffb722e
           >
             {t("header_contact")}
           </button>
