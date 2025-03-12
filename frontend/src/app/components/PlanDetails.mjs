@@ -13,31 +13,29 @@ function PlanDetails() {
   const plan = searchParams.get("plan") || "plan_x"; // Si no hay parámetro, mostrar `plan_x` por defecto
   const logo = searchParams.get("logo") || "logo_x";
 
-      // Función para hacer scroll a una sección
+  // Función para hacer scroll a una sección
 
-        const router = useRouter();
-        const pathname = usePathname();
-        const [targetSection, setTargetSection] = useState(null);
-        // const [isHome, setIsHome] = useState(false);
-      
-        useEffect(() => {
-          // Verificar si estamos en la página de inicio
-          if (window.location.pathname === "/") {
-            setIsHome(true);
-          }
-        }, []);
-      
+  const router = useRouter();
+  const pathname = usePathname();
+  const [targetSection, setTargetSection] = useState(null);
+  // const [isHome, setIsHome] = useState(false);
 
-      
-    
-      // Detecta cuando la ruta cambia a `/` y hace el scroll
-      useEffect(() => {
-        if (pathname === "/" && targetSection) {
-          document.getElementById(targetSection)?.scrollIntoView({ behavior: "smooth" });
-          setTargetSection(null); // Resetea el estado
-        }
-      }, [pathname, targetSection]);
+  useEffect(() => {
+    // Verificar si estamos en la página de inicio
+    if (window.location.pathname === "/") {
+      setIsHome(true);
+    }
+  }, []);
 
+  // Detecta cuando la ruta cambia a `/` y hace el scroll
+  useEffect(() => {
+    if (pathname === "/" && targetSection) {
+      document
+        .getElementById(targetSection)
+        ?.scrollIntoView({ behavior: "smooth" });
+      setTargetSection(null); // Resetea el estado
+    }
+  }, [pathname, targetSection]);
 
   return (
     <section className="mt-28 w-full">

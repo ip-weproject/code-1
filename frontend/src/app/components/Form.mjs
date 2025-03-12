@@ -7,16 +7,16 @@ function Form() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-fredoka-semibold px-20 py-20 text-p-gray-700 flex flex-col lg:flex-row items-center">
+    <section className="font-mona-semibold px-20 py-20 flex flex-col lg:flex-row items-center">
       {/* Texto a la derecha */}
       <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
-        <h1 className=" font-fredoka-bold  sm:text-5xl text-p-red mb-4">
+        <h1 className=" sm:text-5xl text-color-4 mb-4">
           {t("form_lets_talk")}
         </h1>
-        <p className="mb-4 leading-relaxed regular-font-size text-p-white">
+        <p className="mb-4 leading-relaxed font-mona-regular regular-font-size text-color-1">
           {t("about_us_form")}
         </p>
-        <div className="regular-font-size text-p-white">{t("form_keep_in_touch")}</div>
+        <div className="regular-font-size text-color-1">{t("form_keep_in_touch")}</div>
       </div>
 
       {/* Formulario a la izquierda */}
@@ -62,7 +62,7 @@ function Form() {
             />
             <button
               type="submit"
-              className="flex items-center justify-center text-p-blue font-semibold py-2 px-6 focus:outline-none text-md hover:bg-amber-200 hover:text-white transition duration-300 ease-in-out"
+              className="flex items-center justify-center text-p-blue font-semibold py-2 px-6 focus:outline-none text-md hover:bg-amber-200 hover:bg-color-3 transition duration-300 ease-in-out"
             >
               {t("form_send_message")}
             </button>

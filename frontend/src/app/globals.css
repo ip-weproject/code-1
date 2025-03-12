@@ -2,89 +2,144 @@
 @tailwind components;
 @tailwind utilities;
 
-/* styles/globals.css */
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 /* Colores marca OSA*/
-.text-p-yellow {
-  color: #fcca7b !important;
-}
 
-.text-p-red {
-  color: #fa7474 !important;
-}
-
-.text-p-blue {
+.text-color-1{
   color: #0d2b3f !important;
 }
 
-.text-p-lightgray {
+.text-color-2{
   color: #f0f0f0 !important;
 }
 
-.bg-yellow {
-  background-color: #fcca7b !important;
+.text-color-3{
+  color: #45ACA5 !important;
 }
 
-.bg-lightgray {
-  background-color: #f0f0f0 !important;
+.text-color-4{
+  color: #FF7587 !important;
 }
 
-.bg-lightgray {
-  background-color: #f0f0f0 !important;
+.text-color-5{
+  color: #c2c2c2 !important;
+}
+
+.bg-color-1{
+  background-color: #0d2b3f !important;
+}
+
+.bg-color-2 {
+  background-color: #FFFEFE !important;
+}
+
+.bg-color-3 {
+  background-color: #45ACA5 !important;
+}
+
+.bg-color-4 {
+  background-color: #fa7474 !important;
+}
+
+
+.hover\:bg-color-1:hover {
+  background: #0d2b3f !important;
+}
+
+.hover\:bg-color-2:hover {
+  background: #F0F0F0 !important;
+  color: #0d2b3f
+}
+.hover\:bg-color-3:hover {
+  background: #45ACA5 !important;
+  color: #FFFEFE
+}
+
+border-color-1{
+  border-color: #0d2b3f;
+}
+
+.home-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/portada1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.salesforce-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/salesforce-fondo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
 }
 
 /* Fuentes OSA */
 
+
 @font-face {
-  font-family: "Fredoka Bold";
-  src: url("fonts/Fredoka-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Fredoka Medium";
-  src: url("fonts/Fredoka-Medium.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Fredoka Regular";
-  src: url("fonts/Fredoka-Regular.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Fredoka Semibold";
-  src: url("fonts/Fredoka-SemiBold.ttf") format("truetype");
+  font-family: "MonaSans-Semibold";
+  src: url("fonts/MonaSans-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
-/* Clases fuentes OSA */
+@font-face {
+  font-family: "MonaSans-Bold";
+  src: url("fonts/MonaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 
-.font-fredoka-bold {
-  font-family: "Fredoka-Bold", sans-serif;
+@font-face {
+  font-family: "MonaSans-SemiBold";
+  src: url("fonts/MonaSans-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonaSans-Regular";
+  src: url("fonts/MonaSans-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonaSans-Light";
+  src: url("fonts/MonaSans-Light.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.font-mona-bold {
+  font-family: "MonaSans-Bold", sans-serif;
   font-weight: 700;
 }
 
-.font-fredoka-semibold {
-  font-family: "Fredoka-SemiBold", sans-serif;
-  font-weight: 500;
+.font-mona-semibold {
+  font-family: "MonaSans-SemiBold", sans-serif;
+  font-weight: 700;
 }
 
-.font-fredoka-medium {
-  font-family: "Fredoka-Medium", sans-serif;
-  font-weight: 400;
-}
-
-.font-fredoka-regular {
-  font-family: "Fredoka-Regular", sans-serif;
+.font-mona-regular {
+  font-family: "MonaSans-Regular", sans-serif;
   font-weight: 200;
 }
 
+.font-mona-medium {
+  font-family: "MonaSans-Medium", sans-serif;
+  font-weight: 400;
+}
+
+
+
 .standard-font-size {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .regular-font-size {
@@ -93,54 +148,6 @@
 
 .medium-font-size {
   font-size: 26px;
-}
-
-.section-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/portada1.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fredoka Bold";
-  src: url("fonts/Fredoka-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Fredoka Medium";
-  src: url("fonts/Fredoka-Medium.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Fredoka Regular";
-  src: url("fonts/Fredoka-Regular.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Fredoka Semibold";
-  src: url("fonts/Fredoka-SemiBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
 }
 
 * {
@@ -159,11 +166,11 @@ body {
 }
 
 body {
-  background: #0d2b3f;
+  background: #ececec;
   background-size: cover;
   background-position: center;
   display: flex;
-  font-family: "Fredoka", sans-serif;
+  font-family: "MonaSans", sans-serif;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -199,81 +206,6 @@ ul {
 .stretchToScreen {
   width: 100vw;
   height: 100vh;
-}
-
-
-
-/* texts colors */
-.bg-color-cian {
-  background-color: var(--gcolor-cian);
-}
-.bg-color-purple {
-  background-color: var(--gcolor-purple);
-}
-.bg-color-blue {
-  background-color: var(--gcolor-blue);
-}
-.bg-color-red {
-  background-color: var(--gcolor-red);
-}
-.bg-color-black {
-  background-color: var(--foreground) !important;
-}
-.bg-color-white {
-  background-color: var(--background);
-}
-.bg-color-yellow {
-  background-color: var(--gcolor-yellow);
-}
-
-@layer utilities {
-  /* Gilroy Black */
-  .font-gilroy-black {
-    font-family: "Gilroy-Black", sans-serif;
-    font-weight: 900;
-  }
-
-  /* Gilroy Bold */
-  .font-gilroy-bold {
-    font-family: "Gilroy-Bold", sans-serif;
-    font-weight: 700;
-  }
-
-  /* Gilroy Heavy */
-  .font-gilroy-heavy {
-    font-family: "Gilroy-Heavy", sans-serif;
-    font-weight: 800;
-  }
-
-  /* Gilroy Light */
-  .font-gilroy-light {
-    font-family: "Gilroy-Light", sans-serif;
-    font-weight: 100;
-  }
-
-  /* Gilroy Medium */
-  .font-gilroy-medium {
-    font-family: "Gilroy-Medium", sans-serif;
-    font-weight: 500;
-  }
-
-  /* Gilroy Regular */
-  .font-gilroy-regular {
-    font-family: "Gilroy-Regular", sans-serif;
-    font-weight: 400;
-  }
-
-  /* Gilroy SemiBold */
-  .font-gilroy-semibold {
-    font-family: "Gilroy-SemiBold", sans-serif;
-    font-weight: 600;
-  }
-
-  /* Gilroy UltraLight */
-  .font-gilroy-ultralight {
-    font-family: "GilroyUltralight", sans-serif;
-    font-weight: 100;
-  }
 }
 
 /* Contenedor del header */
@@ -317,14 +249,6 @@ ul {
   background-color: #d4d4d4;
 }
 
-/* Enlace activo */
-.navbar .active {
-  background-color: #8a3ab9;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 20px;
-}
-
 /* Botón de "Let's Talk" */
 .button {
   padding: 10px 20px;
@@ -360,73 +284,6 @@ ul {
   display: none;
 }
 
-/* pazly styles  */
-/* gradients */
-.bg-p-grad-1 {
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-}
-.bg-p-grad-2 {
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    75deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-}
-
-.bg-p-grad-3 {
-  background-color: #85ffbd;
-  background-image: linear-gradient(90deg, #85ffbd 0%, #fffb7d 100%);
-}
-
-.bg-p-grad-4 {
-  background-color: #fbab7e;
-  background-image: linear-gradient(77deg, #fbab7e 0%, #fdee8e 100%);
-}
-
-.bg-p-grad-5 {
-  background-color: #3eecac;
-  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-}
-
-.bg-p-grad-6 {
-  background-color: #faaca8;
-  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
-}
-
-.bg-p-grad-7 {
-  background-color: #f4d03f;
-  background-image: linear-gradient(90deg, #f4d03f 0%, #16a085 100%);
-}
-
-.bg-p-grad-8 {
-  background-color: #ff3cac;
-  background-image: linear-gradient(
-    225deg,
-    #ff3cac 0%,
-    #784ba0 50%,
-    #2b86c5 100%
-  );
-}
-
-.bg-p-grad-9 {
-  background-color: #944c4c;
-  background-image: linear-gradient(90deg, #944c4c 0%, #5c42a0 100%);
-}
-
-.text-p-grad-1 {
-  color: transparent !important;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -ms-background-clip: text;
-  -o-background-clip: text;
-  background-clip: text;
-
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-}
 .text-p-grad-2 {
   color: transparent !important;
   -webkit-background-clip: text;

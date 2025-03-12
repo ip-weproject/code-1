@@ -9,7 +9,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="font-fredoka-medium text-p-gray-600  bg-p-gray-200">
+    <footer className="font-mona-semibold text-color-1  bg-color-2">
       <div className="container px-5 pt-8 mx-auto">
         <div className="flex flex-wrap md:text-left text-center mb-4">
           <div className="lg:w-1/4 md:w-1/2 w-full pr-4">
