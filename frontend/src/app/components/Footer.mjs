@@ -34,12 +34,12 @@ export default function Footer() {
                 info@osaconsulting.com
               </Link>
               <Link href="#" className="inline-block my-1 whitespace-pre-line">
-                Buenos Aires, Arg.
+                Buenos Aires, Argentina.
               </Link>
             </div>
             <div className="text-sm md:text-left text-center flex flex-row mt-8">
               <span className="flex">
-                Copyright © 2025 OSA
+                Copyright © 2025 OSA.
                 <br /> All rights reserved.  
               </span>
             </div>

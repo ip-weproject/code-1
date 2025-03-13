@@ -44,7 +44,7 @@ function Form() {
               required
             />
             <input
-              className="flex-grow bg-white focus:outline-none m-0 rounded-b-lg"
+              className="flex-grow bg-white focus:outline-none w-full m-0 rounded-b-lg"
               placeholder={t("form_company")}
               name="company"
               type="text"

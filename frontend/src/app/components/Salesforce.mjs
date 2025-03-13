@@ -9,7 +9,7 @@ function Salesforce() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-mona-semibold salesforce-background mt-10">
+    <section className="font-mona-semibold mt-10">
       <div className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
         <h1 className="w-full my-8 px-8 whitespace-pre-line  text-5xl text-color-3 text-center">
           {t("new_salesforce")}
@@ -30,9 +30,9 @@ function Salesforce() {
             href="https://www.salesforce.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex font-bold px-6 py-4  rounded outline-none focus:outline-none mr-1 mb-1  text-sm shadow hover:shadow-lg whitespace-pre-line border border-gray-500 text-color-2"
+            className="inline-flex font-bold px-4 py-2  rounded-xl outline-none focus:outline-none mr-1 mb-1  text-sm shadow hover:bg-[#0d9dda] hover:text-color-3 border border-cian-500 text-color-2"
           >
-            {t("learn_more")}
+            {t("Oficial site")}
           </Link>
         </div>
         {/* </div> */}

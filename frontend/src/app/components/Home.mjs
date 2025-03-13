@@ -24,7 +24,7 @@ function Start() {
         {/* Botón de consulta */}
         <div className="w-full flex flex-col items-center text-center mt-10 md:mt-2 lg:mt-2">
           <a
-            className=" mt-10 px-6 py-4 rounded-xl hover:cursor-pointer  text-color-2 bg-color-3 hover:bg-color-2 transition-all duration-300"
+            className=" mt-10 px-6 py-4 rounded-xl hover:cursor-pointer  text-color-2 bg-color-3 hover:bg-color-1 transition-all duration-300"
             onClick={() => window.open("https://calendly.com/ip-weproject")}
           >
             {t("book_consultation")}

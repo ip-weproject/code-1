@@ -38,7 +38,7 @@ export default function Header() {
 
   return (
     <section className="font-mona-bold text-color-1 fixed flex  justify-center top-0 left-0 w-full z-50">
-      <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-color-2 mt-4 rounded-lg">
+      <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-color-2 shadow-lg mt-4 rounded-lg">
         {/* Logo */}
         <button
           onClick={() => scrollToSection("home")}
@@ -84,12 +84,12 @@ export default function Header() {
           </button>
         </nav>
 
-        {/* Botones "Let's Talk" y de Idioma */}
+        {/* Botones "contact" y de Idioma */}
         <div className="flex items-center space-x-4">
           <button
             onClick={() => scrollToSection("contact")}
             // onClick={handleClick}
-            className="bg-color-3 flex items-center px-4 py-2 text-color-2 rounded-lg hover:bg-color-2 transition-all duration-300 standard-font-size"
+            className="bg-color-3 flex items-center px-4 py-2 text-color-2 rounded-lg hover:bg-color-4 transition-all duration-300 standard-font-size"
           >
             {t("header_contact")}
           </button>
@@ -101,7 +101,7 @@ export default function Header() {
               const newLanguage = language === "en" ? "es" : "en";
               changeLanguage(newLanguage); // Cambiar idioma
             }}
-            className="flex items-center px-4 py-2 rounded-lg hover:bg-color-2 standard-font-size"
+            className="flex items-center px-4 py-2 rounded-lg standard-font-size hover:bg-color-5 hover:border-solid"
           >
             <GlobeAltIcon className="w-5 h-5 mr-1" />
             {language === "en" ? "ES" : "EN"}
