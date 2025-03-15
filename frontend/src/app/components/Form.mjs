@@ -25,26 +25,27 @@ function Form() {
           name="contact"
           method="POST"
           data-netlify="true"
-          className="flex flex-col lg:w-3/4 w-full p-2 bg-gray-100 rounded-lg shadow-lg"
+          className="flex flex-col lg:w-5/6 w-full rounded-lg "
         >
           <input type="hidden" name="form-name" value="contact" />
           <textarea
             name="message"
-            className="focus:outline-none border-2 border-gray-300 mb-4 py-2 px-3 rounded-lg md:bg-[url('/images/dot.svg')] bg-repeat bg-[size:6px_6px] placeholder:text-xl"
-            rows="10"
+            className="focus:outline-none mb-4 py-3 px-3 rounded-lg resize-none"
+            // className="focus:outline-noneborder-gray-300 mb-4 py-2 px-3 rounded-lg md:bg-[url('/images/dot.svg')] bg-repeat bg-[size:6px_6px] placeholder:text-xl"
+            rows="5"
             placeholder={t("form_message_placeholder")}
           ></textarea>
 
-          <div className="flex flex-row justify-between shadow-lg mb-4 border-2 border-gray-300">
+          <div className="flex flex-row justify-between mb-4">
             <input
-              className="flex-grow bg-white focus:outline-none py-4 px-4 m-0 rounded-b-lg"
+              className="flex-grow bg-white focus:outline-none py-4 px-4 m-0 rounded-lg"
               placeholder={t("form_name")}
               name="name"
               type="text"
               required
             />
             <input
-              className="flex-grow bg-white focus:outline-none w-full m-0 rounded-b-lg"
+              className="flex-grow bg-white focus:outline-none w-full ml-5 pl-4 rounded-lg"
               placeholder={t("form_company")}
               name="company"
               type="text"
@@ -52,9 +53,9 @@ function Form() {
             />
           </div>
 
-          <div className="flex flex-row justify-between h-14 shadow-lg border-2 border-gray-300">
+          <div className="flex flex-row justify-between h-14">
             <input
-              className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-b-lg"
+              className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-lg"
               placeholder={t("form_email")}
               name="email"
               type="email"
@@ -62,7 +63,7 @@ function Form() {
             />
             <button
               type="submit"
-              className="flex items-center justify-center text-p-blue font-semibold py-2 px-6 focus:outline-none text-md hover:bg-amber-200 hover:bg-color-3 transition duration-300 ease-in-out"
+              className="flex items-center justify-center text-p-blue font-semibold ml-5 px-3 focus:outline-none text-color-2 text-lg rounded-lg bg-color-3 hover:bg-color-1 transition-all duration-300 standard-font-size ease-in-out"
             >
               {t("form_send_message")}
             </button>

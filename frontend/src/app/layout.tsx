@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/Footer.mjs";
 import Header from "./components/Header.mjs";
 import { LanguageProvider } from "../app/context/LenguajeContext";
-// import Head from "next/head";
-// import Link from "next/link";
-
-// const fredokaBold = localFont({
-//   src: "./fonts/Fredoka-Bold.ttf",
-//   variable: "--font-gilroy-bold",
-//   weight: "100 900",
-// });
-
-// const fredokaLight = localFont({
-//   src: "./fonts/Fredoka-Regular.ttf",
-//   variable: "--font-gilroy-light",
-//   weight: "100 900",
-// });
 
 export const metadata: Metadata = {
   title: "OSA - Web App",
@@ -28,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       {/* <Head>

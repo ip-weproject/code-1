@@ -39,7 +39,7 @@ if (!i18n.isInitialized) {
           form_message_placeholder: "Your message here...",
           form_name: "Name",
           form_phone: "Phone",
-          form_send_message: "Send Message",
+          form_send_message: "Send",
           form_subscribe_text:
             "Subscribe to our newsletter to get the latest stories of our work and many happy customer testimonials. Want to be our customer? Enter your email below.",
           header_about: "About",
@@ -119,7 +119,7 @@ if (!i18n.isInitialized) {
           form_message_placeholder: "Tu mensaje aquí...",
           form_name: "Nombre",
           form_phone: "Teléfono",
-          form_send_message: "Enviar mensaje",
+          form_send_message: "Enviar",
           form_subscribe_text:
             "Suscríbete a nuestro boletín para recibir las últimas historias de nuestro trabajo y muchos testimonios de clientes felices. ¿Quieres ser nuestro cliente? Ingresa tu correo electrónico a continuación.",
           header_about: "Acerca de",

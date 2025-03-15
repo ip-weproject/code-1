@@ -41,6 +41,12 @@ export default function Header() {
       <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-color-2 shadow-lg mt-4 rounded-lg">
         {/* Logo */}
         <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden block text-color-1 focus:outline-none"
+        >
+          ☰
+        </button>
+        <button
           onClick={() => scrollToSection("home")}
           href="/"
           className="flex"
@@ -56,29 +62,29 @@ export default function Header() {
         </button>
 
         {/* Navegación */}
-        <nav className="flex items-center standard-font-size rounded-full px-4 py-1">
+        <nav className={`md:flex ${isOpen ? "block" : "hidden"} flex-col md:flex-row items-center`}>
           <button
             onClick={() => scrollToSection("home")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:border-solid hover:border-2 hover:bg-color-3 hover:rounded-lg standard-font-size"
+            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
           >
             {t("home_page")}
           </button>
 
           <button
             onClick={() => scrollToSection("products")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:border-solid hover:border-2 hover:bg-color-3 hover:rounded-lg standard-font-size"
+            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
           >
             {t("header_products")}
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:border-solid hover:border-2 hover:bg-color-3 hover:rounded-lg standard-font-size"
+            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
           >
             {t("header_about")}
           </button>
           <button
             onClick={() => scrollToSection("sales")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:border-solid hover:border-2 hover:bg-color-3 hover:rounded-lg standard-font-size"
+            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
           >
             {t("Salesforce")}
           </button>
@@ -89,7 +95,7 @@ export default function Header() {
           <button
             onClick={() => scrollToSection("contact")}
             // onClick={handleClick}
-            className="bg-color-3 flex items-center px-4 py-2 text-color-2 rounded-lg hover:bg-color-4 transition-all duration-300 standard-font-size"
+            className="flex items-center px-4 py-2 text-color-2 text-lg rounded-lg bg-color-3 hover:bg-color-1 transition-all duration-300 standard-font-size"
           >
             {t("header_contact")}
           </button>
@@ -107,37 +113,6 @@ export default function Header() {
             {language === "en" ? "ES" : "EN"}
           </button>
 
-          {/* Menú desplegable */}
-          {isOpen && (
-            <div className="absolute right-30 mt-2 w-24 rounded-md shadow-lg ">
-              <div className="py-1">
-                <button
-                  onClick={() => {
-                    changeLanguage("en");
-                    setIsOpen(false);
-                  }}
-                  className={`block w-full text-left px-4 py-2 text-sm  ${
-                    language === "en" ? "font-semibold" : ""
-                  }`}
-                  disabled={language === "en"}
-                >
-                  {t("toogle_lenguage_en")}
-                </button>
-                <button
-                  onClick={() => {
-                    changeLanguage("es");
-                    setIsOpen(false);
-                  }}
-                  className={`block w-full text-left px-4 py-2 text-sm ${
-                    language === "es" ? "font-semibold" : ""
-                  }`}
-                  disabled={language === "es"}
-                >
-                  {t("toogle_lenguage_es")}
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </section>

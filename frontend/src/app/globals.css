@@ -76,10 +76,10 @@
   background: var(--color-1) !important;
 }
 
-/* /* .hover\:bg-color-2:hover {
-  background: var(--color-2) !important;
-  color: var(--color-1);
-} */
+.hover\:bg-color-2:hover {
+  background: var(--color-3) !important;
+  color: var(--color-2) !important;
+}
 
 /* .hover\:bg-color-3:hover {
   background: var(--bg-color-3) !important;
@@ -94,7 +94,7 @@
 .home-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/portada1.jpg");
-  background-size: 100% 100%;
+  background-size: 100% 150%;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
@@ -103,7 +103,7 @@
 .salesforce-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/salesforce-fondo.jpg");
-  background-size: 100% 100%;
+  background-size: 100% 150%;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
