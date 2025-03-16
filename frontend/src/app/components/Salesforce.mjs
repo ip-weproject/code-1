@@ -9,7 +9,7 @@ function Salesforce() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-mona-semibold mt-10">
+    <section className="font-albert-semibold mt-10">
       <div className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
         <h1 className="w-full my-4 px-8 whitespace-pre-line  text-6xl text-color-3 text-center">
           {t("new_salesforce")}

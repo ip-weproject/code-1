@@ -7,13 +7,13 @@ function Form() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-mona-semibold px-20 py-20 flex flex-col lg:flex-row items-center">
+    <section className="font-albert-semibold px-20 py-20 flex flex-col lg:flex-row items-center">
       {/* Texto a la derecha */}
       <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
         <h1 className="text-6xl text-color-3 mb-4">
           {t("form_lets_talk")}
         </h1>
-        <p className="mb-4 leading-relaxed font-mona-regular regular-font-size text-color-1">
+        <p className="mb-4 leading-relaxed font-albert-regular regular-font-size text-color-1">
           {t("about_us_form")}
         </p>
         <div className="regular-font-size text-color-1">{t("form_keep_in_touch")}</div>

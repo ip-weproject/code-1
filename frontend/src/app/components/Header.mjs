@@ -37,7 +37,7 @@ export default function Header() {
   }, [pathname, targetSection]);
 
   return (
-    <section className="font-mona-bold text-color-1 fixed flex  justify-center top-0 left-0 w-full z-50">
+    <section className="font-albert-bold text-color-1 fixed flex  justify-center top-0 left-0 w-full z-50">
       <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-color-2 shadow-lg mt-4 rounded-lg">
         {/* Logo */}
         <button

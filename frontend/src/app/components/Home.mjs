@@ -7,7 +7,7 @@ function Start() {
   const { t } = useTranslation();
 
   return (
-    <div className="font-mona-bold w-full min-h-screen flex home-background justify-center">
+    <div className="font-albert-bold w-full min-h-screen flex home-background justify-center">
       <section className=" w-full max-w-6xl mx-auto flex flex-col mt-14 md:mt-20 lg:mt-40">
         {/* Encabezado: Título e imagen */}
 
@@ -17,7 +17,7 @@ function Start() {
           </h1>
         </div>
         <div className="w-full flex justify-center mt-10 md:mt-8 lg:mt-6">
-          <h1 className="font-mona-semibold  md:text-2xl text-color-2 text-center mt-10">
+          <h1 className="font-albert-semibold  md:text-2xl text-color-2 text-center mt-10">
             {t("home_text_1")}
           </h1>
         </div>

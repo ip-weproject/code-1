@@ -9,7 +9,7 @@
 :root {
   --color-1: #0d2b3f;
   --color-2: #f0f0f0;
-  --color-3: #439785;
+  --color-3: #f9ba5a;
   --color-4: #AFD78A;
   --color-5: #c2c2c2;
 }
@@ -109,59 +109,60 @@
 
 
 @font-face {
-  font-family: "MonaSans-Semibold";
-  src: url("fonts/MonaSans-SemiBold.ttf") format("truetype");
+  font-family: "AlbertSans-Semibold";
+  src: url("fonts/AlbertSans-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MonaSans-Bold";
-  src: url("fonts/MonaSans-Bold.ttf") format("truetype");
+  font-family: "AlbertSans-Bold";
+  src: url("fonts/AlbertSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MonaSans-SemiBold";
-  src: url("fonts/MonaSans-SemiBold.ttf") format("truetype");
+  font-family: "AlbertSans-SemiBold";
+  src: url("fonts/AlbertSans-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MonaSans-Regular";
-  src: url("fonts/MonaSans-Regular.ttf") format("truetype");
+  font-family: "AlbertSans-Regular";
+  src: url("fonts/AlbertSans-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "MonaSans-Light";
-  src: url("fonts/MonaSans-Light.ttf") format("truetype");
+  font-family: "AlbertSans-Light";
+  src: url("fonts/AlbertSans-Light.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
-.font-mona-bold {
-  font-family: "MonaSans-Bold", sans-serif;
+.font-albert-bold {
+  font-family: "AlbertSans-Bold", sans-serif;
   font-weight: 700;
 }
 
-.font-mona-semibold {
-  font-family: "MonaSans-SemiBold", sans-serif;
+.font-albert-semibold {
+  font-family: "AlbertSans-SemiBold", sans-serif;
   font-weight: 700;
 }
 
-.font-mona-regular {
-  font-family: "MonaSans-Regular", sans-serif;
+.font-albert-regular {
+  font-family: "AlbertSans-Regular", sans-serif;
   font-weight: 200;
 }
 
-.font-mona-medium {
-  font-family: "MonaSans-Medium", sans-serif;
+.font-albert-medium {
+  font-family: "AlbertSans-Medium", sans-serif;
   font-weight: 400;
 }
+
 
 .xsmall-font-size {
   font-size: 14px;
@@ -247,7 +248,7 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  font-family: "MonaSans", sans-serif;
+  font-family: "AlbertSans", sans-serif;
   font-weight: normal;
   line-height: 1.5;
 }

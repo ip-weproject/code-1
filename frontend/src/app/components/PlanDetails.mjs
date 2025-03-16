@@ -40,7 +40,7 @@ function PlanDetails() {
   return (
     <section className="mt-28 w-full">
       <div className="w-full pt-8 pb-8">
-        <div className="font-mona-semibold container mx-auto flex lg:flex-row flex-col items-center">
+        <div className="font-albert-semibold container mx-auto flex lg:flex-row flex-col items-center">
           <div className="lg:w-5/12 w-10/12 lg:pl-20">
             <Image
               priority
@@ -86,14 +86,14 @@ function PlanDetails() {
         <div className="text-md font-light mt-6 lg:mt-12 text-center px-4 w-full flex flex-col md:flex-row justify-center ">
           <Link
             href="#"
-            className="font-mona-bold px-6 py-4 rounded-xl hover:cursor-pointer text-color-blue bg-yellow transition-all duration-300"
+            className="font-albert-bold px-6 py-4 rounded-xl hover:cursor-pointer text-color-blue bg-yellow transition-all duration-300"
             onClick={() => window.open("https://calendly.com/ip-weproject")}
           >
             {t("book_consultation")}
           </Link>
           <button
             onClick={() => router.push("/#products")}
-            className="font-mona-bold px-6 py-4 ml-2 text-p-white rounded-xl border hover:cursor-pointer text-color-blue hover:bg-red-400 transition-all duration-300"
+            className="font-albert-bold px-6 py-4 ml-2 text-p-white rounded-xl border hover:cursor-pointer text-color-blue hover:bg-red-400 transition-all duration-300"
           >
             {t("back_to_plans")}
           </button>

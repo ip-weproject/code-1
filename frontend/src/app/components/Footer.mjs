@@ -9,7 +9,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="font-mona-semibold text-color-2  bg-color-1">
+    <footer className="font-albert-semibold text-color-2  bg-color-1">
       <div className="container px-5 pt-8 mx-auto">
         <div className="flex flex-wrap md:text-left text-center mb-4">
           <div className="lg:w-1/4 md:w-1/2 w-full pr-4">
@@ -33,7 +33,7 @@ export default function Footer() {
               <Link href="#" className="xsmall-font-size inline-block my-1 whitespace-pre-line">
                 {" "}
                 
-                <span className="flex">2025 © OSA - {t("footer_1")}
+                <span className="flex">2025 © {t("footer_1")}
            
                 </span>
               </Link>
