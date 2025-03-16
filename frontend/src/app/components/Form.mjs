@@ -10,17 +10,17 @@ function Form() {
     <section className="font-mona-semibold px-20 py-20 flex flex-col lg:flex-row items-center">
       {/* Texto a la derecha */}
       <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
-        <h1 className="text-6xl text-color-3 mb-4">
+        <h1 className="text-4xl md:text-6xl text-color-3 mb-4">
           {t("form_lets_talk")}
         </h1>
-        <p className="mb-4 leading-relaxed font-mona-regular regular-font-size text-color-1">
+        <p className="mb-4 leading-relaxed font-mona-regular text-1xl md:regular-font-size text-color-1">
           {t("about_us_form")}
         </p>
-        <div className="regular-font-size text-color-1">{t("form_keep_in_touch")}</div>
+        <div className="text-1xl md:mb-0 mb-8 md:regular-font-size text-color-1">{t("form_keep_in_touch")}</div>
       </div>
 
       {/* Formulario a la izquierda */}
-      <div className="lg:w-1/2 w-full flex justify-center lg:justify-end">
+      <div className="md::w-1/2 md:w-full md:flex md:justify-center">
         <form
           name="contact"
           method="POST"
@@ -36,7 +36,7 @@ function Form() {
             placeholder={t("form_message_placeholder")}
           ></textarea>
 
-          <div className="flex flex-row justify-between mb-4">
+          <div className="flex flex-col md:flex-row md:justify-between my-6 md:mb-4">
             <input
               className="flex-grow bg-white focus:outline-none py-4 px-4 m-0 rounded-lg"
               placeholder={t("form_name")}
@@ -45,7 +45,7 @@ function Form() {
               required
             />
             <input
-              className="flex-grow bg-white focus:outline-none w-full ml-5 pl-4 rounded-lg"
+              className="flex-grow bg-white focus:outline-none md:w-full my-20 md:ml-5 pl-4 rounded-lg"
               placeholder={t("form_company")}
               name="company"
               type="text"

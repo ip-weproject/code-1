@@ -11,10 +11,10 @@ function Salesforce() {
   return (
     <section className="font-mona-semibold mt-10">
       <div className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
-        <h1 className="w-full my-4 px-8 whitespace-pre-line  text-6xl text-color-3 text-center">
+        <h1 className="w-full my-4 px-8 whitespace-pre-line text-4xl md:text-6xl text-color-3 text-center">
           {t("new_salesforce")}
         </h1>
-        <h1 className="w-full my-4 px-8 whitespace-pre-line  text-4xl text-color-2 text-center">
+        <h1 className="w-full my-4 mx-20 md:px-8 whitespace-pre-line text-1xl md:text-4xl text-color-2 text-center">
           {t("discover_salesforce")}
         </h1>
         <Image

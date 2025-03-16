@@ -8,10 +8,10 @@ function Services() {
   return (
     <section className="font-mona-semibold text-color-1 mt-10">
       <div className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
-        <p className="w-full text-6xl my-8 whitespace-pre-line text-color-3 text-center justify-center">
+        <p className="w-full text-4xl px-20 md:text-6xl my-8 whitespace-pre-line text-color-3 text-center justify-center">
           {t("services_header")}
         </p>
-        <div className="text-center font-mona-regular regular-font-size px-10 mt-8 mb-8 leading-relaxed justify-center">
+        <div className="text-center font-mona-regular text-base px-20 md:regular-font-size md:px-10 mt-0 md:mt-8 mb-8 leading-relaxed justify-center">
           {t("services_1")}
         </div>
         <div className="w-full text-center font-mona-semibold regular-font-size px-10 mb-8 leading-relaxed justify-center">
