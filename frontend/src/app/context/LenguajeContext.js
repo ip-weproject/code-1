@@ -31,6 +31,7 @@ if (!i18n.isInitialized) {
           certifications: "Our Team Certifications",
           discover_salesforce:
             "Unlock the power of the most popular CRM in the world.",
+            footer_1: "All rights reserved",
           form_company: "Company Name",
           form_email: "Email",
           form_keep_in_touch:
@@ -55,24 +56,31 @@ if (!i18n.isInitialized) {
           learn_more: "Learn more",
           mail_osa: "osa@infoconsulting.com",
           new_salesforce: "New to Salesforce?",
+          official_site: "Official site",
           optimize: "optize ",
           p_about_description:
             "Certified Salesforce professional with extensive experience in consulting and UI development within Sales, Service, and Commerce Cloud. I have a strong background in applying agile methodologies and best practices to deliver efficient, high-quality solutions. Enthusiastic and proactive, I love challenges and enjoy working collaboratively. I am seeking a new opportunity to continue learning, exploring, and growing in this industry.",
           plan_1: "On demand support",
+          plan_1_aim:
+          "Perfect for companies that already have Salesforce implemented but need day-to-day support.",
           plan_1_description:
-            "Perfect for companies that already have Salesforce implemented but need day-to-day support. This plan includes troubleshooting, quick fixes, best practices advice, and general guidance to ensure your Salesforce environment remains stable and optimized.",
+            "This plan includes troubleshooting, quick fixes, best practices advice, and general guidance to ensure your Salesforce environment remains stable and optimized.",
           plan_1_duration: "Per hour",
           plan_1_title:
             "Ongoing guidance for Salesforce basics and everyday challenges.",
           plan_2: "Jumpstart",
+          plan_2_aim:
+          "Ideal for businesses new to Salesforce, this plan offers a rapid setup to get your Salesforce environment up and running. ",
           plan_2_description:
-            "Ideal for businesses new to Salesforce, this plan offers a rapid setup to get your Salesforce environment up and running. It includes account configuration, essential module setup, basic workflows, and training. Perfect for small-to-medium businesses looking for a hassle-free Salesforce deployment with minimal customization.",
+            "It includes account configuration, essential module setup, basic workflows, and training. ",
           plan_2_duration: "Two weeks",
           plan_2_title:
             "Launch your Salesforce journey quickly and efficiently.",
           plan_3: "Growth Accelerator",
+          plan_3_aim:
+          "Designed for businesses ready to grow and in need of more advanced Salesforce features.",
           plan_3_description:
-            "Designed for businesses ready to grow and in need of more advanced Salesforce features. This plan focuses on customizations tailored to your unique needs. It includes advanced workflows, automation, custom reports, and deeper insights. Ideal for businesses aiming to leverage Salesforce for advanced CRM management, data-driven decision-making, and complex automation.",
+            "This plan focuses on customizations tailored to your unique needs. It includes advanced workflows, automation, custom reports, and deeper insights.",
           plan_3_duration: "Monthly",
           plan_3_title: "Unlock Salesforce's full potential as you scale.",
           salesforce_services:
@@ -105,12 +113,13 @@ if (!i18n.isInitialized) {
           about_header_4: "para un crecimiento más inteligente con Salesforce.",
           about_us: "Sobre nosotros",
           about_us_form:
-            "En OSA, no solo implementamos Salesforce, desbloqueamos todo su potencial para tu negocio.Nuestras soluciones flexibles y personalizadas se adaptan a tus necesidades únicas.",
+            "En OSA, no solo implementamos Salesforce, desbloqueamos todo su potencial para tu negocio. Nuestras soluciones flexibles y personalizadas se adaptan a tus necesidades únicas.",
           analytics: "analítica ",
           back_to_plans: "Volver a los Planes",
           book_consultation: "Consulta gratuita",
           certifications: "Certificaciones de nuestro equipo",
           discover_salesforce: "Descubre el potencial del CRM más famoso.",
+          footer_1: "Todos los derechos reservados",
           form_company: "Compañia",
           form_email: "Correo eléctronico",
           form_keep_in_touch:
@@ -135,24 +144,31 @@ if (!i18n.isInitialized) {
             "Apasionado desarrollador web con más de 3 años de experiencia en la industria del desarrollo de software. Mi entusiasmo por la tecnología me impulsa a aprender y adaptarme continuamente a nuevos avances. Me encantan los desafíos, destaco en entornos de equipo y mantengo un enfoque proactivo y entusiasta. Estoy buscando nuevas oportunidades para crecer, innovar y contribuir a la industria tecnológica, aprovechando mis habilidades y pasión para lograr soluciones exitosas y colaborativas.",
           learn_more: "Conoce más",
           new_salesforce: "¿Eres nuevo en Salesforce?",
+          official_site: "Sitio oficial",
           optimize: "Optimizamos ",
           p_about_description:
             "Profesional certificada en Salesforce con amplia experiencia en consultoría y desarrollo de interfaces de usuario dentro de Sales, Service y Commerce Cloud. Tengo una sólida experiencia en la aplicación de metodologías ágiles y mejores prácticas para entregar soluciones eficientes y de alta calidad. Entusiasta y proactiva, me encantan los desafíos y disfruto trabajar de manera colaborativa. Estoy buscando una nueva oportunidad para seguir aprendiendo, explorando y creciendo en esta industria.",
           plan_1: "Soporte Esencial",
+          plan_1_aim:
+          "Perfecto para empresas que ya tienen Salesforce implementado pero necesitan soporte diario.",
           plan_1_description:
-            "Perfecto para empresas que ya tienen Salesforce implementado pero necesitan soporte diario. Este plan incluye solución de problemas, correcciones rápidas, asesoramiento sobre mejores prácticas y orientación general para garantizar que tu entorno de Salesforce se mantenga estable y optimizado.",
+            "Este plan incluye solución de problemas, correcciones rápidas, asesoramiento sobre mejores prácticas y orientación general para garantizar que tu entorno de Salesforce se mantenga estable y optimizado.",
           plan_1_duration: "Por hora",
           plan_1_title:
             "Asesoría continua para los conceptos básicos de Salesforce y desafíos diarios.",
           plan_2: "Despegue",
+          plan_2_aim:
+          "Ideal para empresas nuevas en Salesforce, ofrece una configuración rápida para poner en marcha tu entorno de Salesforce. ",
           plan_2_description:
-            "Ideal para empresas nuevas en Salesforce, ofrece una configuración rápida para poner en marcha tu entorno de Salesforce. Incluye configuración de cuentas, configuración de módulos esenciales, flujos de trabajo básicos y capacitación. Perfecto para pequeñas y medianas empresas que buscan una implementación de Salesforce sin complicaciones y con mínima personalización.",
+            "Incluye configuración de cuentas, configuración de módulos esenciales, flujos de trabajo básicos y capacitación.",
           plan_2_duration: "Dos semanas",
           plan_2_title:
             "Inicia tu viaje con Salesforce de forma rápida y eficiente.",
           plan_3: "Crecimiento Ágil",
+          plan_3_aim:
+          "Para empresas listas para crecer y que requieren funciones avanzadas de Salesforce.",
           plan_3_description:
-            "Para empresas listas para crecer y que requieren funciones avanzadas de Salesforce. Este plan se enfoca en personalizaciones adaptadas a tus necesidades únicas. Incluye flujos de trabajo avanzados, automatización, informes personalizados y análisis más profundos. Ideal para empresas que buscan aprovechar Salesforce para una gestión avanzada de CRM, toma de decisiones basadas en datos y automatización compleja.",
+            "Este plan se enfoca en personalizaciones adaptadas a tus necesidades únicas. Incluye flujos de trabajo avanzados, automatización, informes personalizados y análisis más profundos.",
           plan_3_duration: "Mensual",
           plan_3_title:
             "Desbloquea todo el potencial de Salesforce mientras escalas.",

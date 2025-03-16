@@ -9,68 +9,41 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="font-mona-semibold text-color-1  bg-color-2">
+    <footer className="font-mona-semibold text-color-2  bg-color-1">
       <div className="container px-5 pt-8 mx-auto">
         <div className="flex flex-wrap md:text-left text-center mb-4">
           <div className="lg:w-1/4 md:w-1/2 w-full pr-4">
             <Link href="#" className="text-center">
               <div className="m-2 w-20 h-20 flex justify-center items-center">
                 <Image
-                  width={50}
-                  height={50}
+                  width={40}
+                  height={40}
                   className="object-fill h-auto w-auto transform"
                   alt="logo"
-                  src="/images/logo-png.svg"
+                  src="/images/logo-w-b_1.svg"
                 />
               </div>
             </Link>
-            <div className="text-sm md:text-left text-center flex flex-col mt-4">
-              <Link
-                href="#"
-                className="inline-block my-1 whitespace-pre-line"
-              ></Link>
+            <div className="small-font-size md:text-left text-center flex flex-col mt-4">
               <Link href="#" className="inline-block my-1 whitespace-pre-line">
                 {" "}
                 info@osaconsulting.com
               </Link>
-              <Link href="#" className="inline-block my-1 whitespace-pre-line">
-                Buenos Aires, Argentina.
-              </Link>
-            </div>
-            <div className="text-sm md:text-left text-center flex flex-row mt-8">
-              <span className="flex">
-                Copyright © 2025 OSA.
-                <br /> All rights reserved.  
-              </span>
-            </div>
-          </div>
-          <div className="lg:w-1/4 w-1/2">
-            <h2 className="text-p-gray-900 tracking-widest text-sm mb-3">
-              {t("sitemap")}
-            </h2>
-            <div className="flex flex-col mb-10">
-              <Link
-                href="#"
-                className="text-p-gray-600 hover:text-p-gray-800 my-1"
-              >
-                {t("home_page")}
-              </Link>
-              <Link
-                href="#"
-                className="text-p-gray-600 hover:text-p-gray-800 my-1"
-              >
-                {t("header_products")}
-              </Link>
-              <Link
-                href="#"
-                className="text-p-gray-600 hover:text-p-gray-800 my-1"
-              >
-                {t("header_about")}
+              <br></br>
+              <Link href="#" className="xsmall-font-size inline-block my-1 whitespace-pre-line">
+                {" "}
+                
+                <span className="flex">2025 © OSA - {t("footer_1")}
+           
+                </span>
               </Link>
             </div>
           </div>
           <div className="lg:w-1/4 w-1/2">
-            <h2 className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">
+            <div className="flex flex-col mb-6 text-color-2"></div>
+          </div>
+          <div className="lg:w-1/4 w-1/2">
+            {/* <h2 className="title-font font-medium text-p-gray-900 tracking-widest text-sm mb-3">
               SOCIAL
             </h2>
             <div className="flex flex-col mb-10">
@@ -80,7 +53,7 @@ export default function Footer() {
               >
                 Linkedin
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full">
             <div className="flex flex-col pb-4">
@@ -89,13 +62,14 @@ export default function Footer() {
                 <div className="">
                   <Image
                     priority
-                    width={100}
-                    height={100}
+                    width={130}
+                    height={130}
                     className="mx-auto mt-10 mb-10"
                     alt="logo"
                     src="/images/salesforce-with-type-logo.svg"
                   />
                 </div>
+             
               </div>
 
               {/* <div className="w-full my-1 text-center">

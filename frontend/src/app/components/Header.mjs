@@ -53,12 +53,12 @@ export default function Header() {
         >
           <Image
             priority
-            width={35}
-            height={35}
+            width={50}
+            height={50}
             alt="logo"
-            src="/images/logo-png.svg"
+            src="/images/osa-logo_3.svg"
           />
-          <span className="ml-4 text-3xl">{t("OSA")}</span>
+          <span className="ml-4 mt-2 text-3xl">{t("OSA")}</span>
         </button>
 
         {/* Navegación */}

@@ -9,8 +9,8 @@
 :root {
   --color-1: #0d2b3f;
   --color-2: #f0f0f0;
-  --color-3: #45ACA5;
-  --color-4: #FF7587;
+  --color-3: #439785;
+  --color-4: #AFD78A;
   --color-5: #c2c2c2;
 }
 
@@ -77,14 +77,9 @@
 }
 
 .hover\:bg-color-2:hover {
-  background: var(--color-3) !important;
-  color: var(--color-2) !important;
+  /* background: var(--color-3) !important; */
+  color: var(--color-3) !important;
 }
-
-/* .hover\:bg-color-3:hover {
-  background: var(--bg-color-3) !important;
-  color: var(--bg-color-2);
-}  */
 
 /* Bordes */
 .border-color-1 {
@@ -101,12 +96,13 @@
 }
 
 .salesforce-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/salesforce-fondo.jpg");
   background-size: 100% 150%;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  min-height: 100vh; */
+  background-color: var(--color-1);
 }
 
 /* Fuentes OSA */
@@ -165,6 +161,14 @@
 .font-mona-medium {
   font-family: "MonaSans-Medium", sans-serif;
   font-weight: 400;
+}
+
+.xsmall-font-size {
+  font-size: 14px;
+}
+
+.small-font-size {
+  font-size: 16px;
 }
 
 .standard-font-size {

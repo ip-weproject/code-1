@@ -10,7 +10,7 @@ function Form() {
     <section className="font-mona-semibold px-20 py-20 flex flex-col lg:flex-row items-center">
       {/* Texto a la derecha */}
       <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
-        <h1 className=" sm:text-5xl text-color-4 mb-4">
+        <h1 className="text-6xl text-color-3 mb-4">
           {t("form_lets_talk")}
         </h1>
         <p className="mb-4 leading-relaxed font-mona-regular regular-font-size text-color-1">

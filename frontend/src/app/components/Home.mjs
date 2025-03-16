@@ -12,7 +12,7 @@ function Start() {
         {/* Encabezado: Título e imagen */}
 
         <div className="w-full mt-5">
-          <h1 className="text-8xl md:text-5xl text-color-5 text-center">
+          <h1 className="text-7xl text-6xl text-color-5 text-center">
             {t("home_title")}
           </h1>
         </div>
