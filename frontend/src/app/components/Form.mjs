@@ -31,21 +31,20 @@ function Form() {
           <textarea
             name="message"
             className="focus:outline-none mb-4 py-3 px-3 rounded-lg resize-none"
-            // className="focus:outline-noneborder-gray-300 mb-4 py-2 px-3 rounded-lg md:bg-[url('/images/dot.svg')] bg-repeat bg-[size:6px_6px] placeholder:text-xl"
             rows="5"
             placeholder={t("form_message_placeholder")}
           ></textarea>
 
-          <div className="flex flex-col md:flex-row md:justify-between my-6 md:mb-4">
+          <div className="flex flex-col md:flex-row md:justify-between md:mb-4">
             <input
-              className="flex-grow bg-white focus:outline-none py-4 px-4 m-0 rounded-lg"
+              className="flex-grow bg-white focus:outline-none px-4 md:h-14 h-10 md:w-full my-2 md:ml-0 pl-4 rounded-lg"
               placeholder={t("form_name")}
               name="name"
               type="text"
               required
             />
             <input
-              className="flex-grow bg-white focus:outline-none md:w-full my-20 md:ml-5 pl-4 rounded-lg"
+              className="flex-grow bg-white focus:outline-none h-10 md:w-full md:h-14 md:my-2 md:ml-5 pl-4 rounded-lg"
               placeholder={t("form_company")}
               name="company"
               type="text"
@@ -53,9 +52,9 @@ function Form() {
             />
           </div>
 
-          <div className="flex flex-row justify-between h-14">
+          <div className="flex flex-row my-2 md:my-0 justify-between h-10 md:h-14">
             <input
-              className="flex-grow bg-white focus:outline-none px-4 m-0 rounded-lg"
+              className="flex-grow bg-white px-4 m-0 rounded-lg focus:outline-none"
               placeholder={t("form_email")}
               name="email"
               type="email"

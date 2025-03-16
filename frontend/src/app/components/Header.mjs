@@ -16,6 +16,24 @@ export default function Header() {
   const pathname = usePathname();
   const [targetSection, setTargetSection] = useState(null);
 
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      setIsVisible(false); // Oculta el header al hacer scroll hacia abajo
+    } else {
+      setIsVisible(true); // Muestra el header al hacer scroll hacia arriba
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY]);
+
+
   // Función para hacer scroll a una sección
   const scrollToSection = (id) => {
     if (pathname !== "/") {
@@ -37,8 +55,22 @@ export default function Header() {
   }, [pathname, targetSection]);
 
   return (
-    <section className="font-albert-bold text-color-1 fixed flex  justify-center top-0 left-0 w-full z-50">
-      <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-color-2 shadow-lg mt-4 rounded-lg">
+    <section className="font-albert-bold text-color-1 fixed flex h-32 bg-color-2 justify-center top-0 left-0 w-full z-50">
+              <button
+          onClick={() => scrollToSection("home")}
+          href="/"
+          className="flex"
+        >
+          <Image
+            priority
+            width={90}
+            height={90}
+            alt="logo"
+            src="/images/osa-logo_3.svg"
+          />
+          <span className="flex items-center ml-4 text-3xl">{t("OSA")}</span>
+        </button>
+      <div className="container flex w-6/12 px-6 mx-20 my-8 flex-col md:flex-row items-center justify-between bg-color-2 shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-2xl">
         {/* Logo
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -46,20 +78,7 @@ export default function Header() {
         >
           ☰
         </button> */}
-        <button
-          onClick={() => scrollToSection("home")}
-          href="/"
-          className="flex"
-        >
-          <Image
-            priority
-            width={50}
-            height={50}
-            alt="logo"
-            src="/images/osa-logo_3.svg"
-          />
-          <span className="ml-4 mt-2 text-3xl">{t("OSA")}</span>
-        </button>
+
 
         {/* Navegación */}
         <nav className={`md:flex ${isOpen ? "block" : "hidden"} flex-col md:flex-row items-center`}>

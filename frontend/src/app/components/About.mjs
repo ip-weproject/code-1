@@ -26,40 +26,40 @@ function About() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center px-10">
-            <Image
-              priority
-              width={125}
-              height={125}
-              alt="logo"
-              src="/images/cert-admin.png"
-              className="w-16 md:w-32 h-auto"
-            />
-            <Image
-              priority
-              width={125}
-              height={125}
-              alt="logo"
-              src="/images/cert-app-builder.png"
-              className="w-16 md:w-32 h-auto"
-            />
-             <Image
-              priority
-              width={125}
-              height={125}
-              alt="logo"
-              src="/images/cert-business-analyst.png"
-              className="w-16 md:w-32 h-auto"
-            />
-            <Image
-              priority
-              width={125}
-              height={125}
-              alt="logo"
-              src="/images/cert-ai-specialist.png"
-              className="w-16 md:w-32 h-auto"
-            />
-          </div>
+          <div className="grid grid-cols-2 gap-6 px-20 md:flex md:flex-row md:px-80 md:justify-center">
+          <Image
+            priority
+            width={100}
+            height={100}
+            alt="logo"
+            src="/images/cert-admin.png"
+            className="w-24 md:w-32 h-auto mx-auto"
+          />
+          <Image
+            priority
+            width={100}
+            height={100}
+            alt="logo"
+            src="/images/cert-app-builder.png"
+            className="w-24 md:w-32 h-auto mx-auto"
+          />
+          <Image
+            priority
+            width={100}
+            height={100}
+            alt="logo"
+            src="/images/cert-business-analyst.png"
+            className="w-24 md:w-32 h-auto mx-auto"
+          />
+          <Image
+            priority
+            width={100}
+            height={100}
+            alt="logo"
+            src="/images/cert-ai-specialist.png"
+            className="w-24 md:w-32 h-auto mx-auto"
+          />
+        </div>
         </div>
       </div>
     </section>
