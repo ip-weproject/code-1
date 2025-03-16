@@ -8,7 +8,7 @@ function Services() {
   return (
     <section className="font-albert-semibold text-color-1 mt-10">
       <div className="flex flex-row flex-wrap container mx-auto justify-center pt-16">
-        <p className="w-full text-6xl my-8 whitespace-pre-line text-color-3 text-center justify-center">
+        <p className="w-full text-4xl px-20 md:text-6xl my-8 whitespace-pre-line text-color-3 text-center justify-center">
           {t("services_header")}
         </p>
         <div className="text-center font-albert-regular regular-font-size px-10 mt-8 mb-8 leading-relaxed justify-center">

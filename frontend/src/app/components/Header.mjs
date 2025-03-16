@@ -39,13 +39,13 @@ export default function Header() {
   return (
     <section className="font-albert-bold text-color-1 fixed flex  justify-center top-0 left-0 w-full z-50">
       <div className="container flex py-4 px-6 flex-col md:flex-row items-center justify-between bg-color-2 shadow-lg mt-4 rounded-lg">
-        {/* Logo */}
+        {/* Logo
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden block text-color-1 focus:outline-none"
         >
           ☰
-        </button>
+        </button> */}
         <button
           onClick={() => scrollToSection("home")}
           href="/"
