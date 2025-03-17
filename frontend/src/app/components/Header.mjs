@@ -134,6 +134,21 @@ useEffect(() => {
 
         </div>
       </div>
+      <button
+          onClick={() => scrollToSection("home")}
+          href="/"
+          className="flex w-40 p-5"
+        >
+          <Image
+            priority
+            width={80}
+            height={80}
+            alt="logo"
+            src="/images/Partner-Logo.webp"
+            className="hidden"
+          />
+          {/* <span className="flex items-center ml-4 text-3xl">{t("OSA")}</span> */}
+        </button>
     </section>
   );
 }
