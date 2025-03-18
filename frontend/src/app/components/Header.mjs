@@ -63,8 +63,8 @@ useEffect(() => {
         >
           <Image
             priority
-            width={90}
-            height={90}
+            width={70}
+            height={70}
             alt="logo"
             src="/images/osa-logo_3.svg"
           />
@@ -81,6 +81,7 @@ useEffect(() => {
 
 
         {/* Navegación */}
+        {/* <nav className= "flex-col md:flex-row items-center"> */}
         <nav className={`md:flex ${isOpen ? "block" : "hidden"} flex-col md:flex-row items-center`}>
           <button
             onClick={() => scrollToSection("home")}

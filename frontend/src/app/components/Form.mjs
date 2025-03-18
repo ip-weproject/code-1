@@ -16,7 +16,7 @@ function Form() {
         <p className="mb-4 leading-relaxed font-albert-regular regular-font-size text-color-1">
           {t("about_us_form")}
         </p>
-        <div className="text-1xl md:mb-0 mb-8 md:regular-font-size text-color-1">{t("form_keep_in_touch")}</div>
+        <div className="font-albert-regular md:mb-0 mb-8 text-color-1">{t("form_keep_in_touch")}</div>
       </div>
 
       {/* Formulario a la izquierda */}

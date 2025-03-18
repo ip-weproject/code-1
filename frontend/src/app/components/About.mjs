@@ -18,7 +18,7 @@ function About() {
              <p className="text-center font-albert-semibold text-color-1 regular-font-size px-10 mt-8 mb-8 leading-relaxed justify-center">
               {t("about_description_2")}
             </p>
-            <p className="text-center font-mona-regular regular-font-size text-color-1 px-10 mt-8 mb-8 leading-relaxed justify-center">
+            <p className="text-center font-albert-regular regular-font-size text-color-1 px-10 mt-8 mb-8 leading-relaxed justify-center">
               {t("about_description_1")}
             </p>
             <p className="text-center font-mona-semibold text-color-1 medium-font-size px-10 mt-20 leading-relaxed justify-center">
