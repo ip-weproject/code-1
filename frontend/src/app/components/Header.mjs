@@ -70,7 +70,7 @@ useEffect(() => {
           />
           <span className="flex items-center ml-4 text-3xl">{t("OSA")}</span>
         </button>
-      <div className="container flex w-6/12 px-6 mx-20 my-8 flex-col md:flex-row items-center justify-between bg-color-2 shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-2xl">
+      <div className="container flex w-6/12 px-6 mx-20 my-8 max-w-fit flex-col md:flex-row items-center justify-between bg-color-2 shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-2xl">
         {/* Logo
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -129,7 +129,7 @@ useEffect(() => {
             }}
             className="flex items-center px-4 py-2 rounded-lg standard-font-size hover:bg-color-5 hover:border-solid"
           >
-            <GlobeAltIcon className="w-5 h-5 mr-1" />
+            <GlobeAltIcon className="w-5 h-5 mr-1 mb-1" />
             {language === "en" ? "ES" : "EN"}
           </button>
 

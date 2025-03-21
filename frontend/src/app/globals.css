@@ -143,6 +143,43 @@
   font-style: normal;
 }
 
+/* Gilroy */
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 .font-albert-bold {
   font-family: "AlbertSans-Bold", sans-serif;
   font-weight: 700;

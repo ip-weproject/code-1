@@ -60,7 +60,7 @@ export default function Footer() {
 
           {/* Logo derecha */}
         <div className="flex md:space-x-6 items-center">
-          <Link href="https://wa.me/5491124760567" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
             <Image
               width={30}
               height={30}
@@ -68,7 +68,7 @@ export default function Footer() {
               src="/images/linkedin.svg"
             />
           </Link>
-          <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://wa.me/5491124760567" target="_blank" rel="noopener noreferrer">
             <Image
               width={30}
               height={30}
