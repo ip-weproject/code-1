@@ -2,38 +2,48 @@
 // import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import "../globals.css";
+import Image from "next/image";
 
 function Start() {
   const { t } = useTranslation();
 
   return (
-    <div className="font-albert-bold w-full min-h-screen flex justify-center relative z-0 bg-[url('/images/portada1.jpg')] bg-cover bg-center bg-no-repeat after:content-[''] after:absolute after:inset-0 after:bg-black/60 after:z-[-1]">
+    <section className="bg-color-2 w-full h-full px-32 flex flex-row justify-center">
+    {/* <div className="font-albert-bold w-full min-h-screen flex justify-center relative z-0 bg-[url('/images/portada1.jpg')] bg-cover bg-center bg-no-repeat after:content-[''] after:absolute after:inset-0 after:bg-black/60 after:z-[-1]"> */}
 
-      <section className=" w-full max-w-6xl mx-auto flex flex-col mt-14 md:mt-16">
+      <div className="w-1/2 max-w-6xl mx-auto flex flex-col mt-14 md:mt-16">
         {/* Encabezado: Título e imagen */}
 
         <div className="w-full mt-10 md:mt-5">
-        <h1 className="text-4xl mt-20 md:mt-15 px-2 md:px-18 text-color-2 text-center md:text-7xl ">
+        <div className="font-gilroy-bold text-6xl text-color-1 mt-20 md:mt-15 md:px-18 text-start">
           {t("home_title")}
-        </h1>
+        </div>
 
         </div>
-        <div className="w-full flex justify-center mt-10 md:mt-8">
-          <h1 className="font-albert-semibold px-20 md:text-2xl text-color-2 text-center mt-2 md:mt-0">
+        <div className="w-full flex justify-center mt-4 md:mt-4">
+          <span className="font-gilroy-light text-color-1 md:text-2xl text-start mt-2 md:mt-0">
             {t("home_text_1")}
-          </h1>
+          </span>
         </div>
         {/* Botón de consulta */}
-        <div className="w-full flex flex-col items-center text-center md:mt-10 mt-2 lg:mt-2">
-          <a
-            className=" mt-10 px-6 py-4 rounded-xl hover:cursor-pointer text-lg standard-font-size text-color-2 bg-color-3 hover:bg-color-1 transition-all duration-300"
-            onClick={() => window.open("https://calendly.com/ip-weproject")}
-          >
+        <div className="flex flex-col items-start w-auto text-start md:mt-10 mt-2 mb-12 lg:mt-2">
+          <a className="mt-10 px-6 py-4 rounded-full hover:cursor-pointer text-lg font-gilroy-regular text-color-2 bg-color-4 hover:bg-color-3 transition-all duration-300"
+            onClick={() => window.open("https://calendly.com/ip-weproject")}>
             {t("book_consultation")}
           </a>
         </div>
-      </section>
-    </div>
+      </div>
+      <div className="w-1/2 mt-16 flex align-middle justify-end">
+                <Image
+                priority
+                width={440}
+                height={440}
+                className="flex"
+                alt="logo"
+                src="/images/green-box-3.svg"
+                />
+      </div>
+    </section>
   );
 }
 

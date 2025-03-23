@@ -7,20 +7,20 @@ function Form() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-albert-semibold px-20 py-20 flex flex-col lg:flex-row items-center">
+    <section className="font-gilroy-semibold px-20 py-40 flex flex-col lg:flex-row items-center bg-color-2">
       {/* Texto a la derecha */}
-      <div className="lg:w-1/2 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
-        <h1 className="text-4xl md:text-6xl text-color-3 mb-4">
+      <div className="lg:w-2/3 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
+        <h1 className="font-gilroy-bold text-4xl md:text-6xl text-color-1 mb-4">
           {t("form_lets_talk")}
         </h1>
-        <p className="mb-4 leading-relaxed font-albert-regular regular-font-size text-color-1">
+        <p className="mb-4 leading-relaxed font-gilroy-light text-color-1 md:text-2xl text-start">
           {t("about_us_form")}
         </p>
-        <div className="font-albert-bold md:mb-0 mb-8 text-color-1">{t("form_keep_in_touch")}</div>
+        <div className="font-gilroy-bold md:mb-0 mb-8 text-color-1">{t("form_keep_in_touch")}</div>
       </div>
 
       {/* Formulario a la izquierda */}
-      <div className="md::w-1/2 md:w-full md:flex md:justify-center">
+      <div className="md::w-1/1 md:w-full md:flex md:justify-center">
         <form
           name="contact"
           method="POST"
@@ -62,7 +62,7 @@ function Form() {
             />
             <button
               type="submit"
-              className="flex items-center justify-center text-p-blue font-semibold ml-5 px-3 focus:outline-none text-color-2 text-lg rounded-lg bg-color-3 hover:bg-color-1 transition-all duration-300 standard-font-size ease-in-out"
+              className="flex items-center justify-center text-p-blue font-semibold ml-5 px-3 focus:outline-none text-color-2 text-lg rounded-lg bg-color-4 hover:bg-color-3 transition-all duration-300 standard-font-size ease-in-out"
             >
               {t("form_send_message")}
             </button>

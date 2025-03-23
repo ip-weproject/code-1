@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LanguageProvider>
           <div className="main-container">
             <Header />
-            <main className="content">{children}</main>
+            <main className="">{children}</main>
             <Footer />
           </div>
         </LanguageProvider>

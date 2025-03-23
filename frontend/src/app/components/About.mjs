@@ -6,19 +6,16 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-albert-semibold about-section py-12">
-      <div className="container mx-auto py-12">
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
-          <div className="p-6">
-            <p className="font-bold text-4xl md:text-6xl mx-10 md:my-8 whitespace-pre-line text-color-3 text-center">
-            {t("about_header")}
-       
-            </p>
+    <section className="w-full py-24 bg-color-2">
+      <div className="w-full bg-color-2">
+          <div className="mx-20 py-10">
+            <p className="font-gilroy-bold text-4xl md:text-6xl mx-10 md:my-8 text-color-1 text-start">
+            {t("about_header")}</p>
            
-             <p className="text-center font-albert-semibold text-color-1 regular-font-size px-10 mt-8 mb-8 leading-relaxed justify-center">
+            <p className="font-gilroy-light text-color-1 md:text-2xl px-10 justify-center mt-8">
               {t("about_description_2")}
             </p>
-            <p className="text-center font-albert-regular regular-font-size text-color-1 px-10 mt-8 mb-8 leading-relaxed justify-center">
+            <p className="font-gilroy-light text-color-1 md:text-2xl px-10 justify-center">
               {t("about_description_1")}
             </p>
             <p className="text-center font-mona-semibold text-color-1 medium-font-size px-10 mt-20 leading-relaxed justify-center">
@@ -61,7 +58,6 @@ function About() {
           />
         </div>
         </div>
-      </div>
     </section>
   );
 }

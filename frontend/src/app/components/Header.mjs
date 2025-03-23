@@ -55,7 +55,7 @@ useEffect(() => {
   }, [pathname, targetSection]);
 
   return (
-    <section className="font-albert-bold text-color-1 fixed flex h-32 bg-color-2 justify-center top-0 left-0 w-full z-50">
+    <section className="font-albert-bold text-color-1 fixed flex justify-between h-28 py-4 bg-color-2  top-0 w-full z-50">
               <button
           onClick={() => scrollToSection("home")}
           href="/"
@@ -63,48 +63,44 @@ useEffect(() => {
         >
           <Image
             priority
-            width={70}
+            width={260}
             height={70}
             alt="logo"
-            src="/images/osa-logo_3.svg"
-          />
-          <span className="flex items-center ml-4 text-3xl">{t("OSA")}</span>
+            src="/images/logo-text-2.svg"
+            className="pl-32"          />
+          {/* <span className="flex font-gilroy-bold items-center ml-4 text-5xl">{t("OSA")}</span> */}
         </button>
-      <div className="container flex w-6/12 px-6 mx-20 my-8 max-w-fit flex-col md:flex-row items-center justify-between bg-color-2 shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-2xl">
+      <div className="flex w-6/12 px-6 mx-24 py-0 flex-col md:flex-row items-center justify-between bg-color-2 rounded-2xl">
+      {/* <div className="flex w-6/12 px-6 mx-24 py-0 flex-col md:flex-row items-center justify-between bg-color-2 shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-2xl"> */}
         {/* Logo
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden block text-color-1 focus:outline-none"
-        >
-          ☰
-        </button> */}
-
+        <button onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden block text-color-1 focus:outline-none">
+          ☰ </button> */}
 
         {/* Navegación */}
         {/* <nav className= "flex-col md:flex-row items-center"> */}
         <nav className={`md:flex ${isOpen ? "block" : "hidden"} flex-col md:flex-row items-center`}>
           <button
             onClick={() => scrollToSection("home")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
-          >
+            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0">
             {t("home_page")}
           </button>
 
           <button
             onClick={() => scrollToSection("products")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
+            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0"
           >
             {t("header_products")}
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
+            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0"
           >
             {t("header_about")}
           </button>
           <button
             onClick={() => scrollToSection("sales")}
-            className="text-lg px-4 py-2 rounded-lg border border-transparent hover:bg-color-2 hover:rounded-lg standard-font-size"
+            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0"
           >
             {t("Salesforce")}
           </button>
@@ -115,7 +111,7 @@ useEffect(() => {
           <button
             onClick={() => scrollToSection("contact")}
             // onClick={handleClick}
-            className="flex items-center px-4 py-2 text-color-2 text-lg rounded-lg bg-color-3 hover:bg-color-1 transition-all duration-300 standard-font-size"
+            className="flex items-center px-4 py-2 text-color-2 text-lg rounded-full bg-color-4 hover:bg-color-3 transition-all duration-300 font-gilroy-regular"
           >
             {t("header_contact")}
           </button>
@@ -127,29 +123,28 @@ useEffect(() => {
               const newLanguage = language === "en" ? "es" : "en";
               changeLanguage(newLanguage); // Cambiar idioma
             }}
-            className="flex items-center px-4 py-2 rounded-lg standard-font-size hover:bg-color-5 hover:border-solid"
+            className="flex items-center px-4 py-2 rounded-lg standard-font-size hover:bg-color-5 hover:border-solid font-gilroy-regular"
           >
-            <GlobeAltIcon className="w-5 h-5 mr-1 mb-1" />
+            <GlobeAltIcon className="w-5 h-5 mr-1 mb-0.5" />
             {language === "en" ? "ES" : "EN"}
           </button>
 
         </div>
       </div>
-      <button
+      {/* <button
           onClick={() => scrollToSection("home")}
           href="/"
-          className="flex w-40 p-5"
-        >
+          className="flex w-40 p-5">
           <Image
             priority
-            width={80}
+            width={50}
             height={80}
             alt="logo"
             src="/images/Partner-Logo.webp"
             className="hidden"
           />
-          {/* <span className="flex items-center ml-4 text-3xl">{t("OSA")}</span> */}
-        </button>
+          <span className="flex items-center ml-4 text-3xl">{t("OSA")}</span>
+        </button> */}
     </section>
   );
 }

@@ -7,11 +7,12 @@
 /* Colores marca OSA*/
 /* Definir variables de colores */
 :root {
-  --color-1: #0d2b3f;
-  --color-2: #f0f0f0;
-  --color-3: #f9ba5a;
+  --color-1: #000;
+  --color-2: #f7f1ec;
+  --color-3: #0d9dda;
   --color-4: #AFD78A;
-  --color-5: #c2c2c2;
+  --color-5: #39868d;
+  --gradient-color-1: linear-gradient(45deg, #def8c3, #e1fcfe);
 }
 
 /* Aplicar las variables a las clases de texto */
@@ -54,6 +55,12 @@
 
 .bg-color-5 {
   background-color: var(--color-5) !important;
+}
+
+/* background gradients */
+.bg-gradient-1 {
+  background-color: var(--gradient-color-1) !important;
+  background: var(--gradient-color-1) !important;
 }
 
 /* Efectos hover */
@@ -180,6 +187,27 @@
   font-style: normal;
 }
 
+.font-gilroy-bold {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.font-gilroy-heavy {
+  font-family: "Gilroy-Heavy", sans-serif;
+}
+
+.font-gilroy-light {
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.font-gilroy-medium {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.font-gilroy-regular {
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+ /* Albert */
 .font-albert-bold {
   font-family: "AlbertSans-Bold", sans-serif;
   font-weight: 700;
@@ -221,55 +249,19 @@
   font-size: 26px;
 }
 
+.large-font-size {
+  font-size: 32px;
+}
+
+.big-font-size {
+  font-size: 56px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.card-container {
-  perspective: 1000px;
-  width: 350px;
-  height: 300px;
-  margin: 20px;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.card-container:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.card-front {
-  background: white;
-}
-
-.card-back {
-  background: var(color-);
-  color: white;
-  transform: rotateY(180deg);
-}
-
 
 html,
 body {

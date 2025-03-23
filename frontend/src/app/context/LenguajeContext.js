@@ -29,8 +29,7 @@ if (!i18n.isInitialized) {
           back_to_plans: "Back to Plans",
           book_consultation: "Free consultation",
           certifications: "Our Team Certifications",
-          discover_salesforce:
-            "Unlock the power of the most popular CRM in the world.",
+          discover_salesforce: "Unlock the full potential of the world's most popular CRM. Streamline your sales, enhance customer relationships, and drive business growth with powerful automation and analytics.",
             footer_1: "All rights reserved",
           form_company: "Company Name",
           form_email: "Email",
@@ -92,7 +91,7 @@ if (!i18n.isInitialized) {
             "Choose your tailored plan and unlock your organization’s full potential.",
           services_choose_plan: "Choose your plan",
           services_header:
-            "Trust OSA as your strategic partner for Salesforce implementation and consulting.",
+            "Trust OSA as your strategic partner for Salesforce implementation and consulting",
           sign_up: "Sign Up",
           sitemap: "SITEMAP",
           toogle_lenguage_en: "English",
@@ -118,7 +117,7 @@ if (!i18n.isInitialized) {
           back_to_plans: "Volver a los Planes",
           book_consultation: "Consulta gratuita",
           certifications: "Certificaciones de nuestro equipo",
-          discover_salesforce: "Descubre el potencial del CRM más famoso.",
+          discover_salesforce: "Descubre todo el potencial del CRM más popular del mundo. Optimiza tus ventas, mejora la relación con tus clientes y acelera el crecimiento de tu negocio con potentes herramientas de automatización y análisis.",
           footer_1: "Todos los derechos reservados",
           form_company: "Compañia",
           form_email: "Correo eléctronico",

@@ -8,20 +8,58 @@ export default function Footer() {
 
   return (
     <footer className="px-5 md:px-40 flex flex-col md:flex-row justify-center font-albert-semibold text-color-2 bg-color-1">
-      <div className="flex md:flex-row items-center h-48 justify-between w-full">
+      <div className="flex md:flex-row items-center h-40 justify-between w-full">
         <div className="flex justify-start">
           <Link href="#home" className="flex items-center content-center text-center">
-            <div className="m-2 w-20 h-20 flex items-center">
+            <div className="w-40 h-20 flex items-center">
               <Image
-                width={30}
-                height={30}
-                className="object-fill h-auto w-auto"
+                width={180}
+                height={180}
+                className=""
                 alt="logo"
-                src="/images/logo-w-b_1.svg"
+                src="/images/logo-text-w.svg"
               />
             </div>
           </Link>
-          <div className="small-font-size md:text-left text-center flex flex-col mt-2 md:ml-10">
+
+          {/* Logo de Salesforce */}
+          <div className="flex items-center">
+          <Link href="https://www.salesforce.com" target="_blank" rel="noopener noreferrer">
+          <Image
+            priority
+            width={80}
+            height={80}
+            alt="Salesforce"
+            src="/images/salesforce-with-type-logo.svg"
+            className="ml-14 mr-5"/>
+          </Link>
+          </div>
+
+        </div>
+
+
+          {/* Logo derecha */}
+        <div className="flex md:space-x-6 items-center">
+        <div className="flex flex-row items-center">
+          <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Image
+              width={30}
+              height={30}
+              alt="LinkedIn"
+              src="/images/linkedin.svg"
+            />
+          </Link>
+          <Link href="https://wa.me/5491124760567" target="_blank" rel="noopener noreferrer">
+            <Image
+              width={30}
+              height={30}
+              alt="LinkedIn"
+              src="/images/wassap.svg"
+              className="mx-4"
+            />
+          </Link>
+          </div>
+        <div className="small-font-size md:text-left text-center flex flex-col mt-2 md:ml-10">
             <Link href="#form" className="flex flex-row my-1 whitespace-pre-line">
             <Image
               width={17}
@@ -55,38 +93,9 @@ export default function Footer() {
               <span className="flex">2025 © {t("footer_1")}</span>
             </Link>
           </div>
-        </div>
 
 
-          {/* Logo derecha */}
-        <div className="flex md:space-x-6 items-center">
-          <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              width={30}
-              height={30}
-              alt="LinkedIn"
-              src="/images/linkedin.svg"
-            />
-          </Link>
-          <Link href="https://wa.me/5491124760567" target="_blank" rel="noopener noreferrer">
-            <Image
-              width={30}
-              height={30}
-              alt="LinkedIn"
-              src="/images/wassap.svg"
-            />
-          </Link>
 
-          {/* Logo de Salesforce */}
-          <Link href="https://www.salesforce.com" target="_blank" rel="noopener noreferrer">
-          <Image
-            priority
-            width={100}
-            height={100}
-            alt="Salesforce"
-            src="/images/salesforce-with-type-logo.svg"
-          />
-          </Link>
         </div>
       </div>
     </footer>

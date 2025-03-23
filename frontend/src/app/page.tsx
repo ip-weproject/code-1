@@ -21,31 +21,31 @@ export default function Home() {
       <main>
         <section
           id="home"
-          className="min-h-screen flex items-center justify-center">
+          className="flex items-center justify-center">
           <Start />
         </section>
 
         <section
           id="products"
-          className="min-h-screen flex items-center justify-center">
+          className="flex items-center justify-center">
           <Services />
         </section>
 
         <section
           id="about"
-          className="min-h-screen flex items-center justify-center">
+          className="flex items-center justify-center">
           <About />
         </section>
 
         <section
           id="sales"
-          className="min-h-screen flex items-center justify-center salesforce-background">
+          className="flex items-center justify-center">
           <Salesforce />
         </section>
 
         <section
           id="contact"
-          className="min-h-screen flex items-center justify-center">
+          className="flex items-center justify-center">
           <Form />
         </section>
       </main>
