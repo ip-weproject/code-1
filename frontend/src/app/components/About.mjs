@@ -6,9 +6,9 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full py-24 bg-color-2">
+    <section className="w-full py-24 px-40 bg-color-2">
       <div className="w-full bg-color-2">
-          <div className="mx-20 py-10">
+          <div className="py-10">
             <p className="font-gilroy-bold text-4xl md:text-6xl mx-10 md:my-8 text-color-1 text-start">
             {t("about_header")}</p>
            
@@ -18,12 +18,15 @@ function About() {
             <p className="font-gilroy-light text-color-1 md:text-2xl px-10 justify-center">
               {t("about_description_1")}
             </p>
-            <p className="text-center font-mona-semibold text-color-1 medium-font-size px-10 mt-20 leading-relaxed justify-center">
-              {t("certifications")}
-            </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 px-20 md:flex md:flex-row md:px-80 md:justify-center">
+          <div className="w-full h-full rounded-3xl bg-gradient-1 border shadow-[15px_15px_0px_0px_black] flex flex-col justify-between">
+          <div className="bg-white h-20 rounded-t-3xl">
+            <p className="text-center font-gilroy-bold text-color-1 medium-font-size pt-5 px-10 leading-relaxed justify-center">
+              {t("certifications")}
+            </p>
+        </div>
+          <div className="grid grid-cols-2 gap-6 px-10 md:flex md:flex-row py-16 md:px-30 md:justify-center">
           <Image
             priority
             width={100}
@@ -56,6 +59,7 @@ function About() {
             src="/images/cert-ai-specialist.png"
             className="w-24 md:w-32 h-auto mx-auto"
           />
+        </div>
         </div>
         </div>
     </section>

@@ -27,20 +27,22 @@ function Start() {
         </div>
         {/* Botón de consulta */}
         <div className="flex flex-col items-start w-auto text-start md:mt-10 mt-2 mb-12 lg:mt-2">
-          <a className="mt-10 px-6 py-4 rounded-full hover:cursor-pointer text-lg font-gilroy-regular text-color-2 bg-color-4 hover:bg-color-3 transition-all duration-300"
-            onClick={() => window.open("https://calendly.com/ip-weproject")}>
-            {t("book_consultation")}
-          </a>
+        <a className="consultation-btn mt-10 px-6 py-4 rounded-full text-lg font-gilroy-regular text-color-1 hover:consultation-btn transition-all duration-300"
+        onClick={() => window.open("https://calendly.com/ip-weproject")}>
+        {t("book_consultation")}
+      </a>
+
+
         </div>
       </div>
-      <div className="w-1/2 mt-16 flex align-middle justify-end">
+      <div className="w-1/2 mt-6 flex align-middle justify-end">
                 <Image
                 priority
-                width={440}
-                height={440}
+                width={500}
+                height={500}
                 className="flex"
                 alt="logo"
-                src="/images/green-box-3.svg"
+                src="/images/green-box-home.svg"
                 />
       </div>
     </section>

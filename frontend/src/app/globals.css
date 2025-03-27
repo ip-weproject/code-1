@@ -12,7 +12,7 @@
   --color-3: #0d9dda;
   --color-4: #AFD78A;
   --color-5: #39868d;
-  --gradient-color-1: linear-gradient(45deg, #def8c3, #e1fcfe);
+  --gradient-color-1: linear-gradient(45deg, #c7ffca, #b6fffd);
 }
 
 /* Aplicar las variables a las clases de texto */
@@ -57,11 +57,31 @@
   background-color: var(--color-5) !important;
 }
 
-/* background gradients */
-.bg-gradient-1 {
-  background-color: var(--gradient-color-1) !important;
-  background: var(--gradient-color-1) !important;
+/* Estilo para el botón de consulta */
+.consultation-btn {
+  background: var(--gradient-color-1); /* Fondo inicial con gradiente */
+  transition: all 0.3s ease; /* Transición suave */
 }
+
+.consultation-btn:hover {
+  background: var(--color-3); /* Cambiar el fondo a azul en hover */
+  color: #fff !important; /* Cambiar el color del texto a blanco */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Puede agregar una sombra en el hover si lo deseas */
+  cursor: pointer; /* Cursor de puntero por defecto */
+}
+/* Estilo para el botón de consulta */
+.header-btn {
+  background: transparent; /* Fondo inicial con gradiente */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.header-btn:hover {
+  background: var(--color-3); /* Cambiar el fondo a azul en hover */
+  color: #fff !important; /* Cambiar el color del texto a blanco */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Puede agregar una sombra en el hover si lo deseas */
+  cursor: pointer; /* Cursor de puntero por defecto */
+}
+
 
 /* Efectos hover */
 .hover\:bg-color-1:hover {
@@ -72,12 +92,17 @@
 }
 .hover\:bg-color-3:hover {
   background: var(--color-3) !important;
+  color: #fff;
+  box-shadow: #000;
 }
 .hover\:bg-color-4:hover {
   background: var(--color-4) !important;
 }
 .hover\:bg-color-5:hover {
   background: var(--color-5) !important;
+}
+.hover\:bg-color-1:hover {
+  background: var(--color-1) !important;
 }
 .hover\:bg-color-1:hover {
   background: var(--color-1) !important;
@@ -93,14 +118,23 @@
   border-color: var(--color-1) !important;
 }
 
-.home-background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/images/portada1.jpg");
-  background-size: 100% 150%;
+.bg-1 {
+  /* position: fixed; Fija la imagen en la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  height: 100%; /* Asegura que ocupe toda la altura */
+  background-image: url("/images/bg-l-1.svg");
+  background-size: 50% 50%;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  z-index: -1; /* Asegura que quede por debajo de todo */
 }
+
+.bg-gradient-1 {
+  background: var(--gradient-color-1);
+}
+
 
 .salesforce-background {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),

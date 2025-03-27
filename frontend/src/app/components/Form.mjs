@@ -62,7 +62,7 @@ function Form() {
             />
             <button
               type="submit"
-              className="flex items-center justify-center text-p-blue font-semibold ml-5 px-3 focus:outline-none text-color-2 text-lg rounded-lg bg-color-4 hover:bg-color-3 transition-all duration-300 standard-font-size ease-in-out"
+              className="flex items-center justify-center text-p-blue font-gilroy-regular ml-5 px-3 focus:outline-none text-color-1 text-lg rounded-lg consultation-btn hover:consultation-btn transition-all duration-300 standard-font-size ease-in-out"
             >
               {t("form_send_message")}
             </button>

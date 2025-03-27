@@ -56,11 +56,10 @@ useEffect(() => {
 
   return (
     <section className="font-albert-bold text-color-1 fixed flex justify-between h-28 py-4 bg-color-2  top-0 w-full z-50">
-              <button
+        <button
           onClick={() => scrollToSection("home")}
           href="/"
-          className="flex"
-        >
+          className="flex">
           <Image
             priority
             width={260}
@@ -68,7 +67,6 @@ useEffect(() => {
             alt="logo"
             src="/images/logo-text-2.svg"
             className="pl-32"          />
-          {/* <span className="flex font-gilroy-bold items-center ml-4 text-5xl">{t("OSA")}</span> */}
         </button>
       <div className="flex w-6/12 px-6 mx-24 py-0 flex-col md:flex-row items-center justify-between bg-color-2 rounded-2xl">
       {/* <div className="flex w-6/12 px-6 mx-24 py-0 flex-col md:flex-row items-center justify-between bg-color-2 shadow-[0_0_20px_rgba(0,0,0,0.3)] rounded-2xl"> */}
@@ -82,25 +80,25 @@ useEffect(() => {
         <nav className={`md:flex ${isOpen ? "block" : "hidden"} flex-col md:flex-row items-center`}>
           <button
             onClick={() => scrollToSection("home")}
-            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0">
+            className="ml-2 px-4 py-2 border-2 border-transparent rounded-full hover:border-black font-gilroy-regular standard-font-size outline-none p-0 m-0">
             {t("home_page")}
           </button>
 
           <button
             onClick={() => scrollToSection("products")}
-            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0"
+            className="ml-2 px-4 py-2 border-2 border-transparent rounded-full hover:border-black font-gilroy-regular standard-font-size bg-transparent"
           >
             {t("header_products")}
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0"
+            className="ml-2 px-4 py-2 border-2 border-transparent rounded-full hover:border-black font-gilroy-regular standard-font-size bg-transparent min-w-[120px]"
           >
             {t("header_about")}
           </button>
           <button
             onClick={() => scrollToSection("sales")}
-            className="px-4 py-2 hover:rounded-lg font-gilroy-regular standard-font-size bg-transparent border-none outline-none p-0 m-0"
+            className="ml-2 px-4 py-2 border-2 border-transparent rounded-full hover:border-black font-gilroy-regular standard-font-size bg-transparent"
           >
             {t("Salesforce")}
           </button>
@@ -111,7 +109,7 @@ useEffect(() => {
           <button
             onClick={() => scrollToSection("contact")}
             // onClick={handleClick}
-            className="flex items-center px-4 py-2 text-color-2 text-lg rounded-full bg-color-4 hover:bg-color-3 transition-all duration-300 font-gilroy-regular"
+            className="flex items-center ml-2 px-4 py-2 text-color-1 text-lg rounded-full consultation-btn hover:consultation-btn transition-all duration-300 font-gilroy-regular"
           >
             {t("header_contact")}
           </button>
@@ -121,13 +119,17 @@ useEffect(() => {
           <button
             onClick={() => {
               const newLanguage = language === "en" ? "es" : "en";
-              changeLanguage(newLanguage); // Cambiar idioma
+              changeLanguage(newLanguage);
             }}
-            className="flex items-center px-4 py-2 rounded-lg standard-font-size hover:bg-color-5 hover:border-solid font-gilroy-regular"
+            className="flex items-center px-4 py-2 rounded-full standard-font-size font-gilroy-regular border-2 border-transparent hover:border-black transition-all duration-300"
           >
             <GlobeAltIcon className="w-5 h-5 mr-1 mb-0.5" />
             {language === "en" ? "ES" : "EN"}
           </button>
+
+
+
+
 
         </div>
       </div>
