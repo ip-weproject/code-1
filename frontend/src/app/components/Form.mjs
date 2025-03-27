@@ -7,7 +7,7 @@ function Form() {
   const { t } = useTranslation();
 
   return (
-    <section className="font-gilroy-semibold px-20 py-40 flex flex-col lg:flex-row items-center bg-color-2">
+    <section className="font-gilroy-semibold md:px-20 px-96 md:mx-0 mx-10 md:pb-0 pb-10 md:py-40 py-0 flex flex-col lg:flex-row items-center bg-color-2">
       {/* Texto a la derecha */}
       <div className="lg:w-2/3 w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:px-10 mt-6 lg:mt-0">
         <h1 className="font-gilroy-bold text-4xl md:text-6xl text-color-1 mb-4">

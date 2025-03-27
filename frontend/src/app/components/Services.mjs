@@ -7,24 +7,24 @@ function Services() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full font-gilroy-bold text-color-1 bg-color-2 pt-16 px-5">
+    <section className="w-full font-gilroy-bold text-color-1 bg-color-2 pt-0 md:pt-16 md:px-5">
       <div className="flex flex-row flex-wrap justify-center bg-color-2 py-16">
 
-        <p className="w-full text-4xl px-20 md:text-6xl my-8 whitespace-pre-line text-color-1 text-end justify-center">
+        <p className="w-full mx-10 md:mx-0 px-96 md:px-20 text-3xl md:text-6xl my-8 whitespace-pre-line text-color-1 text-end justify-center">
           {t("services_header")}
         </p>
-        <p className="font-gilroy-light text-color-1 md:text-2xl px-20 pb-16 leading-relaxed text-end justify-center">
+        <p className="font-gilroy-light text-color-1 mx-10 md:mx-0 md:text-2xl px-96 md:px-20 pb-16 leading-relaxed text-end justify-center">
           {t("services_1")}
         </p>
-        <p className="w-full font-gilroy-semibold large-font-size px-20 pb-4 leading-relaxed text-center justify-center">
+        <p className="w-full font-gilroy-semibold text-1xl md:text-6xl px-96 md:px-20 pb-4 text-center justify-center">
           {t("services_2")}
         </p>
         
         {/* Contenedor flex con altura completa y alineado al centro */}
-        <div className="w-full flex items-center justify-center">
-          <section className="w-full flex flex-row justify-center items-stretch gap-10 px-10">
+        <div className="w-full flex items-center justify-center px-96 md:px-0">
+          <section className="w-full flex md:flex-row flex-col justify-center items-stretch gap-10 px-10">
             {["plan_1", "plan_2", "plan_3"].map((plan, index) => (
-              <div key={index} className="w-1/3 flex">
+              <div key={index} className="w-full md:w-1/3 flex">
                 <div className="w-full h-full rounded-3xl bg-gradient-1 border shadow-[15px_15px_0px_0px_black] flex flex-col justify-between">
 
                   {/* Contenedor flex para dividir en dos secciones (superior e inferior) */}

@@ -10,9 +10,11 @@
   --color-1: #000;
   --color-2: #f7f1ec;
   --color-3: #0d9dda;
-  --color-4: #AFD78A;
+  --color-4: #b86bff;
+  /* --color-4: #AFD78A; */
   --color-5: #39868d;
-  --gradient-color-1: linear-gradient(45deg, #c7ffca, #b6fffd);
+  --gradient-color-1: linear-gradient(45deg, #ffddc7, #b6d0ff);
+  /* --gradient-color-1: linear-gradient(45deg, #c7ffca, #b6fffd); */
 }
 
 /* Aplicar las variables a las clases de texto */

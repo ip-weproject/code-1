@@ -55,7 +55,7 @@ useEffect(() => {
   }, [pathname, targetSection]);
 
   return (
-    <section className="font-albert-bold text-color-1 fixed flex justify-between h-28 py-4 bg-color-2  top-0 w-full z-50">
+    <section className="font-albert-bold text-color-1 fixed flex justify-between h-20 md:h-28 py-4 bg-color-2  top-0 w-full z-50">
         <button
           onClick={() => scrollToSection("home")}
           href="/"

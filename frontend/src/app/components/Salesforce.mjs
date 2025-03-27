@@ -9,8 +9,8 @@ function Salesforce() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full h-full px-36 py-40 bg-color-2">
-      <div className="flex flex-row justify-center bg-color-2">
+    <section className="w-full h-full mx-10 md:mx-0 px-96 md:px-36 md:py-40 py-0 bg-color-2">
+      <div className="flex md:flex-row flex-col-reverse justify-center bg-color-2">
         <div className="flex items-start">
         <Image
               priority
@@ -21,7 +21,7 @@ function Salesforce() {
               src="/images/green-box-2.svg"
             />
         </div>
-        <div className="flex flex-col items-end w-1/2">
+        <div className="flex flex-col items-end w-full md:w-1/2">
           <div className="w-full font-gilroy-bold text-4xl md:text-6xl my-4 text-color-1 text-end">
             {t("new_salesforce")}
           </div>
