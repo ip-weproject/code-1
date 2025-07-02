@@ -6,8 +6,8 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full md:py-24 py-0 md:px-40 px-96 bg-color-2">
-      <div className="w-full bg-color-2 md:px-0 px-10">
+    <section className="w-full mt-16 pt-20 md:mt-0 md:py-34 py-0 md:px-40 px-96 bg-color-2 pb-10 md:pb-0">
+      <div className="w-full md:px-0 px-10">
           <div className="py-10">
             <p className="font-gilroy-bold text-3xl md:text-6xl md:my-8 text-color-1 text-start">
             {t("about_header")}</p>
@@ -20,9 +20,9 @@ function About() {
             </p>
           </div>
 
-          <div className="w-full h-full rounded-3xl bg-gradient-1 border shadow-[15px_15px_0px_0px_black] mb-10 md:mb-0 flex flex-col justify-between">
+          <div className="w-full h-full rounded-3xl bg-gradient-1 border shadow-[15px_15px_0px_0px_black] mb-10 md:mb-20 flex flex-col justify-between">
           <div className="bg-white h-16 md:h-20 rounded-t-3xl">
-            <p className="text-center font-gilroy-bold text-color-1 small-font-size md:medium-font-size pt-5 px-10 leading-relaxed justify-center">
+            <p className="text-center font-gilroy-bold text-color-1 large-font-size md:small-font-size pt-5 px-10 leading-relaxed justify-center">
               {t("certifications")}
             </p>
         </div>

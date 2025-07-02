@@ -10,7 +10,7 @@ import Services from "./components/Services.mjs";
 import About from "./components/About.mjs";
 import Form from "./components/Form.mjs";
 import Start from "./components/Home.mjs";
-import Salesforce from "./components/Salesforce.mjs";
+import Crm from "./components/Crm.mjs";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -33,14 +33,14 @@ export default function Home() {
 
         <section
           id="about"
-          className="flex items-center justify-center">
+          className="flex items-center justify-center bg-color-2">
           <About />
         </section>
 
         <section
           id="sales"
-          className="flex items-center justify-center">
-          <Salesforce />
+          className="flex items-center justify-center bg-color-2">
+          <Crm/>
         </section>
 
         <section

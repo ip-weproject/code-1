@@ -3,6 +3,7 @@
 import { useTranslation } from "react-i18next";
 import "../globals.css";
 import Image from "next/image";
+import parse from "html-react-parser";
 
 function Start() {
   const { t } = useTranslation();
@@ -16,7 +17,15 @@ function Start() {
 
         <div className="w-full mt-0 md:mt-5">
         <div className="font-gilroy-bold text-4xl md:text-6xl text-color-1 mt-20 md:mt-15 px-24 md:px-0 text-start">
-          {t("home_title")}
+        {parse(t("home_title", { interpolation: { escapeValue: false } }), {
+  replace: domNode => {
+    if (domNode.name === "highlight") {
+      return <span className="special-highlight">{domNode.children[0].data}</span>;
+    }
+  }
+})
+
+            }
         </div>
 
         </div>

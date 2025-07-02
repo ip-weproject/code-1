@@ -8,7 +8,7 @@
 /* Definir variables de colores */
 :root {
   --color-1: #000;
-  --color-2: #f7f1ec;
+  /* --color-2: #f7f1ec; */
   --color-3: #0d9dda;
   --color-4: #b86bff;
   /* --color-4: #AFD78A; */
@@ -57,6 +57,10 @@
 
 .bg-color-5 {
   background-color: var(--color-5) !important;
+}
+
+.bg-header {
+  background-image: linear-gradient(-15deg, #b6d0ff 0%, #fff 30%, #fff 70%, #ffddc7 100%);
 }
 
 /* Estilo para el botón de consulta */
@@ -299,6 +303,16 @@
   box-sizing: border-box;
 }
 
+.special-highlight {
+  /* background-image: url('/images/underline1.svg'); */
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.8em;
+  color: var(--color-1);
+  font-weight: bold;
+  padding-bottom: 26px;
+}
+
 html,
 body {
   margin: 0;
@@ -309,7 +323,10 @@ body {
 }
 
 body {
-  background: #ececec;
+  /* background: #ececec; */
+  /* background-image: url('/images/background.png'); */
+  /* background-image: linear-gradient(15deg, #fff 30%, #ffddc7 50%, #b6d0ff 70%); */
+  background-image: linear-gradient(15deg, #b6d0ff 30%, #ffddc7 50%, #fff 70%);
   background-size: cover;
   background-position: center;
   display: flex;

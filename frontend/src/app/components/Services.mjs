@@ -16,7 +16,7 @@ function Services() {
         <p className="font-gilroy-light text-color-1 mx-10 md:mx-0 md:text-2xl px-96 md:px-20 pb-16 leading-relaxed text-end justify-center">
           {t("services_1")}
         </p>
-        <p className="w-full font-gilroy-semibold text-1xl md:text-6xl px-96 md:px-20 pb-4 text-center justify-center">
+        <p className="w-full font-gilroy-semibold text-1xl md:text-3xl px-96 md:px-20 pb-4 text-center justify-center">
           {t("services_2")}
         </p>
         

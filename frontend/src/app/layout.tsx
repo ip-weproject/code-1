@@ -7,7 +7,7 @@ import { LanguageProvider } from "../app/context/LenguajeContext";
 export const metadata: Metadata = {
   title: "OSA - Web App",
   description:
-    "A forward-thinking startup in Argentina specializing in Salesforce and Web3 solutions, driven by a team with international expertise.",
+    "A forward-thinking startup in Argentina specializing in CRM solutions, driven by a team with international expertise.",
   icons: {
     icon: "/images/favicon.ico", // Ruta correcta al favicon
   },

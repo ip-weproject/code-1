@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="px-5 md:px-40 flex flex-col md:flex-row justify-center font-albert-semibold text-color-2 bg-color-1">
-      <div className="flex md:flex-row items-center h-40 justify-between w-full">
+      <div className="flex md:flex-row flex-col items-center h-50 md:h-40 justify-between w-full">
         <div className="flex justify-start">
           <Link href="#home" className="flex items-center content-center text-center">
             <div className="w-40 h-20 flex items-center">
@@ -17,7 +17,7 @@ export default function Footer() {
                 height={180}
                 className=""
                 alt="logo"
-                src="/images/logo-text-w.svg"
+                src="/images/logo-h-w.svg"
               />
             </div>
           </Link>
@@ -31,22 +31,34 @@ export default function Footer() {
             height={80}
             alt="Salesforce"
             src="/images/salesforce-with-type-logo.svg"
-            className="ml-14 mr-5"/>
+            className="ml-14"/>
           </Link>
           </div>
 
+          {/* Logo de Hubspot */}
+          <div className="flex items-center">
+          <Link href="https://www.hubspot.com" target="_blank" rel="noopener noreferrer">
+          <Image
+            priority
+            width={90}
+            height={90}
+            alt="Salesforce"
+            src="/images/HubSpot_Logo.svg"
+            className="ml-4"/>
+          </Link>
+          </div>
         </div>
-
 
           {/* Logo derecha */}
         <div className="flex md:space-x-6 items-center">
-        <div className="flex flex-row items-center">
-          <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <div className="flex flex-col items-center">
+          <Link href="https://www.linkedin.com/company/osa-crm-consulting/" target="_blank" rel="noopener noreferrer">
             <Image
               width={30}
               height={30}
               alt="LinkedIn"
               src="/images/linkedin.svg"
+              className="my-2"
             />
           </Link>
           <Link href="https://wa.me/5491124760567" target="_blank" rel="noopener noreferrer">
@@ -59,7 +71,7 @@ export default function Footer() {
             />
           </Link>
           </div>
-        <div className="small-font-size md:text-left text-center flex flex-col mt-2 md:ml-10">
+        <div className="small-font-size md:text-left text-center flex flex-col mt-2 md:ml-10 text-white">
             <Link href="#form" className="flex flex-row my-1 whitespace-pre-line">
             <Image
               width={17}
@@ -93,9 +105,6 @@ export default function Footer() {
               <span className="flex">2025 © {t("footer_1")}</span>
             </Link>
           </div>
-
-
-
         </div>
       </div>
     </footer>
