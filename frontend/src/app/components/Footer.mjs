@@ -33,6 +33,20 @@ export default function Footer() {
             src="/images/salesforce-with-type-logo.svg"
             className="ml-14"/>
           </Link>
+            <Link href="">
+          {/* <Link href="https://appexchange.salesforce.com/mktcollections/curated/technologypartners?gad_source=1&gad_campaignid=22539537766&gbraid=0AAAAAoNTYYTz_UITMiQt88JF2sDRgKY6Z&gclid=CjwKCAjwprjDBhBTEiwA1m1d0uwCPbrWQha1v0JDJ4okbS0LmFg8E6RuRFvE_wpj6Xww24VkN5VLThoCS2EQAvD_BwE" target="_blank" rel="noopener noreferrer"> */}
+          <Image
+            priority
+            width={190}
+            height={190}
+            alt="Salesforce"
+            src="/images/partner-logo.svg"
+            className="ml-0 mt-6"/>
+          </Link>
+          </div>
+
+          {/* Logo de partner */}
+          <div className="flex items-center">
           </div>
 
           {/* Logo de Hubspot */}
@@ -44,9 +58,10 @@ export default function Footer() {
             height={90}
             alt="Salesforce"
             src="/images/HubSpot_Logo.svg"
-            className="ml-4"/>
+            className="ml-0"/>
           </Link>
           </div>
+
         </div>
 
           {/* Logo derecha */}
@@ -98,7 +113,7 @@ export default function Footer() {
               height={15}
               alt=""
               src="/images/footer-address.svg"/>
-            <span className="xsmall-font-size ml-2">Buenos Aires, Argentina.</span>
+            <span className="xsmall-font-size ml-2">30 N Gould St, STE R, Sheridan, WY 82801, Wyoming, USA</span>
             </Link>
 
             <Link href="#" className="xsmall-font-size my-1 whitespace-pre-line text-center flex flex-row">

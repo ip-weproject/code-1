@@ -6,6 +6,7 @@ import { useLanguage } from "../context/LenguajeContext.js";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import "../globals.css";
+import Link from "next/link.js";
 
 export default function Header() {
   const { language, changeLanguage } = useLanguage();
@@ -34,10 +35,24 @@ export default function Header() {
 
   return (
     <section className="font-albert-bold text-color-1 fixed flex justify-around h-20 md:h-28 py-4 bg-header top-0 w-full z-50">
+      {/* <div className="flex items-center"> */}
       <button onClick={() => scrollToSection("home")} className="flex">
         <Image priority width={150} height={60} alt="logo" src="/images/logo-h.svg" className="pl-26" />
       </button>
-      
+        {/* <Link href="">
+          <Image
+            priority
+            width={150}
+            height={120}
+            alt="Salesforce"
+            src="/images/partner-logo.svg"
+            className="-ml-5"/>
+          </Link> */}
+      {/* </div> */}
+
+
+
+
       {/* Botón hamburguesa */}
       <button className="md:hidden pr-6" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <XMarkIcon className="w-8 h-8" /> : <Bars3Icon className="w-8 h-8" />}
